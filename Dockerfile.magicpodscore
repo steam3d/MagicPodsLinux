@@ -1,0 +1,53 @@
+FROM ubuntu:22.04 AS system_stage
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        cmake \
+        gcc \
+        g++ \
+        make \
+        pkg-config \
+        ca-certificates \
+        doxygen \
+        graphviz \
+        libsystemd-dev \
+        git \
+        zlib1g-dev \
+        bluez \
+        libbluetooth-dev \
+        libpulse-dev \
+        libssl-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+FROM system_stage AS build_stage
+
+ADD ./src/modules/MagicPodsCore/src /app/src
+ADD ./src/modules/MagicPodsCore/dependencies /app/dependencies
+ADD ./src/modules/MagicPodsCore/config /app/config
+ADD ./src/modules/MagicPodsCore/CMakeLists.txt /app/CMakeLists.txt
+
+WORKDIR /app/build
+
+RUN cmake -DCMAKE_BUILD_TYPE=Release ../
+RUN cmake --build ./
+
+FROM system_stage AS runtime_collect_stage
+
+RUN mkdir -p /out/bin/modules /out/lib
+COPY --from=build_stage /app/build/magicpodscore /out/bin/modules/magicpodscore
+
+RUN set -eu; \
+    ldd /out/bin/modules/magicpodscore | awk '{if ($3 ~ /^\//) print $3; else if ($1 ~ /^\//) print $1}' | sort -u > /tmp/runtime_deps.txt; \
+    while IFS= read -r dep; do \
+        [ -n "$dep" ] || continue; \
+        case "$(basename "$dep")" in \
+            libc.so.*|libm.so.*|libpthread.so.*|libdl.so.*|librt.so.*|ld-linux-*.so.*) \
+                continue \
+                ;; \
+        esac; \
+        cp -Lv "$dep" /out/lib/; \
+    done < /tmp/runtime_deps.txt
+
+FROM scratch AS runtime_export_stage
+
+COPY --from=runtime_collect_stage /out/ /
