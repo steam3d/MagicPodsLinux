@@ -280,6 +280,20 @@ QtObject {
             "frameHeight": 110,
             "frameCount": 360,
             "frameRate": 60
+        },
+        "76_8240": {
+            "source": "76_8240.png",
+            "frameWidth": 220,
+            "frameHeight": 110,
+            "frameCount": 360,
+            "frameRate": 60
+        },
+        "76_8246": {
+            "source": "76_8246.png",
+            "frameWidth": 220,
+            "frameHeight": 110,
+            "frameCount": 360,
+            "frameRate": 60
         }
     })
 
