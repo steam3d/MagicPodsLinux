@@ -14,8 +14,8 @@ QQC2.ApplicationWindow {
     minimumWidth: gameScopeMode ? 0 : 488
     width: gameScopeMode ? Screen.width : 700
     height: gameScopeMode ? Screen.height : 460
-    visibility: gameScopeMode ? Window.FullScreen : Window.Windowed
-    visible: true
+    visibility: startInBackground ? Window.Hidden
+                                  : (gameScopeMode ? Window.FullScreen : Window.Windowed)
 
     property alias currentIndex: swipeView.currentIndex
 

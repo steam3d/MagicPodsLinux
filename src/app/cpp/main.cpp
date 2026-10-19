@@ -81,6 +81,8 @@ int main(int argc, char *argv[]) {
     app.setDesktopFileName("app.magicpods");
     app.setQuitOnLastWindowClosed(false);
 
+    const bool startInBackground = app.arguments().contains(QStringLiteral("--background"));
+
     const QString serverName = QString("magicpods_%1_%2")
                                    .arg(app.organizationDomain(), app.applicationName());
     QLocalSocket socket;
@@ -168,6 +170,7 @@ int main(int argc, char *argv[]) {
     engine.rootContext()->setContextProperty("uiSettings", &uiSettings);
     engine.rootContext()->setContextProperty("languageManager", &languageManager);
     engine.rootContext()->setContextProperty("gameScopeMode", gameScopeMode);
+    engine.rootContext()->setContextProperty("startInBackground", startInBackground);
     backendManager.start();
     backend.connectSocket();
     engine.loadFromModule("magicpods", "Main");
