@@ -446,6 +446,16 @@ Dezactivați „Detectarea conversației” în setările căștilor pentru a î
             <source />
             <translation>Altele</translation>
         </message>
+        <message id="settings.language">
+            <location filename="../qml/pages/SettingsPage.qml" line="121" />
+            <source />
+            <translation>Limbă:</translation>
+        </message>
+        <message id="settings.language.system">
+            <location filename="../cpp/LanguageManager.cpp" line="71" />
+            <source />
+            <translation>Implicit al sistemului</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

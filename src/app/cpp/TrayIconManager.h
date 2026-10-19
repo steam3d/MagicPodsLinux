@@ -27,6 +27,9 @@ public:
                              std::function<void()> exitApplication,
                              QObject *parent = nullptr);
 
+public slots:
+    void retranslate();
+
 private:
     void updateState(const QVariantMap &json);
     void handleDataReceived(const QVariant &json);

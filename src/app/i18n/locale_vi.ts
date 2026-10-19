@@ -446,6 +446,16 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
             <source />
             <translation>Khác</translation>
         </message>
+        <message id="settings.language">
+            <location filename="../qml/pages/SettingsPage.qml" line="121" />
+            <source />
+            <translation>Ngôn ngữ:</translation>
+        </message>
+        <message id="settings.language.system">
+            <location filename="../cpp/LanguageManager.cpp" line="71" />
+            <source />
+            <translation>Mặc định hệ thống</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

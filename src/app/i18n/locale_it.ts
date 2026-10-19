@@ -446,6 +446,16 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
             <source />
             <translation>Altro</translation>
         </message>
+        <message id="settings.language">
+            <location filename="../qml/pages/SettingsPage.qml" line="121" />
+            <source />
+            <translation>Lingua:</translation>
+        </message>
+        <message id="settings.language.system">
+            <location filename="../cpp/LanguageManager.cpp" line="71" />
+            <source />
+            <translation>Predefinita di sistema</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

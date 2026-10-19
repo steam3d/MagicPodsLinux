@@ -4,8 +4,6 @@
 
 #include <QApplication>
 #include <QQmlApplicationEngine>
-#include <QTranslator>
-#include <QLocale>
 #include <QIcon>
 #include <QLibraryInfo>
 #include <QQmlContext>
@@ -23,6 +21,7 @@
 #include "BackendManager.h"
 #include "DesktopManager.h"
 #include "DeckyManager.h"
+#include "LanguageManager.h"
 #include "TrayIcon.h"
 #include "TrayIconManager.h"
 #include "UiSettingsService.h"
@@ -138,26 +137,13 @@ int main(int argc, char *argv[]) {
     app.setWindowIcon(appIcon);
 
     UiSettingsService uiSettings;
-
-    QTranslator englishTranslation;
-    const QString englishTranslationPath = QStringLiteral(":/i18n/locale_en.qm");    
-    if (!englishTranslation.load(englishTranslationPath)) {
-        qFatal("Could not load %s!", qUtf8Printable(englishTranslationPath));
-    }
-    app.installTranslator(&englishTranslation);
-
-    QTranslator localizedTranslation;
-    if (QLocale().language() != QLocale::English
-        && localizedTranslation.load(QLocale(),
-                                     QStringLiteral("locale"),
-                                     QStringLiteral("_"),
-                                     QStringLiteral(":/i18n/"))) {
-        app.installTranslator(&localizedTranslation);
-    }
+    LanguageManager languageManager(&uiSettings);
+    languageManager.installTranslators();
 
     const bool gameScopeMode = !qEnvironmentVariableIsEmpty("GAMESCOPE_WAYLAND_DISPLAY");
 
     QQmlApplicationEngine engine;
+    languageManager.setEngine(&engine);
     BackendManager backendManager;
     DesktopManager desktopManager;
     DeckyManager deckyManager;
@@ -169,6 +155,7 @@ int main(int argc, char *argv[]) {
     engine.rootContext()->setContextProperty("cppBackend", &backend);
     engine.rootContext()->setContextProperty("cppTrayIcon", &trayIcon);
     engine.rootContext()->setContextProperty("uiSettings", &uiSettings);
+    engine.rootContext()->setContextProperty("languageManager", &languageManager);
     engine.rootContext()->setContextProperty("gameScopeMode", gameScopeMode);
     backendManager.start();
     backend.connectSocket();
@@ -218,6 +205,10 @@ int main(int argc, char *argv[]) {
     TrayIconManager trayIconManager(&trayIcon, &trayMenu, &backend, toggleMainWindow, [&app]() {
         app.quit();
     });
+    QObject::connect(&languageManager,
+                     &LanguageManager::languageChanged,
+                     &trayIconManager,
+                     &TrayIconManager::retranslate);
 
     if (QSystemTrayIcon::isSystemTrayAvailable()) {
         trayIcon.setContextMenu(&trayMenu);

@@ -446,6 +446,16 @@ V nastavení sluchátek vypněte „Detekci konverzace“, aby se při použív�
             <source />
             <translation>Ostatní</translation>
         </message>
+        <message id="settings.language">
+            <location filename="../qml/pages/SettingsPage.qml" line="121" />
+            <source />
+            <translation>Jazyk:</translation>
+        </message>
+        <message id="settings.language.system">
+            <location filename="../cpp/LanguageManager.cpp" line="71" />
+            <source />
+            <translation>Výchozí nastavení systému</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

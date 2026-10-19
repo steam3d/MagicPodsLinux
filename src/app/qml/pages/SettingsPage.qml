@@ -31,6 +31,15 @@ QQC2.Page {
         return "auto";
     }
 
+    function languageIndex(language) {
+        const languages = languageManager?.availableLanguages ?? [];
+        for (let index = 0; index < languages.length; ++index) {
+            if (languages[index].code === language)
+                return index;
+        }
+        return 0;
+    }
+
     function requestSettings() {
         if (cppBackend && cppBackend.connected) {
             cppBackend.getSetting("magicpods", "animation");
@@ -103,6 +112,25 @@ QQC2.Page {
                 font.bold: true
                 text: qsTrId("settings.other")
                 horizontalAlignment: Text.AlignHCenter
+            }
+
+            MP.FormRow {
+                Layout.fillWidth: true
+                Layout.maximumWidth: mWidth * 1.5
+                Layout.alignment: Qt.AlignHCenter
+                label: qsTrId("settings.language")
+
+                QQC2.ComboBox {
+                    width: rootPage.mWidth
+                    model: languageManager?.availableLanguages ?? []
+                    textRole: "name"
+                    valueRole: "code"
+                    currentIndex: rootPage.languageIndex(languageManager?.language ?? "system")
+                    onActivated: {
+                        if (languageManager)
+                            languageManager.language = currentValue;
+                    }
+                }
             }
 
             MP.FormRow {

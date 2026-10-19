@@ -446,6 +446,16 @@ Kapcsolja ki a fejhallgató beállításaiban a „Beszélgetésészlelést”, 
             <source />
             <translation>Egyéb</translation>
         </message>
+        <message id="settings.language">
+            <location filename="../qml/pages/SettingsPage.qml" line="121" />
+            <source />
+            <translation>Nyelv:</translation>
+        </message>
+        <message id="settings.language.system">
+            <location filename="../cpp/LanguageManager.cpp" line="71" />
+            <source />
+            <translation>Rendszer alapértelmezése</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

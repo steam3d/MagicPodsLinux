@@ -63,6 +63,7 @@ qt_add_executable(magicpods
     src/app/cpp/BackendManager.cpp
     src/app/cpp/DeckyManager.cpp
     src/app/cpp/DesktopManager.cpp
+    src/app/cpp/LanguageManager.cpp
     src/app/cpp/main.cpp
     src/app/cpp/TrayIcon.cpp
     src/app/cpp/TrayIconManager.cpp

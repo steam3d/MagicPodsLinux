@@ -84,6 +84,12 @@ TrayIconManager::TrayIconManager(TrayIcon *trayIcon,
     rebuildMenu();
 }
 
+void TrayIconManager::retranslate()
+{
+    updateTrayIcon();
+    rebuildMenu();
+}
+
 void TrayIconManager::handleDataReceived(const QVariant &json)
 {
     updateState(json.toMap());

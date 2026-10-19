@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="en_US">
+<TS version="2.1" language="en">
 <context>
     <name></name>
     <message id="headphones.help.bluetooth_not_found.header">
@@ -445,6 +445,16 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <location filename="../qml/pages/SettingsPage.qml" line="114"/>
         <source></source>
         <translation>Other</translation>
+    </message>
+    <message id="settings.language">
+        <location filename="../qml/pages/SettingsPage.qml" line="121"/>
+        <source></source>
+        <translation>Language:</translation>
+    </message>
+    <message id="settings.language.system">
+        <location filename="../cpp/LanguageManager.cpp" line="71"/>
+        <source></source>
+        <translation>System default</translation>
     </message>
     <message id="settings.add_shortcut_to_menu">
         <location filename="../qml/pages/SettingsPage.qml" line="173"/>
