@@ -31,6 +31,7 @@ QQC2.Page {
     readonly property var ancData: capabilities?.anc ?? null
     readonly property var conversationAwarenessData: capabilities?.conversationAwareness ?? null
     readonly property var personalizedVolumeData: capabilities?.personalizedVolume ?? null
+    readonly property var digitalCrownData: capabilities?.digitalCrown ?? null
     readonly property var ancOneAirPodData: capabilities?.ancOneAirPod ?? null
     readonly property var volumeSwipeData: capabilities?.volumeSwipe ?? null
     readonly property var adaptiveAudioNoiseData: capabilities?.adaptiveAudioNoise ?? null
@@ -44,7 +45,7 @@ QQC2.Page {
     readonly property var earDetectionData: capabilities?.earDetection ?? null
     readonly property int mWidth: MP.Units.gridUnit * 12
 
-    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, ancOneAirPodData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
+    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, ancOneAirPodData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
         return v !== null;
     })
 
@@ -461,6 +462,32 @@ QQC2.Page {
                             if (rootPage.personalizedVolumeData) {
                                 rootPage.personalizedVolumeData.selected = checked;
                                 cppBackend.setCapability("personalizedVolume", rootPage.currentAddress(), checked);
+                            }
+                        }
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.digitalCrownData !== null
+                    label: qsTrId("battery.digital_crown")
+
+                    QQC2.ComboBox {
+                        width: rootPage.mWidth
+                        model: [qsTrId("battery.digital_crown.do_not_change"), qsTrId("battery.digital_crown.back_to_front"), qsTrId("battery.digital_crown.front_to_back")]
+                        currentIndex: {
+                            const value = rootPage.digitalCrownData?.selected;
+                            if (value === -1) return 0;
+                            if (value === 1) return 1;
+                            if (value === 2) return 2;
+                            return -1;
+                        }
+                        enabled: !(rootPage.digitalCrownData?.readonly ?? true)
+                        onActivated: {
+                            if (rootPage.digitalCrownData && currentIndex >= 0) {
+                                const nextValue = currentIndex === 0 ? -1 : currentIndex;
+                                rootPage.digitalCrownData.selected = nextValue;
+                                cppBackend.setCapability("digitalCrown", rootPage.currentAddress(), nextValue);
                             }
                         }
                     }

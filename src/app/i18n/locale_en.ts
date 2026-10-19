@@ -139,6 +139,26 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <source></source>
         <translation>Personalized volume:</translation>
     </message>
+    <message id="battery.digital_crown">
+        <location filename="../qml/pages/BatteryPage.qml" line="473"/>
+        <source></source>
+        <translation>Digital Crown</translation>
+    </message>
+    <message id="battery.digital_crown.do_not_change">
+        <location filename="../qml/pages/BatteryPage.qml" line="477"/>
+        <source></source>
+        <translation>Don't Change</translation>
+    </message>
+    <message id="battery.digital_crown.back_to_front">
+        <location filename="../qml/pages/BatteryPage.qml" line="477"/>
+        <source></source>
+        <translation>Back to front</translation>
+    </message>
+    <message id="battery.digital_crown.front_to_back">
+        <location filename="../qml/pages/BatteryPage.qml" line="477"/>
+        <source></source>
+        <translation>Front to back</translation>
+    </message>
     <message id="battery.adaptive_audio_noise">
         <location filename="../qml/pages/BatteryPage.qml" line="431"/>
         <source></source>
