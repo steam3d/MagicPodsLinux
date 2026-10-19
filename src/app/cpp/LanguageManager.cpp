@@ -22,6 +22,13 @@ const QString SystemLanguage = QStringLiteral("system");
 const QString TranslationPrefix = QStringLiteral("locale_");
 const QString TranslationSuffix = QStringLiteral(".qm");
 const QString TranslationDirectory = QStringLiteral(":/i18n/");
+
+QString nativeLanguageName(const QString &language)
+{
+    const QLocale locale(language);
+    const QString name = locale.nativeLanguageName();
+    return name.isEmpty() ? QLocale::languageToString(locale.language()) : name;
+}
 }
 
 LanguageManager::LanguageManager(UiSettingsService *settings, QObject *parent)
@@ -114,29 +121,20 @@ QStringList LanguageManager::findAvailableLanguageCodes() const
         languages.append(file.mid(prefixLength, file.size() - prefixLength - suffixLength));
     }
 
-    std::sort(languages.begin(), languages.end(), [this](const QString &left, const QString &right) {
-        return QString::localeAwareCompare(languageDisplayName(left), languageDisplayName(right)) < 0;
+    std::sort(languages.begin(), languages.end(), [](const QString &left, const QString &right) {
+        const int nameComparison = QString::localeAwareCompare(nativeLanguageName(left),
+                                                                nativeLanguageName(right));
+        return nameComparison == 0 ? left < right : nameComparison < 0;
     });
     return languages;
 }
 
 QString LanguageManager::languageDisplayName(const QString &language) const
 {
-    if (language == QStringLiteral("zh_CN"))
-        return QStringLiteral("简体中文");
-    if (language == QStringLiteral("zh_Hant"))
-        return QStringLiteral("繁體中文");
-
-    const QLocale locale(language);
-    QString name = locale.nativeLanguageName();
-    if (name.isEmpty())
-        name = QLocale::languageToString(locale.language());
-
-    const QStringList parts = language.split(QLatin1Char('_'));
-    if (parts.size() > 1 && parts.constLast().size() != 4) {
-        const QString territory = locale.nativeTerritoryName();
-        if (!territory.isEmpty())
-            name += QStringLiteral(" (%1)").arg(territory);
+    const QString name = nativeLanguageName(language);
+    for (const QString &otherLanguage : availableLanguageCodes) {
+        if (otherLanguage != language && nativeLanguageName(otherLanguage) == name)
+            return QStringLiteral("%1 (%2)").arg(name, language);
     }
 
     return name;
