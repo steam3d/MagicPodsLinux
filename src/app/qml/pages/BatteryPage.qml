@@ -65,6 +65,11 @@ QQC2.Page {
         return infoData?.address;
     }
 
+    // Preserve integer capability values when QML converts them to QVariant.
+    function toInteger(value) {
+        return Math.round(value) | 0;
+    }
+
     function requestInfo() {
         if (cppBackend && cppBackend.connected) {
             cppBackend.getInfo();
@@ -123,9 +128,9 @@ QQC2.Page {
         const selected = customEqData.selected || {};
         cppBackend.setCapability("customEq", currentAddress(), {
             enabled: selected.enabled ?? false,
-            low: Math.round(selected.low ?? 50),
-            mid: Math.round(selected.mid ?? 50),
-            high: Math.round(selected.high ?? 50)
+            low: toInteger(selected.low ?? 50),
+            mid: toInteger(selected.mid ?? 50),
+            high: toInteger(selected.high ?? 50)
         });
     }
 
@@ -893,12 +898,14 @@ QQC2.Page {
                             enabled: !(rootPage.toneVolumeData?.readonly ?? true)
                             onMoved: {
                                 if (rootPage.toneVolumeData) {
-                                    rootPage.toneVolumeData.selected = Math.round(value);
+                                    rootPage.toneVolumeData.selected = rootPage.toInteger(value);
                                 }
                             }
                             onPressedChanged: {
                                 if (!pressed && rootPage.toneVolumeData) {
-                                    cppBackend.setCapability("toneVolume", rootPage.currentAddress(), rootPage.toneVolumeData.selected);
+                                    const selectedValue = rootPage.toInteger(rootPage.toneVolumeData.selected);
+                                    rootPage.toneVolumeData.selected = selectedValue;
+                                    cppBackend.setCapability("toneVolume", rootPage.currentAddress(), selectedValue);
                                 }
                             }
                         }
