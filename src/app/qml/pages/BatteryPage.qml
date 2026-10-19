@@ -35,6 +35,7 @@ QQC2.Page {
     readonly property var pressAndHoldAirPodModeData: capabilities?.pressAndHoldAirPodMode ?? null
     readonly property var ancOneAirPodData: capabilities?.ancOneAirPod ?? null
     readonly property var ancOffModeData: capabilities?.ancOffMode ?? null
+    readonly property var customEqData: capabilities?.customEq ?? null
     readonly property var volumeSwipeData: capabilities?.volumeSwipe ?? null
     readonly property var adaptiveAudioNoiseData: capabilities?.adaptiveAudioNoise ?? null
     readonly property var pressAndHoldDurationData: capabilities?.pressAndHoldDuration ?? null
@@ -47,7 +48,7 @@ QQC2.Page {
     readonly property var earDetectionData: capabilities?.earDetection ?? null
     readonly property int mWidth: MP.Units.gridUnit * 12
 
-    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, ancOneAirPodData, ancOffModeData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
+    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, ancOneAirPodData, ancOffModeData, customEqData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
         return v !== null;
     })
 
@@ -94,6 +95,35 @@ QQC2.Page {
         var update = {};
         update[side] = value;
         cppBackend.setCapability("pressAndHoldAirPodMode", currentAddress(), update);
+    }
+
+    function customEqValue(field) {
+        const selected = customEqData?.selected;
+        return selected && selected[field] !== undefined ? selected[field] : 50;
+    }
+
+    function setCustomEqField(field, value) {
+        if (!customEqData) {
+            return;
+        }
+
+        var selected = customEqData.selected || {};
+        selected[field] = value;
+        customEqData.selected = selected;
+    }
+
+    function sendCustomEq() {
+        if (!customEqData) {
+            return;
+        }
+
+        const selected = customEqData.selected || {};
+        cppBackend.setCapability("customEq", currentAddress(), {
+            enabled: selected.enabled ?? false,
+            low: Math.round(selected.low ?? 50),
+            mid: Math.round(selected.mid ?? 50),
+            high: Math.round(selected.high ?? 50)
+        });
     }
 
     Connections {
@@ -643,6 +673,65 @@ QQC2.Page {
                                 const nextValue = currentIndex === 0 ? -1 : currentIndex;
                                 rootPage.ancOffModeData.selected = nextValue;
                                 cppBackend.setCapability("ancOffMode", rootPage.currentAddress(), nextValue);
+                            }
+                        }
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.customEqData !== null
+                    label: qsTrId("battery.custom_eq")
+
+                    QQC2.Switch {
+                        id: customEqSwitch
+                        checked: rootPage.customEqData?.selected?.enabled ?? false
+                        enabled: !(rootPage.customEqData?.readonly ?? true)
+                        onToggled: {
+                            if (rootPage.customEqData) {
+                                rootPage.setCustomEqField("enabled", checked);
+                                rootPage.sendCustomEq();
+                            }
+                        }
+                    }
+                }
+
+                Repeater {
+                    model: [
+                        { field: "low", label: qsTrId("battery.custom_eq.low") },
+                        { field: "mid", label: qsTrId("battery.custom_eq.mid") },
+                        { field: "high", label: qsTrId("battery.custom_eq.high") }
+                    ]
+
+                    delegate: MP.FormRow {
+                        Layout.fillWidth: true
+                        visible: rootPage.customEqData !== null
+                        label: modelData.label
+
+                        RowLayout {
+                            spacing: MP.Units.largeSpacing
+
+                            QQC2.Slider {
+                                id: customEqSlider
+                                Layout.leftMargin: -16
+                                Layout.rightMargin: -16
+                                implicitWidth: rootPage.mWidth + 32
+                                from: 0
+                                to: 100
+                                value: rootPage.customEqValue(modelData.field)
+                                enabled: !(rootPage.customEqData?.readonly ?? true)
+                                         && customEqSwitch.checked
+                                onMoved: rootPage.setCustomEqField(modelData.field, Math.round(value))
+                                onPressedChanged: {
+                                    if (!pressed && rootPage.customEqData) {
+                                        rootPage.setCustomEqField(modelData.field, Math.round(value));
+                                        rootPage.sendCustomEq();
+                                    }
+                                }
+                            }
+
+                            MP.Label {
+                                text: Math.round(customEqSlider.value) + "%"
                             }
                         }
                     }

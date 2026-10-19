@@ -234,6 +234,26 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <source></source>
         <translation>Disabled</translation>
     </message>
+    <message id="battery.custom_eq">
+        <location filename="../qml/pages/BatteryPage.qml" line="683"/>
+        <source></source>
+        <translation>Equalizer</translation>
+    </message>
+    <message id="battery.custom_eq.low">
+        <location filename="../qml/pages/BatteryPage.qml" line="700"/>
+        <source></source>
+        <translation>Equalizer: Low</translation>
+    </message>
+    <message id="battery.custom_eq.mid">
+        <location filename="../qml/pages/BatteryPage.qml" line="701"/>
+        <source></source>
+        <translation>Equalizer: Mid</translation>
+    </message>
+    <message id="battery.custom_eq.high">
+        <location filename="../qml/pages/BatteryPage.qml" line="702"/>
+        <source></source>
+        <translation>Equalizer: High</translation>
+    </message>
     <message id="battery.press_and_hold_duration">
         <location filename="../qml/pages/BatteryPage.qml" line="480"/>
         <source></source>
