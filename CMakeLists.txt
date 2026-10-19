@@ -10,7 +10,37 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Qml Quick QuickControls2 Widgets WebSockets Linguist)
 
 qt_standard_project_setup(REQUIRES 6.8
-    I18N_TRANSLATED_LANGUAGES en
+    I18N_TRANSLATED_LANGUAGES
+        en
+        ar
+        ckb
+        cs
+        da
+        de
+        el
+        es
+        fi
+        fr
+        fr_CA
+        hu
+        it
+        ja
+        ko
+        lv
+        nl
+        pl
+        pt_BR
+        pt_PT
+        ro
+        ru
+        si
+        sv
+        th
+        tr
+        uk
+        vi
+        zh_CN
+        zh_Hant
 )
 
 set(QML_IMPORT_PATH "${CMAKE_BINARY_DIR}/qml" CACHE STRING "Qt Creator extra qml import paths" FORCE)
