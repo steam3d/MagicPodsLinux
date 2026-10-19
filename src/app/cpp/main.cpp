@@ -149,6 +149,17 @@ int main(int argc, char *argv[]) {
     DeckyManager deckyManager;
     Backend backend;
     TrayIcon trayIcon;
+    const QString trayIconThemeKey = QStringLiteral("theme/tray_icon");
+    const QString trayIconTheme = uiSettings
+                                      .value(trayIconThemeKey, QStringLiteral("auto"))
+                                      .toString();
+    if (trayIconTheme == QStringLiteral("light"))
+        trayIcon.setThemeMode(1);
+    else if (trayIconTheme == QStringLiteral("dark"))
+        trayIcon.setThemeMode(2);
+    else
+        trayIcon.setThemeMode(0);
+
     engine.rootContext()->setContextProperty("backendManager", &backendManager);
     engine.rootContext()->setContextProperty("desktopManager", &desktopManager);
     engine.rootContext()->setContextProperty("deckyManager", &deckyManager);

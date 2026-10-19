@@ -19,12 +19,6 @@ QQC2.Page {
     readonly property int mWidth: MP.Units.gridUnit * 12
     title: qsTrId("menu.settings")
 
-    function themeTrayStringToIndex(value) {
-        if (value === "light") return 1;
-        if (value === "dark") return 2;
-        return 0;
-    }
-
     function themeTrayIndexToString(index) {
         if (index === 1) return "light";
         if (index === 2) return "dark";
@@ -43,7 +37,6 @@ QQC2.Page {
     function requestSettings() {
         if (cppBackend && cppBackend.connected) {
             cppBackend.getSetting("magicpods", "animation");
-            cppBackend.getSetting("magicpods", "theme_tray");
         }
     }
 
@@ -54,8 +47,6 @@ QQC2.Page {
             if (!json || Object.keys(json).length === 0) {} else if (json.settings) {
                 if (json.settings?.magicpods?.animation != null)
                     rootPage.settingAnimation = json.settings.magicpods.animation;
-                if (json.settings?.magicpods?.theme_tray != null && cppTrayIcon)
-                    cppTrayIcon.themeMode = rootPage.themeTrayStringToIndex(json.settings.magicpods.theme_tray);
             }
         }
         function onConnectedChanged() {
@@ -178,7 +169,7 @@ QQC2.Page {
 
                 QQC2.ComboBox {
                     width: rootPage.mWidth
-                    enabled: cppBackend?.connected ?? false
+                    enabled: !!cppTrayIcon
                     model: [
                         qsTrId("settings.tray_icon_theme.auto"),
                         qsTrId("settings.tray_icon_theme.light"),
@@ -188,8 +179,8 @@ QQC2.Page {
                     onActivated: {
                         if (cppTrayIcon)
                             cppTrayIcon.themeMode = currentIndex;
-                        if (cppBackend)
-                            cppBackend.setSetting("magicpods", "theme_tray", rootPage.themeTrayIndexToString(currentIndex));
+                        if (uiSettings)
+                            uiSettings.setValue("theme/tray_icon", rootPage.themeTrayIndexToString(currentIndex));
                     }
                 }
             }
