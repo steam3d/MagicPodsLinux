@@ -76,6 +76,7 @@ qt_add_qml_module(magicpods
         src/app/qml/components/HelpMessage.qml
         src/app/qml/components/InlineMessage.qml
         src/app/qml/components/Label.qml
+        src/app/qml/components/MultiSelect.qml
         src/app/qml/components/Separator.qml
         src/app/qml/pages/AboutPage.qml
         src/app/qml/pages/BatteryPage.qml

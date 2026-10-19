@@ -189,6 +189,21 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <source></source>
         <translation>Volume down</translation>
     </message>
+    <message id="battery.press_and_hold_anc">
+        <location filename="../qml/pages/BatteryPage.qml" line="638"/>
+        <source></source>
+        <translation>Noise control from headphones</translation>
+    </message>
+    <message id="battery.press_and_hold_anc.hint">
+        <location filename="../qml/pages/BatteryPage.qml" line="639"/>
+        <source></source>
+        <translation>Select at least two modes, or clear all to leave the setting unchanged.</translation>
+    </message>
+    <message id="battery.press_and_hold_anc.do_not_change">
+        <location filename="../qml/pages/BatteryPage.qml" line="682"/>
+        <source></source>
+        <translation>Don't change</translation>
+    </message>
     <message id="battery.adaptive_audio_noise">
         <location filename="../qml/pages/BatteryPage.qml" line="431"/>
         <source></source>

@@ -33,6 +33,8 @@ QQC2.Page {
     readonly property var personalizedVolumeData: capabilities?.personalizedVolume ?? null
     readonly property var digitalCrownData: capabilities?.digitalCrown ?? null
     readonly property var pressAndHoldAirPodModeData: capabilities?.pressAndHoldAirPodMode ?? null
+    readonly property var pressAndHoldAirPodModeAncData: capabilities?.pressAndHoldAirPodModeAnc ?? null
+    property int pressAndHoldAncValue: -1
     readonly property var ancOneAirPodData: capabilities?.ancOneAirPod ?? null
     readonly property var ancOffModeData: capabilities?.ancOffMode ?? null
     readonly property var customEqData: capabilities?.customEq ?? null
@@ -50,7 +52,7 @@ QQC2.Page {
     readonly property var earDetectionData: capabilities?.earDetection ?? null
     readonly property int mWidth: MP.Units.gridUnit * 12
 
-    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, ancOneAirPodData, ancOffModeData, customEqData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, sleepDetectionData, optimizedChargeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
+    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, pressAndHoldAirPodModeAncData, ancOneAirPodData, ancOffModeData, customEqData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, sleepDetectionData, optimizedChargeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
         return v !== null;
     })
 
@@ -134,9 +136,11 @@ QQC2.Page {
         function onDataReceived(json) {
             if (!json || Object.keys(json).length === 0) {
                 rootPage.infoData = ({});
+                rootPage.pressAndHoldAncValue = -1;
             } else if (json.info) {
                 rootPage.infoData = json.info;
                 rootPage.selectedAnc = json.info?.capabilities?.anc?.selected ?? rootPage.selectedAnc;
+                rootPage.pressAndHoldAncValue = json.info?.capabilities?.pressAndHoldAirPodModeAnc?.selected ?? -1;
             }
         }
         function onConnectedChanged() {
@@ -602,6 +606,34 @@ QQC2.Page {
                             if (currentIndex >= 0 && currentIndex < options.length) {
                                 rootPage.setPressAndHoldMode("right", options[currentIndex]);
                             }
+                        }
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.pressAndHoldAirPodModeAncData !== null
+                    label: qsTrId("battery.press_and_hold_anc")
+
+                    Components.MultiSelect {
+                        width: rootPage.mWidth
+                        title: qsTrId("battery.press_and_hold_anc")
+                        hint: qsTrId("battery.press_and_hold_anc.hint")
+                        doNotApplyLabel: qsTrId("battery.press_and_hold_anc.do_not_change")
+                        value: rootPage.pressAndHoldAncValue
+                        enabled: !(rootPage.pressAndHoldAirPodModeAncData?.readonly ?? true)
+                        options: [
+                            { value: 1, icon: rootPage.assetPath("icons/icon-off.svg"), label: qsTrId("battery.anc_off") },
+                            { value: 4, icon: rootPage.assetPath("icons/icon-tra.svg"), label: qsTrId("battery.anc_tra") },
+                            { value: 8, icon: rootPage.assetPath("icons/icon-adaptive.svg"), label: qsTrId("battery.anc_adaptive") },
+                            { value: 2, icon: rootPage.assetPath("icons/icon-noise.svg"), label: qsTrId("battery.anc_anc") }
+                        ].filter(function (option) {
+                            return ((rootPage.pressAndHoldAirPodModeAncData?.options ?? 0) & option.value) !== 0;
+                        })
+                        onValueCommitted: function (value) {
+                            rootPage.pressAndHoldAncValue = value;
+                            rootPage.pressAndHoldAirPodModeAncData.selected = value;
+                            cppBackend.setCapability("pressAndHoldAirPodModeAnc", rootPage.currentAddress(), value);
                         }
                     }
                 }
