@@ -29,29 +29,29 @@ QQC2.Page {
     property var data: infoData
     readonly property var capabilities: data?.capabilities ?? null
     readonly property var ancData: capabilities?.anc ?? null
+    readonly property var highResolutionMicrophoneData: capabilities?.highResolutionMicrophone ?? null
+    readonly property var bluetoothCodec: capabilities?.bluetoothCodec ?? null
+    readonly property var earDetectionData: capabilities?.earDetection ?? null
     readonly property var conversationAwarenessData: capabilities?.conversationAwareness ?? null
     readonly property var personalizedVolumeData: capabilities?.personalizedVolume ?? null
     readonly property var digitalCrownData: capabilities?.digitalCrown ?? null
     readonly property var pressAndHoldAirPodModeData: capabilities?.pressAndHoldAirPodMode ?? null
     readonly property var pressAndHoldAirPodModeAncData: capabilities?.pressAndHoldAirPodModeAnc ?? null
+    readonly property var adaptiveAudioNoiseData: capabilities?.adaptiveAudioNoise ?? null
     readonly property var ancOneAirPodData: capabilities?.ancOneAirPod ?? null
     readonly property var ancOffModeData: capabilities?.ancOffMode ?? null
     readonly property var customEqData: capabilities?.customEq ?? null
-    readonly property var volumeSwipeData: capabilities?.volumeSwipe ?? null
-    readonly property var adaptiveAudioNoiseData: capabilities?.adaptiveAudioNoise ?? null
-    readonly property var pressAndHoldDurationData: capabilities?.pressAndHoldDuration ?? null
     readonly property var pressSpeedData: capabilities?.pressSpeed ?? null
+    readonly property var pressAndHoldDurationData: capabilities?.pressAndHoldDuration ?? null
+    readonly property var volumeSwipeData: capabilities?.volumeSwipe ?? null
+    readonly property var volumeSwipeLengthData: capabilities?.volumeSwipeLength ?? null
+    readonly property var endCallData: capabilities?.endCall ?? null
     readonly property var toneVolumeData: capabilities?.toneVolume ?? null
     readonly property var sleepDetectionData: capabilities?.sleepDetection ?? null
     readonly property var optimizedChargeData: capabilities?.optimizedCharge ?? null
-    readonly property var volumeSwipeLengthData: capabilities?.volumeSwipeLength ?? null
-    readonly property var endCallData: capabilities?.endCall ?? null
-    readonly property var highResolutionMicrophoneData: capabilities?.highResolutionMicrophone ?? null
-    readonly property var bluetoothCodec: capabilities?.bluetoothCodec ?? null
-    readonly property var earDetectionData: capabilities?.earDetection ?? null
     readonly property int mWidth: MP.Units.gridUnit * 12
 
-    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, pressAndHoldAirPodModeAncData, ancOneAirPodData, ancOffModeData, customEqData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, sleepDetectionData, optimizedChargeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
+    readonly property bool hasCapabilities: !!capabilities && [ancData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, pressAndHoldAirPodModeAncData, adaptiveAudioNoiseData, ancOneAirPodData, ancOffModeData, customEqData, pressSpeedData, pressAndHoldDurationData, volumeSwipeData, volumeSwipeLengthData, endCallData, toneVolumeData, sleepDetectionData, optimizedChargeData].some(function (v) {
         return v !== null;
     })
 
@@ -769,25 +769,6 @@ QQC2.Page {
 
                 MP.FormRow {
                     Layout.fillWidth: true
-                    visible: rootPage.pressAndHoldDurationData !== null
-                    label: qsTrId("battery.press_and_hold_duration")
-
-                    QQC2.ComboBox {
-                        width: rootPage.mWidth
-                        model: [qsTrId("battery.press_and_hold_duration.default"), qsTrId("battery.press_and_hold_duration.shorter"), qsTrId("battery.press_and_hold_duration.shortest")]
-                        currentIndex: rootPage.pressAndHoldDurationData?.selected ?? 0
-                        enabled: !(rootPage.pressAndHoldDurationData?.readonly ?? true)
-                        onActivated: {
-                            if (rootPage.pressAndHoldDurationData) {
-                                rootPage.pressAndHoldDurationData.selected = currentIndex;
-                                cppBackend.setCapability("pressAndHoldDuration", rootPage.currentAddress(), currentIndex);
-                            }
-                        }
-                    }
-                }
-
-                MP.FormRow {
-                    Layout.fillWidth: true
                     visible: rootPage.pressSpeedData !== null
                     label: qsTrId("battery.press_speed")
 
@@ -807,68 +788,18 @@ QQC2.Page {
 
                 MP.FormRow {
                     Layout.fillWidth: true
-                    visible: rootPage.toneVolumeData !== null
-                    label: qsTrId("battery.tone_volume")
+                    visible: rootPage.pressAndHoldDurationData !== null
+                    label: qsTrId("battery.press_and_hold_duration")
 
-                    RowLayout {
-                        spacing: MP.Units.largeSpacing
-
-                        QQC2.Slider {
-                            id: toneVolumeSlider
-                            Layout.leftMargin: -16
-                            Layout.rightMargin: -16
-                            implicitWidth: rootPage.mWidth + 32
-                            from: 15
-                            to: 125
-                            value: rootPage.toneVolumeData?.selected ?? 50
-                            enabled: !(rootPage.toneVolumeData?.readonly ?? true)
-                            onMoved: {
-                                if (rootPage.toneVolumeData) {
-                                    rootPage.toneVolumeData.selected = Math.round(value);
-                                }
-                            }
-                            onPressedChanged: {
-                                if (!pressed && rootPage.toneVolumeData) {
-                                    cppBackend.setCapability("toneVolume", rootPage.currentAddress(), rootPage.toneVolumeData.selected);
-                                }
-                            }
-                        }
-
-                        MP.Label {
-                            text: Math.round(toneVolumeSlider.value) + "%"
-                        }
-                    }
-                }
-
-                MP.FormRow {
-                    Layout.fillWidth: true
-                    visible: rootPage.sleepDetectionData !== null
-                    label: qsTrId("battery.sleep_detection")
-
-                    QQC2.Switch {
-                        checked: rootPage.sleepDetectionData?.selected ?? false
-                        enabled: !(rootPage.sleepDetectionData?.readonly ?? true)
-                        onToggled: {
-                            if (rootPage.sleepDetectionData) {
-                                rootPage.sleepDetectionData.selected = checked;
-                                cppBackend.setCapability("sleepDetection", rootPage.currentAddress(), checked);
-                            }
-                        }
-                    }
-                }
-
-                MP.FormRow {
-                    Layout.fillWidth: true
-                    visible: rootPage.optimizedChargeData !== null
-                    label: qsTrId("battery.optimized_charge")
-
-                    QQC2.Switch {
-                        checked: rootPage.optimizedChargeData?.selected ?? false
-                        enabled: !(rootPage.optimizedChargeData?.readonly ?? true)
-                        onToggled: {
-                            if (rootPage.optimizedChargeData) {
-                                rootPage.optimizedChargeData.selected = checked;
-                                cppBackend.setCapability("optimizedCharge", rootPage.currentAddress(), checked);
+                    QQC2.ComboBox {
+                        width: rootPage.mWidth
+                        model: [qsTrId("battery.press_and_hold_duration.default"), qsTrId("battery.press_and_hold_duration.shorter"), qsTrId("battery.press_and_hold_duration.shortest")]
+                        currentIndex: rootPage.pressAndHoldDurationData?.selected ?? 0
+                        enabled: !(rootPage.pressAndHoldDurationData?.readonly ?? true)
+                        onActivated: {
+                            if (rootPage.pressAndHoldDurationData) {
+                                rootPage.pressAndHoldDurationData.selected = currentIndex;
+                                cppBackend.setCapability("pressAndHoldDuration", rootPage.currentAddress(), currentIndex);
                             }
                         }
                     }
@@ -940,6 +871,75 @@ QQC2.Page {
                         model: [qsTrId("battery.end_call.twice"), qsTrId("battery.end_call.once")]
                         currentIndex: (rootPage.endCallData?.selected === 2) ? 1 : 0
                         enabled: false
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.toneVolumeData !== null
+                    label: qsTrId("battery.tone_volume")
+
+                    RowLayout {
+                        spacing: MP.Units.largeSpacing
+
+                        QQC2.Slider {
+                            id: toneVolumeSlider
+                            Layout.leftMargin: -16
+                            Layout.rightMargin: -16
+                            implicitWidth: rootPage.mWidth + 32
+                            from: 15
+                            to: 125
+                            value: rootPage.toneVolumeData?.selected ?? 50
+                            enabled: !(rootPage.toneVolumeData?.readonly ?? true)
+                            onMoved: {
+                                if (rootPage.toneVolumeData) {
+                                    rootPage.toneVolumeData.selected = Math.round(value);
+                                }
+                            }
+                            onPressedChanged: {
+                                if (!pressed && rootPage.toneVolumeData) {
+                                    cppBackend.setCapability("toneVolume", rootPage.currentAddress(), rootPage.toneVolumeData.selected);
+                                }
+                            }
+                        }
+
+                        MP.Label {
+                            text: Math.round(toneVolumeSlider.value) + "%"
+                        }
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.sleepDetectionData !== null
+                    label: qsTrId("battery.sleep_detection")
+
+                    QQC2.Switch {
+                        checked: rootPage.sleepDetectionData?.selected ?? false
+                        enabled: !(rootPage.sleepDetectionData?.readonly ?? true)
+                        onToggled: {
+                            if (rootPage.sleepDetectionData) {
+                                rootPage.sleepDetectionData.selected = checked;
+                                cppBackend.setCapability("sleepDetection", rootPage.currentAddress(), checked);
+                            }
+                        }
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.optimizedChargeData !== null
+                    label: qsTrId("battery.optimized_charge")
+
+                    QQC2.Switch {
+                        checked: rootPage.optimizedChargeData?.selected ?? false
+                        enabled: !(rootPage.optimizedChargeData?.readonly ?? true)
+                        onToggled: {
+                            if (rootPage.optimizedChargeData) {
+                                rootPage.optimizedChargeData.selected = checked;
+                                cppBackend.setCapability("optimizedCharge", rootPage.currentAddress(), checked);
+                            }
+                        }
                     }
                 }
             }
