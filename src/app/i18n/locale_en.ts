@@ -159,6 +159,36 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <source></source>
         <translation>Front to back</translation>
     </message>
+    <message id="battery.press_and_hold_mode.left">
+        <location filename="../qml/pages/BatteryPage.qml" line="529"/>
+        <source></source>
+        <translation>Left press and hold</translation>
+    </message>
+    <message id="battery.press_and_hold_mode.right">
+        <location filename="../qml/pages/BatteryPage.qml" line="554"/>
+        <source></source>
+        <translation>Right press and hold</translation>
+    </message>
+    <message id="battery.press_and_hold_mode.voice_assistant">
+        <location filename="../qml/pages/BatteryPage.qml" line="72"/>
+        <source></source>
+        <translation>Voice assistant</translation>
+    </message>
+    <message id="battery.press_and_hold_mode.noise_control">
+        <location filename="../qml/pages/BatteryPage.qml" line="74"/>
+        <source></source>
+        <translation>Noise control</translation>
+    </message>
+    <message id="battery.press_and_hold_mode.volume_up">
+        <location filename="../qml/pages/BatteryPage.qml" line="76"/>
+        <source></source>
+        <translation>Volume up</translation>
+    </message>
+    <message id="battery.press_and_hold_mode.volume_down">
+        <location filename="../qml/pages/BatteryPage.qml" line="78"/>
+        <source></source>
+        <translation>Volume down</translation>
+    </message>
     <message id="battery.adaptive_audio_noise">
         <location filename="../qml/pages/BatteryPage.qml" line="431"/>
         <source></source>

@@ -32,6 +32,7 @@ QQC2.Page {
     readonly property var conversationAwarenessData: capabilities?.conversationAwareness ?? null
     readonly property var personalizedVolumeData: capabilities?.personalizedVolume ?? null
     readonly property var digitalCrownData: capabilities?.digitalCrown ?? null
+    readonly property var pressAndHoldAirPodModeData: capabilities?.pressAndHoldAirPodMode ?? null
     readonly property var ancOneAirPodData: capabilities?.ancOneAirPod ?? null
     readonly property var volumeSwipeData: capabilities?.volumeSwipe ?? null
     readonly property var adaptiveAudioNoiseData: capabilities?.adaptiveAudioNoise ?? null
@@ -45,7 +46,7 @@ QQC2.Page {
     readonly property var earDetectionData: capabilities?.earDetection ?? null
     readonly property int mWidth: MP.Units.gridUnit * 12
 
-    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, ancOneAirPodData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
+    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, ancOneAirPodData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
         return v !== null;
     })
 
@@ -63,6 +64,35 @@ QQC2.Page {
         if (cppBackend && cppBackend.connected) {
             cppBackend.getInfo();
         }
+    }
+
+    function pressAndHoldModeLabel(value) {
+        switch (value) {
+        case 1:
+            return qsTrId("battery.press_and_hold_mode.voice_assistant");
+        case 5:
+            return qsTrId("battery.press_and_hold_mode.noise_control");
+        case 6:
+            return qsTrId("battery.press_and_hold_mode.volume_up");
+        case 7:
+            return qsTrId("battery.press_and_hold_mode.volume_down");
+        default:
+            return String(value);
+        }
+    }
+
+    function setPressAndHoldMode(side, value) {
+        if (!pressAndHoldAirPodModeData) {
+            return;
+        }
+
+        var selected = pressAndHoldAirPodModeData.selected || {};
+        selected[side] = value;
+        pressAndHoldAirPodModeData.selected = selected;
+
+        var update = {};
+        update[side] = value;
+        cppBackend.setCapability("pressAndHoldAirPodMode", currentAddress(), update);
     }
 
     Connections {
@@ -488,6 +518,56 @@ QQC2.Page {
                                 const nextValue = currentIndex === 0 ? -1 : currentIndex;
                                 rootPage.digitalCrownData.selected = nextValue;
                                 cppBackend.setCapability("digitalCrown", rootPage.currentAddress(), nextValue);
+                            }
+                        }
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.pressAndHoldAirPodModeData !== null
+                    label: qsTrId("battery.press_and_hold_mode.left")
+
+                    QQC2.ComboBox {
+                        width: rootPage.mWidth
+                        model: (rootPage.pressAndHoldAirPodModeData?.options ?? []).map(function (value) {
+                            return rootPage.pressAndHoldModeLabel(value);
+                        })
+                        currentIndex: {
+                            const options = rootPage.pressAndHoldAirPodModeData?.options ?? [];
+                            const selected = rootPage.pressAndHoldAirPodModeData?.selected?.left;
+                            return options.indexOf(selected);
+                        }
+                        enabled: !(rootPage.pressAndHoldAirPodModeData?.readonly ?? true)
+                        onActivated: {
+                            const options = rootPage.pressAndHoldAirPodModeData?.options ?? [];
+                            if (currentIndex >= 0 && currentIndex < options.length) {
+                                rootPage.setPressAndHoldMode("left", options[currentIndex]);
+                            }
+                        }
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.pressAndHoldAirPodModeData !== null
+                    label: qsTrId("battery.press_and_hold_mode.right")
+
+                    QQC2.ComboBox {
+                        width: rootPage.mWidth
+                        model: (rootPage.pressAndHoldAirPodModeData?.options ?? []).map(function (value) {
+                            return rootPage.pressAndHoldModeLabel(value);
+                        })
+                        currentIndex: {
+                            const options = rootPage.pressAndHoldAirPodModeData?.options ?? [];
+                            const selected = rootPage.pressAndHoldAirPodModeData?.selected?.right;
+                            return options.indexOf(selected);
+                        }
+                        enabled: !(rootPage.pressAndHoldAirPodModeData?.readonly ?? true)
+                        onActivated: {
+                            const options = rootPage.pressAndHoldAirPodModeData?.options ?? [];
+                            if (currentIndex >= 0 && currentIndex < options.length) {
+                                rootPage.setPressAndHoldMode("right", options[currentIndex]);
                             }
                         }
                     }
