@@ -38,7 +38,10 @@ private:
     QString composeToolTip(const QString &details) const;
     QList<QVariantMap> sortedHeadphones() const;
     QVariantMap ancDataForAddress(const QString &address) const;
+    QVariantMap highResolutionMicrophoneDataForAddress(const QString &address) const;
     void addHeadphoneAction(const QVariantMap &headphone);
+    void addHighResolutionMicrophoneAction(const QString &address,
+                                           const QVariantMap &microphoneData);
     void addAncActions(const QString &address, const QVariantMap &ancData);
     void addAncAction(const QString &address,
                       const QVariantMap &ancData,

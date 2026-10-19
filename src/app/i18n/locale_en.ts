@@ -108,6 +108,22 @@
         <source></source>
         <translation>Options</translation>
     </message>
+    <message id="battery.high_resolution_microphone">
+        <location filename="../qml/pages/BatteryPage.qml" line="360"/>
+        <source></source>
+        <translation>HD Microphone</translation>
+    </message>
+    <message id="battery.high_resolution_microphone.description">
+        <location filename="../qml/pages/BatteryPage.qml" line="361"/>
+        <source></source>
+        <translation>Provides significantly better audio and microphone quality than Bluetooth Hands-Free (headset) mode. However, audio playback quality is still noticeably lower than in regular headphone mode.
+
+When enabled, the &quot;MagicPods Virtual Mic&quot; audio input device is automatically created and selected. When disabled, audio transmission stops and the device is removed.
+
+If the microphone isn't working, make sure &quot;MagicPods Virtual Mic&quot; is selected as the audio input device.
+
+Disable &quot;Conversation Awareness&quot; in your headphones' settings to prevent the volume from automatically decreasing while using the microphone.</translation>
+    </message>
     <message id="battery.conversation_awareness">
         <location filename="../qml/pages/BatteryPage.qml" line="399"/>
         <source></source>

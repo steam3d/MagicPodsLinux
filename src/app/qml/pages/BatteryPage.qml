@@ -39,10 +39,11 @@ QQC2.Page {
     readonly property var toneVolumeData: capabilities?.toneVolume ?? null
     readonly property var volumeSwipeLengthData: capabilities?.volumeSwipeLength ?? null
     readonly property var endCallData: capabilities?.endCall ?? null
+    readonly property var highResolutionMicrophoneData: capabilities?.highResolutionMicrophone ?? null
     readonly property var bluetoothCodec: capabilities?.bluetoothCodec ?? null
     readonly property int mWidth: MP.Units.gridUnit * 12
 
-    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, ancOneAirPodData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, bluetoothCodec].some(function (v) {
+    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, ancOneAirPodData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec].some(function (v) {
         return v !== null;
     })
 
@@ -351,6 +352,24 @@ QQC2.Page {
                     font.bold: true
                     text: qsTrId("battery.capabilities.header")
                     horizontalAlignment: Text.AlignHCenter
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.highResolutionMicrophoneData !== null
+                    label: qsTrId("battery.high_resolution_microphone")
+                    tooltip: qsTrId("battery.high_resolution_microphone.description")
+
+                    QQC2.Switch {
+                        checked: rootPage.highResolutionMicrophoneData?.selected ?? false
+                        enabled: !(rootPage.highResolutionMicrophoneData?.readonly ?? true)
+                        onToggled: {
+                            if (rootPage.highResolutionMicrophoneData) {
+                                rootPage.highResolutionMicrophoneData.selected = checked;
+                                cppBackend.setCapability("highResolutionMicrophone", rootPage.currentAddress(), checked);
+                            }
+                        }
+                    }
                 }
 
                 MP.FormRow {
