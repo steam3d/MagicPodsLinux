@@ -41,9 +41,10 @@ QQC2.Page {
     readonly property var endCallData: capabilities?.endCall ?? null
     readonly property var highResolutionMicrophoneData: capabilities?.highResolutionMicrophone ?? null
     readonly property var bluetoothCodec: capabilities?.bluetoothCodec ?? null
+    readonly property var earDetectionData: capabilities?.earDetection ?? null
     readonly property int mWidth: MP.Units.gridUnit * 12
 
-    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, ancOneAirPodData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec].some(function (v) {
+    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, ancOneAirPodData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
         return v !== null;
     })
 
@@ -409,6 +410,23 @@ QQC2.Page {
                                         cppBackend.setCapability("bluetoothCodec", rootPage.currentAddress(), nextValue);
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.earDetectionData !== null
+                    label: qsTrId("battery.ear_detection")
+
+                    QQC2.Switch {
+                        checked: rootPage.earDetectionData?.selected ?? false
+                        enabled: !(rootPage.earDetectionData?.readonly ?? true)
+                        onToggled: {
+                            if (rootPage.earDetectionData) {
+                                rootPage.earDetectionData.selected = checked;
+                                cppBackend.setCapability("earDetection", rootPage.currentAddress(), checked);
                             }
                         }
                     }

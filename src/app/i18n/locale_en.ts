@@ -124,6 +124,11 @@ If the microphone isn't working, make sure &quot;MagicPods Virtual Mic&quot; is 
 
 Disable &quot;Conversation Awareness&quot; in your headphones' settings to prevent the volume from automatically decreasing while using the microphone.</translation>
     </message>
+    <message id="battery.ear_detection">
+        <location filename="../qml/pages/BatteryPage.qml" line="420"/>
+        <source></source>
+        <translation>Ear detection</translation>
+    </message>
     <message id="battery.conversation_awareness">
         <location filename="../qml/pages/BatteryPage.qml" line="399"/>
         <source></source>
