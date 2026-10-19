@@ -8,10 +8,14 @@ RUN apt-get update \
         make \
         pkg-config \
         ca-certificates \
+        curl \
         doxygen \
         graphviz \
         libsystemd-dev \
         git \
+        nasm \
+        patchelf \
+        xz-utils \
         zlib1g-dev \
         bluez \
         libbluetooth-dev \
@@ -19,7 +23,50 @@ RUN apt-get update \
         libssl-dev \
     && rm -rf /var/lib/apt/lists/*
 
+# SteamOS ships a newer FFmpeg that is incompatible with this Ubuntu 22.04
+# build, so bundle a minimal compatible FFmpeg with the backend.
+FROM system_stage AS ffmpeg_stage
+
+ARG FFMPEG_VERSION=4.4.8
+ARG FFMPEG_SHA256=c73848c4ae283d9eaee7be3b276affbc3543380483555500d0dd2c9b7e1c39c3
+
+WORKDIR /tmp/ffmpeg
+
+RUN curl -fsSL "https://ffmpeg.org/releases/ffmpeg-${FFMPEG_VERSION}.tar.xz" \
+        -o /tmp/ffmpeg.tar.xz \
+    && echo "${FFMPEG_SHA256}  /tmp/ffmpeg.tar.xz" | sha256sum -c - \
+    && tar -xJf /tmp/ffmpeg.tar.xz --strip-components=1
+
+RUN ./configure \
+        --prefix=/opt/ffmpeg \
+        --disable-everything \
+        --disable-autodetect \
+        --disable-programs \
+        --disable-doc \
+        --disable-debug \
+        --disable-static \
+        --enable-shared \
+        --enable-small \
+        --enable-decoder=aac \
+        --disable-avdevice \
+        --disable-avfilter \
+        --disable-avformat \
+        --disable-network \
+        --disable-postproc \
+        --disable-swresample \
+        --disable-swscale \
+    && make -j"$(nproc)" \
+    && make install \
+    && find /opt/ffmpeg/lib -type f \
+        \( -name 'libavcodec.so.*' -o -name 'libavutil.so.*' \) \
+        -exec strip --strip-unneeded {} +
+
 FROM system_stage AS build_stage
+
+COPY --from=ffmpeg_stage /opt/ffmpeg /opt/ffmpeg
+
+ENV LD_LIBRARY_PATH=/opt/ffmpeg/lib
+ENV PKG_CONFIG_PATH=/opt/ffmpeg/lib/pkgconfig
 
 ADD ./src/modules/MagicPodsCore/src /app/src
 ADD ./src/modules/MagicPodsCore/dependencies /app/dependencies
@@ -30,22 +77,32 @@ WORKDIR /app/build
 
 RUN cmake -DCMAKE_BUILD_TYPE=Release ../
 RUN cmake --build ./
+RUN patchelf --set-rpath '$ORIGIN/lib' /app/build/magicpodscore
 
 FROM system_stage AS runtime_collect_stage
 
-RUN mkdir -p /out/bin/modules /out/lib
+COPY --from=ffmpeg_stage /opt/ffmpeg /opt/ffmpeg
+
+RUN mkdir -p /out/bin/modules/lib
 COPY --from=build_stage /app/build/magicpodscore /out/bin/modules/magicpodscore
 
 RUN set -eu; \
+    cp -L /opt/ffmpeg/lib/libavcodec.so.58 /out/bin/modules/lib/; \
+    cp -L /opt/ffmpeg/lib/libavutil.so.56 /out/bin/modules/lib/; \
     ldd /out/bin/modules/magicpodscore | awk '{if ($3 ~ /^\//) print $3; else if ($1 ~ /^\//) print $1}' | sort -u > /tmp/runtime_deps.txt; \
     while IFS= read -r dep; do \
         [ -n "$dep" ] || continue; \
+        case "$dep" in \
+            /out/bin/modules/lib/*) \
+                continue \
+                ;; \
+        esac; \
         case "$(basename "$dep")" in \
             libc.so.*|libm.so.*|libpthread.so.*|libdl.so.*|librt.so.*|ld-linux-*.so.*) \
                 continue \
                 ;; \
         esac; \
-        cp -Lv "$dep" /out/lib/; \
+        cp -Lv "$dep" /out/bin/modules/lib/; \
     done < /tmp/runtime_deps.txt
 
 FROM scratch AS runtime_export_stage
