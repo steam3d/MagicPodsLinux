@@ -42,6 +42,7 @@ QQC2.Page {
     readonly property var pressSpeedData: capabilities?.pressSpeed ?? null
     readonly property var toneVolumeData: capabilities?.toneVolume ?? null
     readonly property var sleepDetectionData: capabilities?.sleepDetection ?? null
+    readonly property var optimizedChargeData: capabilities?.optimizedCharge ?? null
     readonly property var volumeSwipeLengthData: capabilities?.volumeSwipeLength ?? null
     readonly property var endCallData: capabilities?.endCall ?? null
     readonly property var highResolutionMicrophoneData: capabilities?.highResolutionMicrophone ?? null
@@ -49,7 +50,7 @@ QQC2.Page {
     readonly property var earDetectionData: capabilities?.earDetection ?? null
     readonly property int mWidth: MP.Units.gridUnit * 12
 
-    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, ancOneAirPodData, ancOffModeData, customEqData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, sleepDetectionData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
+    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, ancOneAirPodData, ancOffModeData, customEqData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, sleepDetectionData, optimizedChargeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
         return v !== null;
     })
 
@@ -823,6 +824,23 @@ QQC2.Page {
                             if (rootPage.sleepDetectionData) {
                                 rootPage.sleepDetectionData.selected = checked;
                                 cppBackend.setCapability("sleepDetection", rootPage.currentAddress(), checked);
+                            }
+                        }
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.optimizedChargeData !== null
+                    label: qsTrId("battery.optimized_charge")
+
+                    QQC2.Switch {
+                        checked: rootPage.optimizedChargeData?.selected ?? false
+                        enabled: !(rootPage.optimizedChargeData?.readonly ?? true)
+                        onToggled: {
+                            if (rootPage.optimizedChargeData) {
+                                rootPage.optimizedChargeData.selected = checked;
+                                cppBackend.setCapability("optimizedCharge", rootPage.currentAddress(), checked);
                             }
                         }
                     }
