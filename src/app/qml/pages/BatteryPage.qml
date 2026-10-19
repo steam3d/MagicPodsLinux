@@ -41,6 +41,7 @@ QQC2.Page {
     readonly property var pressAndHoldDurationData: capabilities?.pressAndHoldDuration ?? null
     readonly property var pressSpeedData: capabilities?.pressSpeed ?? null
     readonly property var toneVolumeData: capabilities?.toneVolume ?? null
+    readonly property var sleepDetectionData: capabilities?.sleepDetection ?? null
     readonly property var volumeSwipeLengthData: capabilities?.volumeSwipeLength ?? null
     readonly property var endCallData: capabilities?.endCall ?? null
     readonly property var highResolutionMicrophoneData: capabilities?.highResolutionMicrophone ?? null
@@ -48,7 +49,7 @@ QQC2.Page {
     readonly property var earDetectionData: capabilities?.earDetection ?? null
     readonly property int mWidth: MP.Units.gridUnit * 12
 
-    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, ancOneAirPodData, ancOffModeData, customEqData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
+    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, ancOneAirPodData, ancOffModeData, customEqData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, sleepDetectionData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
         return v !== null;
     })
 
@@ -806,6 +807,23 @@ QQC2.Page {
 
                         MP.Label {
                             text: Math.round(toneVolumeSlider.value) + "%"
+                        }
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.sleepDetectionData !== null
+                    label: qsTrId("battery.sleep_detection")
+
+                    QQC2.Switch {
+                        checked: rootPage.sleepDetectionData?.selected ?? false
+                        enabled: !(rootPage.sleepDetectionData?.readonly ?? true)
+                        onToggled: {
+                            if (rootPage.sleepDetectionData) {
+                                rootPage.sleepDetectionData.selected = checked;
+                                cppBackend.setCapability("sleepDetection", rootPage.currentAddress(), checked);
+                            }
                         }
                     }
                 }

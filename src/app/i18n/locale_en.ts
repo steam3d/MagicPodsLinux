@@ -299,6 +299,11 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <source></source>
         <translation>Tone volume:</translation>
     </message>
+    <message id="battery.sleep_detection">
+        <location filename="../qml/pages/BatteryPage.qml" line="817"/>
+        <source></source>
+        <translation>Pause when asleep</translation>
+    </message>
     <message id="battery.volume_swipe">
         <location filename="../qml/pages/BatteryPage.qml" line="543"/>
         <source></source>
