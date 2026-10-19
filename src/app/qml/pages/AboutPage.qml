@@ -55,7 +55,7 @@ QQC2.Page {
                     MP.Label {
                         Layout.topMargin: -4
                         text: qsTrId("about.button.home_page")
-                        color: palette.link
+                        color: palette.accent
                         font.underline: true
                         MouseArea {
                             id: mouseHomePage
@@ -156,7 +156,7 @@ QQC2.Page {
                 label: qsTrId("about.item.issue")
                 MP.Label {
                     text: "GitHub"
-                    color: palette.link
+                    color: palette.accent
                     font.underline: true
                     MouseArea {
                         id: mouseGitHub
@@ -180,7 +180,7 @@ QQC2.Page {
                 label: qsTrId("about.item.community")
                 MP.Label {
                     text: "Discord"
-                    color: palette.link
+                    color: palette.accent
                     font.underline: true
                     MouseArea {
                         id: mouseDiscord
@@ -204,7 +204,7 @@ QQC2.Page {
                 label: ""
                 MP.Label {
                     text: "Telegram"
-                    color: palette.link
+                    color: palette.accent
                     font.underline: true
                     MouseArea {
                         id: mouseTelegram
