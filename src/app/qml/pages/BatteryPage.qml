@@ -34,6 +34,7 @@ QQC2.Page {
     readonly property var digitalCrownData: capabilities?.digitalCrown ?? null
     readonly property var pressAndHoldAirPodModeData: capabilities?.pressAndHoldAirPodMode ?? null
     readonly property var ancOneAirPodData: capabilities?.ancOneAirPod ?? null
+    readonly property var ancOffModeData: capabilities?.ancOffMode ?? null
     readonly property var volumeSwipeData: capabilities?.volumeSwipe ?? null
     readonly property var adaptiveAudioNoiseData: capabilities?.adaptiveAudioNoise ?? null
     readonly property var pressAndHoldDurationData: capabilities?.pressAndHoldDuration ?? null
@@ -46,7 +47,7 @@ QQC2.Page {
     readonly property var earDetectionData: capabilities?.earDetection ?? null
     readonly property int mWidth: MP.Units.gridUnit * 12
 
-    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, ancOneAirPodData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
+    readonly property bool hasCapabilities: !!capabilities && [ancData, conversationAwarenessData, personalizedVolumeData, digitalCrownData, pressAndHoldAirPodModeData, ancOneAirPodData, ancOffModeData, volumeSwipeData, adaptiveAudioNoiseData, pressAndHoldDurationData, pressSpeedData, toneVolumeData, volumeSwipeLengthData, endCallData, highResolutionMicrophoneData, bluetoothCodec, earDetectionData].some(function (v) {
         return v !== null;
     })
 
@@ -616,6 +617,32 @@ QQC2.Page {
                             if (rootPage.ancOneAirPodData) {
                                 rootPage.ancOneAirPodData.selected = checked;
                                 cppBackend.setCapability("ancOneAirPod", rootPage.currentAddress(), checked);
+                            }
+                        }
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.ancOffModeData !== null
+                    label: qsTrId("battery.anc_off_mode")
+
+                    QQC2.ComboBox {
+                        width: rootPage.mWidth
+                        model: [qsTrId("battery.anc_off_mode.do_not_change"), qsTrId("battery.anc_off_mode.enabled"), qsTrId("battery.anc_off_mode.disabled")]
+                        currentIndex: {
+                            const value = rootPage.ancOffModeData?.selected;
+                            if (value === -1) return 0;
+                            if (value === 1) return 1;
+                            if (value === 2) return 2;
+                            return -1;
+                        }
+                        enabled: !(rootPage.ancOffModeData?.readonly ?? true)
+                        onActivated: {
+                            if (rootPage.ancOffModeData && currentIndex >= 0) {
+                                const nextValue = currentIndex === 0 ? -1 : currentIndex;
+                                rootPage.ancOffModeData.selected = nextValue;
+                                cppBackend.setCapability("ancOffMode", rootPage.currentAddress(), nextValue);
                             }
                         }
                     }

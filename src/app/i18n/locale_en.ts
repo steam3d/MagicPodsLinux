@@ -214,6 +214,26 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <source></source>
         <translation>ANC with one AirPod:</translation>
     </message>
+    <message id="battery.anc_off_mode">
+        <location filename="../qml/pages/BatteryPage.qml" line="628"/>
+        <source></source>
+        <translation>Off Listening Mode</translation>
+    </message>
+    <message id="battery.anc_off_mode.do_not_change">
+        <location filename="../qml/pages/BatteryPage.qml" line="632"/>
+        <source></source>
+        <translation>Don't Change</translation>
+    </message>
+    <message id="battery.anc_off_mode.enabled">
+        <location filename="../qml/pages/BatteryPage.qml" line="632"/>
+        <source></source>
+        <translation>Enabled</translation>
+    </message>
+    <message id="battery.anc_off_mode.disabled">
+        <location filename="../qml/pages/BatteryPage.qml" line="632"/>
+        <source></source>
+        <translation>Disabled</translation>
+    </message>
     <message id="battery.press_and_hold_duration">
         <location filename="../qml/pages/BatteryPage.qml" line="480"/>
         <source></source>
