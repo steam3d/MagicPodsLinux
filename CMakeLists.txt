@@ -66,6 +66,7 @@ qt_add_executable(magicpods
     src/app/cpp/main.cpp
     src/app/cpp/TrayIcon.cpp
     src/app/cpp/TrayIconManager.cpp
+    src/app/cpp/UiSettingsService.cpp
 )
 
 qt_add_resources(magicpods "fonts"

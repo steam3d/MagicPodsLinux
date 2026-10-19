@@ -25,6 +25,7 @@
 #include "DeckyManager.h"
 #include "TrayIcon.h"
 #include "TrayIconManager.h"
+#include "UiSettingsService.h"
 #include "Backend.h"
 
 static void ensureEnvDefaults() {
@@ -136,8 +137,10 @@ int main(int argc, char *argv[]) {
     appIcon.addFile(QStringLiteral(":/qt/qml/magicpods/src/app/qml/assets/images/logo-512.png"), QSize(512, 512));
     app.setWindowIcon(appIcon);
 
+    UiSettingsService uiSettings;
+
     QTranslator englishTranslation;
-    const QString englishTranslationPath = QStringLiteral(":/i18n/locale_en.qm");
+    const QString englishTranslationPath = QStringLiteral(":/i18n/locale_en.qm");    
     if (!englishTranslation.load(englishTranslationPath)) {
         qFatal("Could not load %s!", qUtf8Printable(englishTranslationPath));
     }
@@ -165,6 +168,7 @@ int main(int argc, char *argv[]) {
     engine.rootContext()->setContextProperty("deckyManager", &deckyManager);
     engine.rootContext()->setContextProperty("cppBackend", &backend);
     engine.rootContext()->setContextProperty("cppTrayIcon", &trayIcon);
+    engine.rootContext()->setContextProperty("uiSettings", &uiSettings);
     engine.rootContext()->setContextProperty("gameScopeMode", gameScopeMode);
     backendManager.start();
     backend.connectSocket();
