@@ -34,7 +34,6 @@ QQC2.Page {
     readonly property var digitalCrownData: capabilities?.digitalCrown ?? null
     readonly property var pressAndHoldAirPodModeData: capabilities?.pressAndHoldAirPodMode ?? null
     readonly property var pressAndHoldAirPodModeAncData: capabilities?.pressAndHoldAirPodModeAnc ?? null
-    property int pressAndHoldAncValue: -1
     readonly property var ancOneAirPodData: capabilities?.ancOneAirPod ?? null
     readonly property var ancOffModeData: capabilities?.ancOffMode ?? null
     readonly property var customEqData: capabilities?.customEq ?? null
@@ -136,11 +135,9 @@ QQC2.Page {
         function onDataReceived(json) {
             if (!json || Object.keys(json).length === 0) {
                 rootPage.infoData = ({});
-                rootPage.pressAndHoldAncValue = -1;
             } else if (json.info) {
                 rootPage.infoData = json.info;
                 rootPage.selectedAnc = json.info?.capabilities?.anc?.selected ?? rootPage.selectedAnc;
-                rootPage.pressAndHoldAncValue = json.info?.capabilities?.pressAndHoldAirPodModeAnc?.selected ?? -1;
             }
         }
         function onConnectedChanged() {
@@ -620,7 +617,7 @@ QQC2.Page {
                         title: qsTrId("battery.press_and_hold_anc")
                         hint: qsTrId("battery.press_and_hold_anc.hint")
                         doNotApplyLabel: qsTrId("battery.press_and_hold_anc.do_not_change")
-                        value: rootPage.pressAndHoldAncValue
+                        value: rootPage.pressAndHoldAirPodModeAncData?.selected ?? -1
                         enabled: !(rootPage.pressAndHoldAirPodModeAncData?.readonly ?? true)
                         options: [
                             { value: 1, icon: rootPage.assetPath("icons/icon-off.svg"), label: qsTrId("battery.anc_off") },
@@ -631,7 +628,6 @@ QQC2.Page {
                             return ((rootPage.pressAndHoldAirPodModeAncData?.options ?? 0) & option.value) !== 0;
                         })
                         onValueCommitted: function (value) {
-                            rootPage.pressAndHoldAncValue = value;
                             rootPage.pressAndHoldAirPodModeAncData.selected = value;
                             cppBackend.setCapability("pressAndHoldAirPodModeAnc", rootPage.currentAddress(), value);
                         }

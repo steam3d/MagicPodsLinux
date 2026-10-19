@@ -21,6 +21,7 @@ Item {
 
     signal valueCommitted(int value)
 
+    property int _displayValue: value
     property int draftValue: 0
     readonly property int availableValues: {
         var result = 0;
@@ -30,16 +31,18 @@ Item {
         return result;
     }
     readonly property var selectedOptions: {
-        if (value === doNotApplyValue) {
+        if (_displayValue === doNotApplyValue) {
             return [];
         }
         return options.filter(function (option) {
-            return (value & option.value) !== 0;
+            return (_displayValue & option.value) !== 0;
         });
     }
 
     implicitWidth: selectButton.implicitWidth
     implicitHeight: selectButton.implicitHeight
+
+    onValueChanged: _displayValue = value
 
     function selectedCount(selectedValue) {
         return options.filter(function (option) {
@@ -121,14 +124,18 @@ Item {
         }
 
         onAboutToShow: {
-            root.draftValue = root.value === root.doNotApplyValue
+            root.draftValue = root._displayValue === root.doNotApplyValue
                 ? 0
-                : root.value & root.availableValues;
+                : root._displayValue & root.availableValues;
         }
         onOpened: updateOkButton()
-        onAccepted: root.valueCommitted(root.draftValue === 0
-            ? root.doNotApplyValue
-            : root.draftValue)
+        onAccepted: {
+            const selectedValue = root.draftValue === 0
+                ? root.doNotApplyValue
+                : root.draftValue;
+            root._displayValue = selectedValue;
+            root.valueCommitted(selectedValue);
+        }
 
         contentItem: ColumnLayout {
             spacing: 8
