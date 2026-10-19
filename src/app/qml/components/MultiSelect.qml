@@ -23,6 +23,7 @@ Item {
 
     property int _displayValue: value
     property int draftValue: 0
+    property bool _openedWithKeyboard: false
     readonly property int availableValues: {
         var result = 0;
         for (var i = 0; i < options.length; ++i) {
@@ -65,7 +66,10 @@ Item {
     QQC2.Button {
         id: selectButton
         anchors.fill: parent
-        onClicked: selectDialog.open()
+        onClicked: {
+            root._openedWithKeyboard = visualFocus;
+            selectDialog.open();
+        }
 
         contentItem: Item {
             implicitWidth: buttonContent.implicitWidth
@@ -136,6 +140,17 @@ Item {
             root._displayValue = selectedValue;
             root.valueCommitted(selectedValue);
         }
+        onClosed: Qt.callLater(function () {
+            if (root._openedWithKeyboard) {
+                selectButton.forceActiveFocus(Qt.TabFocusReason);
+                return;
+            }
+
+            // Clear the style's programmatic-focus frame while keeping the
+            // button as the logical focus item after a pointer interaction.
+            root.forceActiveFocus(Qt.MouseFocusReason);
+            selectButton.forceActiveFocus(Qt.MouseFocusReason);
+        })
 
         contentItem: ColumnLayout {
             spacing: 8

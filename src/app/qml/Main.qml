@@ -18,6 +18,21 @@ QQC2.ApplicationWindow {
     visible: true
 
     property alias currentIndex: swipeView.currentIndex
+
+    function clearRestoredControlFocus() {
+        // Keep restored window focus away from an individual control. Keyboard
+        // navigation still enters the regular focus chain on the next Tab.
+        root.contentItem.forceActiveFocus(Qt.MouseFocusReason);
+    }
+
+    onActiveChanged: {
+        if (active) {
+            Qt.callLater(clearRestoredControlFocus);
+        }
+    }
+
+    Component.onCompleted: Qt.callLater(clearRestoredControlFocus)
+
     onClosing: (event) => {
         event.accepted = false;
         root.visible = false;
