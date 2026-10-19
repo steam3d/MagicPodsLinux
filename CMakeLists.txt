@@ -11,9 +11,9 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Qml Quick QuickControls2 Widgets W
 
 qt_standard_project_setup(REQUIRES 6.8
     I18N_TRANSLATED_LANGUAGES
-        en
-        ar
-        ckb
+        en        
+        # ar
+        # ckb
         cs
         da
         de

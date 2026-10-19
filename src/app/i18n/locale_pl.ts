@@ -6,22 +6,22 @@
         <message id="headphones.help.bluetooth_not_found.header">
             <location filename="../qml/pages/HeadphonesPage.qml" line="67" />
             <source />
-            <translation type="unfinished" />
+            <translation>Nie znaleziono adaptera Bluetooth</translation>
         </message>
         <message id="headphones.help.bluetooth_not_found.description">
             <location filename="../qml/pages/HeadphonesPage.qml" line="68" />
             <source />
-            <translation type="unfinished" />
+            <translation>Podłącz adapter Bluetooth</translation>
         </message>
         <message id="headphones.help.bluetooth_no_paired_headphones.header">
             <location filename="../qml/pages/HeadphonesPage.qml" line="75" />
             <source />
-            <translation type="unfinished" />
+            <translation>Brak sparowanych słuchawek</translation>
         </message>
         <message id="headphones.help.no_paired_headphones.description">
             <location filename="../qml/pages/HeadphonesPage.qml" line="76" />
             <source />
-            <translation type="unfinished" />
+            <translation>Sparuj słuchawki z komputerem i uruchom ponownie aplikację</translation>
         </message>
         <message id="headphones.bluetooth">
             <location filename="../qml/pages/HeadphonesPage.qml" line="85" />
@@ -42,12 +42,12 @@
             <location filename="../qml/main.qml" line="147" />
             <location filename="../qml/pages/BatteryPage.qml" line="46" />
             <source />
-            <translation type="unfinished" />
+            <translation>Bateria</translation>
         </message>
         <message id="battery.connect_headphones.header">
             <location filename="../qml/pages/BatteryPage.qml" line="84" />
             <source />
-            <translation type="unfinished" />
+            <translation>Podłącz słuchawki</translation>
         </message>
         <message id="battery.connect_headphones.description">
             <location filename="../qml/pages/BatteryPage.qml" line="85" />
@@ -379,7 +379,7 @@ Wyłącz opcję „Wykrywanie rozmów” w ustawieniach słuchawek, aby zapobiec
         <message id="Error.service_api_wrong">
             <location filename="../qml/main.qml" line="56" />
             <source />
-            <translation type="unfinished" />
+            <translation>Wersja MagicPodsCore jest niezgodna. Zaktualizuj wtyczkę Decky Loader oraz aplikację komputerową.</translation>
         </message>
         <message id="menu.headphones">
             <location filename="../qml/main.qml" line="152" />
@@ -398,88 +398,88 @@ Wyłącz opcję „Wykrywanie rozmów” w ustawieniach słuchawek, aby zapobiec
             <location filename="../qml/main.qml" line="162" />
             <location filename="../qml/pages/AboutPage.qml" line="14" />
             <source />
-            <translation type="unfinished" />
+            <translation>O programie</translation>
         </message>
         <message id="about.button.home_page">
             <location filename="../qml/pages/AboutPage.qml" line="47" />
             <source />
-            <translation type="unfinished" />
+            <translation>Strona główna</translation>
         </message>
         <message id="about.packages">
             <location filename="../qml/pages/AboutPage.qml" line="65" />
             <source />
-            <translation type="unfinished" />
+            <translation>Pakiety</translation>
         </message>
         <message id="about.not_installed">
             <location filename="../qml/pages/AboutPage.qml" line="79" />
             <location filename="../qml/pages/AboutPage.qml" line="86" />
             <source />
-            <translation type="unfinished" />
+            <translation>Nie zainstalowano</translation>
         </message>
         <message id="about.not_connected">
             <location filename="../qml/pages/AboutPage.qml" line="17" />
             <source />
-            <translation type="unfinished" />
+            <translation>Nie połączono</translation>
         </message>
         <message id="about.install">
             <location filename="../qml/pages/AboutPage.qml" line="101" />
             <source />
-            <translation type="unfinished" />
+            <translation>Zainstaluj</translation>
         </message>
         <message id="about.support">
             <location filename="../qml/pages/AboutPage.qml" line="109" />
             <source />
-            <translation type="unfinished" />
+            <translation>Pomoc</translation>
         </message>
         <message id="about.item.issue">
             <location filename="../qml/pages/AboutPage.qml" line="114" />
             <source />
-            <translation type="unfinished" />
+            <translation>Zgłoś problem:</translation>
         </message>
         <message id="about.item.community">
             <location filename="../qml/pages/AboutPage.qml" line="123" />
             <source />
-            <translation type="unfinished" />
+            <translation>Społeczność:</translation>
         </message>
         <message id="settings.other">
             <location filename="../qml/pages/SettingsPage.qml" line="114" />
             <source />
-            <translation type="unfinished" />
+            <translation>Inne</translation>
         </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />
-            <translation type="unfinished" />
+            <translation>Dodaj skrót do menu:</translation>
         </message>
         <message id="settings.add_shortcut_to_menu.description">
             <location filename="../qml/pages/SettingsPage.qml" line="174" />
             <source />
-            <translation type="unfinished" />
+            <translation>Dodaje aplikację do menu aplikacji w kategorii „Narzędzia”.</translation>
         </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />
-            <translation type="unfinished" />
+            <translation>Motyw ikony zasobnika:</translation>
         </message>
         <message id="settings.tray_icon_theme.auto">
             <location filename="../qml/pages/SettingsPage.qml" line="103" />
             <source />
-            <translation type="unfinished" />
+            <translation>Automatyczny</translation>
         </message>
         <message id="settings.tray_icon_theme.light">
             <location filename="../qml/pages/SettingsPage.qml" line="104" />
             <source />
-            <translation type="unfinished" />
+            <translation>Jasny</translation>
         </message>
         <message id="settings.tray_icon_theme.dark">
             <location filename="../qml/pages/SettingsPage.qml" line="105" />
             <source />
-            <translation type="unfinished" />
+            <translation>Ciemny</translation>
         </message>
         <message id="settings.popup">
             <location filename="../qml/pages/SettingsPage.qml" line="75" />
             <source />
-            <translation type="unfinished" />
+            <translation>Wyskakujące okna</translation>
         </message>
         <message id="settings.headphones_animation">
             <location filename="../qml/pages/SettingsPage.qml" line="81" />
@@ -489,50 +489,50 @@ Wyłącz opcję „Wykrywanie rozmów” w ustawieniach słuchawek, aby zapobiec
         <message id="settings.headphones_animation.description">
             <location filename="../qml/pages/SettingsPage.qml" line="103" />
             <source />
-            <translation type="unfinished" />
+            <translation>Po otwarciu etui słuchawek wyświetla animację AirPods i Beats podobną do animacji na iPhonie. W celu wstępnej konfiguracji podłącz słuchawki jeden raz.</translation>
         </message>
         <message id="tray.socket_error_tooltip">
             <location filename="../cpp/TrayIconManager.cpp" line="206" />
             <source />
-            <translation type="unfinished" />
+            <translation>Jeśli problem będzie się powtarzał, spróbuj ponownie uruchomić aplikację.</translation>
         </message>
         <message id="tray.disconnected">
             <location filename="../cpp/TrayIconManager.cpp" line="211" />
             <location filename="../cpp/TrayIconManager.cpp" line="232" />
             <source />
-            <translation type="unfinished" />
+            <translation>Słuchawki odłączone</translation>
         </message>
         <message id="tray.exit">
             <location filename="../cpp/TrayIconManager.cpp" line="159" />
             <source />
-            <translation type="unfinished" />
+            <translation>Zakończ</translation>
         </message>
         <message id="settings.exit">
             <location filename="../qml/pages/SettingsPage.qml" line="182" />
             <source />
-            <translation type="unfinished" />
+            <translation>Zakończ aplikację:</translation>
         </message>
         <message id="settings.exit.description">
             <location filename="../qml/pages/SettingsPage.qml" line="183" />
             <source />
-            <translation type="unfinished" />
+            <translation>Aplikacja zostanie zamknięta, a wszystkie funkcje wyłączone.</translation>
         </message>
         <message id="settings.exit_button">
             <location filename="../qml/pages/SettingsPage.qml" line="186" />
             <source />
-            <translation type="unfinished" />
+            <translation>Zakończ</translation>
         </message>
         <message id="tray.disconnect">
             <location filename="../qml/PopupAnimation.qml" line="354" />
             <location filename="../cpp/TrayIconManager.cpp" line="283" />
             <source />
-            <translation type="unfinished" />
+            <translation>Rozłącz</translation>
         </message>
         <message id="tray.connect">
             <location filename="../qml/PopupAnimation.qml" line="354" />
             <location filename="../cpp/TrayIconManager.cpp" line="283" />
             <source />
-            <translation type="unfinished" />
+            <translation>Połącz</translation>
         </message>
     </context>
 </TS>

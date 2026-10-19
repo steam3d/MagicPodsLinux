@@ -6,22 +6,22 @@
         <message id="headphones.help.bluetooth_not_found.header">
             <location filename="../qml/pages/HeadphonesPage.qml" line="67" />
             <source />
-            <translation type="unfinished" />
+            <translation>لم يتم العثور على محول Bluetooth</translation>
         </message>
         <message id="headphones.help.bluetooth_not_found.description">
             <location filename="../qml/pages/HeadphonesPage.qml" line="68" />
             <source />
-            <translation type="unfinished" />
+            <translation>وصّل محول Bluetooth</translation>
         </message>
         <message id="headphones.help.bluetooth_no_paired_headphones.header">
             <location filename="../qml/pages/HeadphonesPage.qml" line="75" />
             <source />
-            <translation type="unfinished" />
+            <translation>لا توجد سماعات رأس مقترنة</translation>
         </message>
         <message id="headphones.help.no_paired_headphones.description">
             <location filename="../qml/pages/HeadphonesPage.qml" line="76" />
             <source />
-            <translation type="unfinished" />
+            <translation>أقرن سماعات الرأس بالكمبيوتر ثم أعد تشغيل التطبيق</translation>
         </message>
         <message id="headphones.bluetooth">
             <location filename="../qml/pages/HeadphonesPage.qml" line="85" />
@@ -42,12 +42,12 @@
             <location filename="../qml/main.qml" line="147" />
             <location filename="../qml/pages/BatteryPage.qml" line="46" />
             <source />
-            <translation type="unfinished" />
+            <translation>البطارية</translation>
         </message>
         <message id="battery.connect_headphones.header">
             <location filename="../qml/pages/BatteryPage.qml" line="84" />
             <source />
-            <translation type="unfinished" />
+            <translation>وصّل سماعات الرأس</translation>
         </message>
         <message id="battery.connect_headphones.description">
             <location filename="../qml/pages/BatteryPage.qml" line="85" />
@@ -111,17 +111,23 @@
         <message id="battery.high_resolution_microphone">
             <location filename="../qml/pages/BatteryPage.qml" line="360" />
             <source />
-            <translation type="unfinished" />
+            <translation>ميكروفون عالي الدقة</translation>
         </message>
         <message id="battery.high_resolution_microphone.description">
             <location filename="../qml/pages/BatteryPage.qml" line="361" />
             <source />
-            <translation type="unfinished" />
+            <translation>يوفر جودة صوت وميكروفون أفضل بكثير من وضع Bluetooth Hands-Free (سماعة الرأس). ومع ذلك، تظل جودة تشغيل الصوت أقل بشكل ملحوظ من وضع سماعات الرأس العادي.
+
+عند التفعيل، يتم إنشاء جهاز إدخال الصوت «MagicPods Virtual Mic» وتحديده تلقائيًا. عند التعطيل، يتوقف إرسال الصوت وتتم إزالة الجهاز.
+
+إذا لم يعمل الميكروفون، فتأكد من تحديد «MagicPods Virtual Mic» بوصفه جهاز إدخال الصوت.
+
+عطّل «تنبيه المحادثة» في إعدادات سماعات الرأس لمنع انخفاض مستوى الصوت تلقائيًا أثناء استخدام الميكروفون.</translation>
         </message>
         <message id="battery.ear_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="420" />
             <source />
-            <translation type="unfinished" />
+            <translation>اكتشاف وضع السماعة في الأذن</translation>
         </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
@@ -311,12 +317,12 @@
         <message id="battery.sleep_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="818" />
             <source />
-            <translation>Pause When Asleep</translation>
+            <translation>إيقاف مؤقت عند النوم</translation>
         </message>
         <message id="battery.optimized_charge">
             <location filename="../qml/pages/BatteryPage.qml" line="835" />
             <source />
-            <translation>Optimized Charge Limit</translation>
+            <translation>حد الشحن المحسّن</translation>
         </message>
         <message id="battery.volume_swipe">
             <location filename="../qml/pages/BatteryPage.qml" line="543" />
@@ -373,7 +379,7 @@
         <message id="Error.service_api_wrong">
             <location filename="../qml/main.qml" line="56" />
             <source />
-            <translation type="unfinished" />
+            <translation>إصدار MagicPodsCore غير متوافق. يُرجى تحديث إضافة Decky Loader وتطبيق سطح المكتب.</translation>
         </message>
         <message id="menu.headphones">
             <location filename="../qml/main.qml" line="152" />
@@ -392,88 +398,88 @@
             <location filename="../qml/main.qml" line="162" />
             <location filename="../qml/pages/AboutPage.qml" line="14" />
             <source />
-            <translation type="unfinished" />
+            <translation>حول</translation>
         </message>
         <message id="about.button.home_page">
             <location filename="../qml/pages/AboutPage.qml" line="47" />
             <source />
-            <translation type="unfinished" />
+            <translation>الصفحة الرئيسية</translation>
         </message>
         <message id="about.packages">
             <location filename="../qml/pages/AboutPage.qml" line="65" />
             <source />
-            <translation type="unfinished" />
+            <translation>الحزم</translation>
         </message>
         <message id="about.not_installed">
             <location filename="../qml/pages/AboutPage.qml" line="79" />
             <location filename="../qml/pages/AboutPage.qml" line="86" />
             <source />
-            <translation type="unfinished" />
+            <translation>غير مثبّت</translation>
         </message>
         <message id="about.not_connected">
             <location filename="../qml/pages/AboutPage.qml" line="17" />
             <source />
-            <translation type="unfinished" />
+            <translation>غير متصل</translation>
         </message>
         <message id="about.install">
             <location filename="../qml/pages/AboutPage.qml" line="101" />
             <source />
-            <translation type="unfinished" />
+            <translation>تثبيت</translation>
         </message>
         <message id="about.support">
             <location filename="../qml/pages/AboutPage.qml" line="109" />
             <source />
-            <translation type="unfinished" />
+            <translation>الدعم</translation>
         </message>
         <message id="about.item.issue">
             <location filename="../qml/pages/AboutPage.qml" line="114" />
             <source />
-            <translation type="unfinished" />
+            <translation>الإبلاغ عن مشكلة:</translation>
         </message>
         <message id="about.item.community">
             <location filename="../qml/pages/AboutPage.qml" line="123" />
             <source />
-            <translation type="unfinished" />
+            <translation>المجتمع:</translation>
         </message>
         <message id="settings.other">
             <location filename="../qml/pages/SettingsPage.qml" line="114" />
             <source />
-            <translation type="unfinished" />
+            <translation>أخرى</translation>
         </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />
-            <translation type="unfinished" />
+            <translation>إضافة اختصار إلى القائمة:</translation>
         </message>
         <message id="settings.add_shortcut_to_menu.description">
             <location filename="../qml/pages/SettingsPage.qml" line="174" />
             <source />
-            <translation type="unfinished" />
+            <translation>يضيف التطبيق إلى قائمة التطبيقات ضمن «الأدوات المساعدة».</translation>
         </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />
-            <translation type="unfinished" />
+            <translation>سمة أيقونة علبة النظام:</translation>
         </message>
         <message id="settings.tray_icon_theme.auto">
             <location filename="../qml/pages/SettingsPage.qml" line="103" />
             <source />
-            <translation type="unfinished" />
+            <translation>تلقائي</translation>
         </message>
         <message id="settings.tray_icon_theme.light">
             <location filename="../qml/pages/SettingsPage.qml" line="104" />
             <source />
-            <translation type="unfinished" />
+            <translation>فاتح</translation>
         </message>
         <message id="settings.tray_icon_theme.dark">
             <location filename="../qml/pages/SettingsPage.qml" line="105" />
             <source />
-            <translation type="unfinished" />
+            <translation>داكن</translation>
         </message>
         <message id="settings.popup">
             <location filename="../qml/pages/SettingsPage.qml" line="75" />
             <source />
-            <translation type="unfinished" />
+            <translation>النوافذ المنبثقة</translation>
         </message>
         <message id="settings.headphones_animation">
             <location filename="../qml/pages/SettingsPage.qml" line="81" />
@@ -483,50 +489,50 @@
         <message id="settings.headphones_animation.description">
             <location filename="../qml/pages/SettingsPage.qml" line="103" />
             <source />
-            <translation type="unfinished" />
+            <translation>يعرض رسماً متحركاً لـ AirPods وBeats، شبيهاً بما يظهر على iPhone، عند فتح علبة سماعات الرأس. وصّل سماعات الرأس مرة واحدة لإجراء الإعداد الأولي.</translation>
         </message>
         <message id="tray.socket_error_tooltip">
             <location filename="../cpp/TrayIconManager.cpp" line="206" />
             <source />
-            <translation type="unfinished" />
+            <translation>إذا استمرت المشكلة، فجرّب إعادة تشغيل التطبيق.</translation>
         </message>
         <message id="tray.disconnected">
             <location filename="../cpp/TrayIconManager.cpp" line="211" />
             <location filename="../cpp/TrayIconManager.cpp" line="232" />
             <source />
-            <translation type="unfinished" />
+            <translation>سماعات الرأس غير متصلة</translation>
         </message>
         <message id="tray.exit">
             <location filename="../cpp/TrayIconManager.cpp" line="159" />
             <source />
-            <translation type="unfinished" />
+            <translation>خروج</translation>
         </message>
         <message id="settings.exit">
             <location filename="../qml/pages/SettingsPage.qml" line="182" />
             <source />
-            <translation type="unfinished" />
+            <translation>الخروج من التطبيق:</translation>
         </message>
         <message id="settings.exit.description">
             <location filename="../qml/pages/SettingsPage.qml" line="183" />
             <source />
-            <translation type="unfinished" />
+            <translation>سيتم إغلاق التطبيق وتعطيل جميع الوظائف.</translation>
         </message>
         <message id="settings.exit_button">
             <location filename="../qml/pages/SettingsPage.qml" line="186" />
             <source />
-            <translation type="unfinished" />
+            <translation>خروج</translation>
         </message>
         <message id="tray.disconnect">
             <location filename="../qml/PopupAnimation.qml" line="354" />
             <location filename="../cpp/TrayIconManager.cpp" line="283" />
             <source />
-            <translation type="unfinished" />
+            <translation>قطع الاتصال</translation>
         </message>
         <message id="tray.connect">
             <location filename="../qml/PopupAnimation.qml" line="354" />
             <location filename="../cpp/TrayIconManager.cpp" line="283" />
             <source />
-            <translation type="unfinished" />
+            <translation>اتصال</translation>
         </message>
     </context>
 </TS>

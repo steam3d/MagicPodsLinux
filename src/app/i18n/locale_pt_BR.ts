@@ -6,22 +6,22 @@
         <message id="headphones.help.bluetooth_not_found.header">
             <location filename="../qml/pages/HeadphonesPage.qml" line="67" />
             <source />
-            <translation type="unfinished" />
+            <translation>Adaptador Bluetooth não encontrado</translation>
         </message>
         <message id="headphones.help.bluetooth_not_found.description">
             <location filename="../qml/pages/HeadphonesPage.qml" line="68" />
             <source />
-            <translation type="unfinished" />
+            <translation>Conecte um adaptador Bluetooth</translation>
         </message>
         <message id="headphones.help.bluetooth_no_paired_headphones.header">
             <location filename="../qml/pages/HeadphonesPage.qml" line="75" />
             <source />
-            <translation type="unfinished" />
+            <translation>Nenhum fone de ouvido pareado</translation>
         </message>
         <message id="headphones.help.no_paired_headphones.description">
             <location filename="../qml/pages/HeadphonesPage.qml" line="76" />
             <source />
-            <translation type="unfinished" />
+            <translation>Pareie os fones de ouvido com o computador e reinicie o aplicativo</translation>
         </message>
         <message id="headphones.bluetooth">
             <location filename="../qml/pages/HeadphonesPage.qml" line="85" />
@@ -42,12 +42,12 @@
             <location filename="../qml/main.qml" line="147" />
             <location filename="../qml/pages/BatteryPage.qml" line="46" />
             <source />
-            <translation type="unfinished" />
+            <translation>Bateria</translation>
         </message>
         <message id="battery.connect_headphones.header">
             <location filename="../qml/pages/BatteryPage.qml" line="84" />
             <source />
-            <translation type="unfinished" />
+            <translation>Conecte os fones de ouvido</translation>
         </message>
         <message id="battery.connect_headphones.description">
             <location filename="../qml/pages/BatteryPage.qml" line="85" />
@@ -379,7 +379,7 @@ Desative a “Detecção de conversa” nas configurações dos fones de ouvido 
         <message id="Error.service_api_wrong">
             <location filename="../qml/main.qml" line="56" />
             <source />
-            <translation type="unfinished" />
+            <translation>A versão do MagicPodsCore é incompatível. Atualize o plugin do Decky Loader e o aplicativo para desktop.</translation>
         </message>
         <message id="menu.headphones">
             <location filename="../qml/main.qml" line="152" />
@@ -398,88 +398,88 @@ Desative a “Detecção de conversa” nas configurações dos fones de ouvido 
             <location filename="../qml/main.qml" line="162" />
             <location filename="../qml/pages/AboutPage.qml" line="14" />
             <source />
-            <translation type="unfinished" />
+            <translation>Sobre</translation>
         </message>
         <message id="about.button.home_page">
             <location filename="../qml/pages/AboutPage.qml" line="47" />
             <source />
-            <translation type="unfinished" />
+            <translation>Página inicial</translation>
         </message>
         <message id="about.packages">
             <location filename="../qml/pages/AboutPage.qml" line="65" />
             <source />
-            <translation type="unfinished" />
+            <translation>Pacotes</translation>
         </message>
         <message id="about.not_installed">
             <location filename="../qml/pages/AboutPage.qml" line="79" />
             <location filename="../qml/pages/AboutPage.qml" line="86" />
             <source />
-            <translation type="unfinished" />
+            <translation>Não instalado</translation>
         </message>
         <message id="about.not_connected">
             <location filename="../qml/pages/AboutPage.qml" line="17" />
             <source />
-            <translation type="unfinished" />
+            <translation>Não conectado</translation>
         </message>
         <message id="about.install">
             <location filename="../qml/pages/AboutPage.qml" line="101" />
             <source />
-            <translation type="unfinished" />
+            <translation>Instalar</translation>
         </message>
         <message id="about.support">
             <location filename="../qml/pages/AboutPage.qml" line="109" />
             <source />
-            <translation type="unfinished" />
+            <translation>Suporte</translation>
         </message>
         <message id="about.item.issue">
             <location filename="../qml/pages/AboutPage.qml" line="114" />
             <source />
-            <translation type="unfinished" />
+            <translation>Relatar problema:</translation>
         </message>
         <message id="about.item.community">
             <location filename="../qml/pages/AboutPage.qml" line="123" />
             <source />
-            <translation type="unfinished" />
+            <translation>Comunidade:</translation>
         </message>
         <message id="settings.other">
             <location filename="../qml/pages/SettingsPage.qml" line="114" />
             <source />
-            <translation type="unfinished" />
+            <translation>Outros</translation>
         </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />
-            <translation type="unfinished" />
+            <translation>Adicionar atalho ao menu:</translation>
         </message>
         <message id="settings.add_shortcut_to_menu.description">
             <location filename="../qml/pages/SettingsPage.qml" line="174" />
             <source />
-            <translation type="unfinished" />
+            <translation>Adiciona o aplicativo ao menu de aplicativos, em “Utilitários”.</translation>
         </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />
-            <translation type="unfinished" />
+            <translation>Tema do ícone da bandeja:</translation>
         </message>
         <message id="settings.tray_icon_theme.auto">
             <location filename="../qml/pages/SettingsPage.qml" line="103" />
             <source />
-            <translation type="unfinished" />
+            <translation>Automático</translation>
         </message>
         <message id="settings.tray_icon_theme.light">
             <location filename="../qml/pages/SettingsPage.qml" line="104" />
             <source />
-            <translation type="unfinished" />
+            <translation>Claro</translation>
         </message>
         <message id="settings.tray_icon_theme.dark">
             <location filename="../qml/pages/SettingsPage.qml" line="105" />
             <source />
-            <translation type="unfinished" />
+            <translation>Escuro</translation>
         </message>
         <message id="settings.popup">
             <location filename="../qml/pages/SettingsPage.qml" line="75" />
             <source />
-            <translation type="unfinished" />
+            <translation>Janelas pop-up</translation>
         </message>
         <message id="settings.headphones_animation">
             <location filename="../qml/pages/SettingsPage.qml" line="81" />
@@ -489,50 +489,50 @@ Desative a “Detecção de conversa” nas configurações dos fones de ouvido 
         <message id="settings.headphones_animation.description">
             <location filename="../qml/pages/SettingsPage.qml" line="103" />
             <source />
-            <translation type="unfinished" />
+            <translation>Exibe uma animação dos AirPods e Beats, semelhante à do iPhone, quando você abre o estojo dos fones. Conecte os fones uma vez para fazer a configuração inicial.</translation>
         </message>
         <message id="tray.socket_error_tooltip">
             <location filename="../cpp/TrayIconManager.cpp" line="206" />
             <source />
-            <translation type="unfinished" />
+            <translation>Se o problema persistir, tente reiniciar o aplicativo.</translation>
         </message>
         <message id="tray.disconnected">
             <location filename="../cpp/TrayIconManager.cpp" line="211" />
             <location filename="../cpp/TrayIconManager.cpp" line="232" />
             <source />
-            <translation type="unfinished" />
+            <translation>Fones de ouvido desconectados</translation>
         </message>
         <message id="tray.exit">
             <location filename="../cpp/TrayIconManager.cpp" line="159" />
             <source />
-            <translation type="unfinished" />
+            <translation>Sair</translation>
         </message>
         <message id="settings.exit">
             <location filename="../qml/pages/SettingsPage.qml" line="182" />
             <source />
-            <translation type="unfinished" />
+            <translation>Sair do aplicativo:</translation>
         </message>
         <message id="settings.exit.description">
             <location filename="../qml/pages/SettingsPage.qml" line="183" />
             <source />
-            <translation type="unfinished" />
+            <translation>O aplicativo será fechado e todas as funções serão desativadas.</translation>
         </message>
         <message id="settings.exit_button">
             <location filename="../qml/pages/SettingsPage.qml" line="186" />
             <source />
-            <translation type="unfinished" />
+            <translation>Sair</translation>
         </message>
         <message id="tray.disconnect">
             <location filename="../qml/PopupAnimation.qml" line="354" />
             <location filename="../cpp/TrayIconManager.cpp" line="283" />
             <source />
-            <translation type="unfinished" />
+            <translation>Desconectar</translation>
         </message>
         <message id="tray.connect">
             <location filename="../qml/PopupAnimation.qml" line="354" />
             <location filename="../cpp/TrayIconManager.cpp" line="283" />
             <source />
-            <translation type="unfinished" />
+            <translation>Conectar</translation>
         </message>
     </context>
 </TS>

@@ -6,22 +6,22 @@
         <message id="headphones.help.bluetooth_not_found.header">
             <location filename="../qml/pages/HeadphonesPage.qml" line="67" />
             <source />
-            <translation type="unfinished" />
+            <translation>未找到蓝牙适配器</translation>
         </message>
         <message id="headphones.help.bluetooth_not_found.description">
             <location filename="../qml/pages/HeadphonesPage.qml" line="68" />
             <source />
-            <translation type="unfinished" />
+            <translation>请连接蓝牙适配器</translation>
         </message>
         <message id="headphones.help.bluetooth_no_paired_headphones.header">
             <location filename="../qml/pages/HeadphonesPage.qml" line="75" />
             <source />
-            <translation type="unfinished" />
+            <translation>没有已配对的耳机</translation>
         </message>
         <message id="headphones.help.no_paired_headphones.description">
             <location filename="../qml/pages/HeadphonesPage.qml" line="76" />
             <source />
-            <translation type="unfinished" />
+            <translation>请将耳机与电脑配对，然后重启应用</translation>
         </message>
         <message id="headphones.bluetooth">
             <location filename="../qml/pages/HeadphonesPage.qml" line="85" />
@@ -42,12 +42,12 @@
             <location filename="../qml/main.qml" line="147" />
             <location filename="../qml/pages/BatteryPage.qml" line="46" />
             <source />
-            <translation type="unfinished" />
+            <translation>电池</translation>
         </message>
         <message id="battery.connect_headphones.header">
             <location filename="../qml/pages/BatteryPage.qml" line="84" />
             <source />
-            <translation type="unfinished" />
+            <translation>连接耳机</translation>
         </message>
         <message id="battery.connect_headphones.description">
             <location filename="../qml/pages/BatteryPage.qml" line="85" />
@@ -379,7 +379,7 @@
         <message id="Error.service_api_wrong">
             <location filename="../qml/main.qml" line="56" />
             <source />
-            <translation type="unfinished" />
+            <translation>MagicPodsCore 版本不兼容。请更新 Decky Loader 插件和桌面应用。</translation>
         </message>
         <message id="menu.headphones">
             <location filename="../qml/main.qml" line="152" />
@@ -398,88 +398,88 @@
             <location filename="../qml/main.qml" line="162" />
             <location filename="../qml/pages/AboutPage.qml" line="14" />
             <source />
-            <translation type="unfinished" />
+            <translation>关于</translation>
         </message>
         <message id="about.button.home_page">
             <location filename="../qml/pages/AboutPage.qml" line="47" />
             <source />
-            <translation type="unfinished" />
+            <translation>主页</translation>
         </message>
         <message id="about.packages">
             <location filename="../qml/pages/AboutPage.qml" line="65" />
             <source />
-            <translation type="unfinished" />
+            <translation>软件包</translation>
         </message>
         <message id="about.not_installed">
             <location filename="../qml/pages/AboutPage.qml" line="79" />
             <location filename="../qml/pages/AboutPage.qml" line="86" />
             <source />
-            <translation type="unfinished" />
+            <translation>未安装</translation>
         </message>
         <message id="about.not_connected">
             <location filename="../qml/pages/AboutPage.qml" line="17" />
             <source />
-            <translation type="unfinished" />
+            <translation>未连接</translation>
         </message>
         <message id="about.install">
             <location filename="../qml/pages/AboutPage.qml" line="101" />
             <source />
-            <translation type="unfinished" />
+            <translation>安装</translation>
         </message>
         <message id="about.support">
             <location filename="../qml/pages/AboutPage.qml" line="109" />
             <source />
-            <translation type="unfinished" />
+            <translation>支持</translation>
         </message>
         <message id="about.item.issue">
             <location filename="../qml/pages/AboutPage.qml" line="114" />
             <source />
-            <translation type="unfinished" />
+            <translation>报告问题：</translation>
         </message>
         <message id="about.item.community">
             <location filename="../qml/pages/AboutPage.qml" line="123" />
             <source />
-            <translation type="unfinished" />
+            <translation>社区：</translation>
         </message>
         <message id="settings.other">
             <location filename="../qml/pages/SettingsPage.qml" line="114" />
             <source />
-            <translation type="unfinished" />
+            <translation>其他</translation>
         </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />
-            <translation type="unfinished" />
+            <translation>将快捷方式添加到菜单：</translation>
         </message>
         <message id="settings.add_shortcut_to_menu.description">
             <location filename="../qml/pages/SettingsPage.qml" line="174" />
             <source />
-            <translation type="unfinished" />
+            <translation>将应用添加到应用程序菜单的“实用工具”分类中。</translation>
         </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />
-            <translation type="unfinished" />
+            <translation>托盘图标主题：</translation>
         </message>
         <message id="settings.tray_icon_theme.auto">
             <location filename="../qml/pages/SettingsPage.qml" line="103" />
             <source />
-            <translation type="unfinished" />
+            <translation>自动</translation>
         </message>
         <message id="settings.tray_icon_theme.light">
             <location filename="../qml/pages/SettingsPage.qml" line="104" />
             <source />
-            <translation type="unfinished" />
+            <translation>浅色</translation>
         </message>
         <message id="settings.tray_icon_theme.dark">
             <location filename="../qml/pages/SettingsPage.qml" line="105" />
             <source />
-            <translation type="unfinished" />
+            <translation>深色</translation>
         </message>
         <message id="settings.popup">
             <location filename="../qml/pages/SettingsPage.qml" line="75" />
             <source />
-            <translation type="unfinished" />
+            <translation>弹窗</translation>
         </message>
         <message id="settings.headphones_animation">
             <location filename="../qml/pages/SettingsPage.qml" line="81" />
@@ -489,50 +489,50 @@
         <message id="settings.headphones_animation.description">
             <location filename="../qml/pages/SettingsPage.qml" line="103" />
             <source />
-            <translation type="unfinished" />
+            <translation>打开耳机充电盒时显示类似 iPhone 的 AirPods 和 Beats 动画。首次设置时，请连接一次耳机。</translation>
         </message>
         <message id="tray.socket_error_tooltip">
             <location filename="../cpp/TrayIconManager.cpp" line="206" />
             <source />
-            <translation type="unfinished" />
+            <translation>如果问题仍然存在，请尝试重启应用。</translation>
         </message>
         <message id="tray.disconnected">
             <location filename="../cpp/TrayIconManager.cpp" line="211" />
             <location filename="../cpp/TrayIconManager.cpp" line="232" />
             <source />
-            <translation type="unfinished" />
+            <translation>耳机已断开连接</translation>
         </message>
         <message id="tray.exit">
             <location filename="../cpp/TrayIconManager.cpp" line="159" />
             <source />
-            <translation type="unfinished" />
+            <translation>退出</translation>
         </message>
         <message id="settings.exit">
             <location filename="../qml/pages/SettingsPage.qml" line="182" />
             <source />
-            <translation type="unfinished" />
+            <translation>退出应用：</translation>
         </message>
         <message id="settings.exit.description">
             <location filename="../qml/pages/SettingsPage.qml" line="183" />
             <source />
-            <translation type="unfinished" />
+            <translation>应用将关闭，所有功能都将被禁用。</translation>
         </message>
         <message id="settings.exit_button">
             <location filename="../qml/pages/SettingsPage.qml" line="186" />
             <source />
-            <translation type="unfinished" />
+            <translation>退出</translation>
         </message>
         <message id="tray.disconnect">
             <location filename="../qml/PopupAnimation.qml" line="354" />
             <location filename="../cpp/TrayIconManager.cpp" line="283" />
             <source />
-            <translation type="unfinished" />
+            <translation>断开连接</translation>
         </message>
         <message id="tray.connect">
             <location filename="../qml/PopupAnimation.qml" line="354" />
             <location filename="../cpp/TrayIconManager.cpp" line="283" />
             <source />
-            <translation type="unfinished" />
+            <translation>连接</translation>
         </message>
     </context>
 </TS>

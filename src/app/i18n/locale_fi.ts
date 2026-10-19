@@ -6,132 +6,138 @@
         <message id="headphones.help.bluetooth_not_found.header">
             <location filename="../qml/pages/HeadphonesPage.qml" line="67" />
             <source />
-            <translation type="unfinished" />
+            <translation>Bluetooth-sovitinta ei löytynyt</translation>
         </message>
         <message id="headphones.help.bluetooth_not_found.description">
             <location filename="../qml/pages/HeadphonesPage.qml" line="68" />
             <source />
-            <translation type="unfinished" />
+            <translation>Yhdistä Bluetooth-sovitin</translation>
         </message>
         <message id="headphones.help.bluetooth_no_paired_headphones.header">
             <location filename="../qml/pages/HeadphonesPage.qml" line="75" />
             <source />
-            <translation type="unfinished" />
+            <translation>Ei pariliitettyjä kuulokkeita</translation>
         </message>
         <message id="headphones.help.no_paired_headphones.description">
             <location filename="../qml/pages/HeadphonesPage.qml" line="76" />
             <source />
-            <translation type="unfinished" />
+            <translation>Muodosta kuulokkeista laitepari tietokoneen kanssa ja käynnistä sovellus uudelleen</translation>
         </message>
         <message id="headphones.bluetooth">
             <location filename="../qml/pages/HeadphonesPage.qml" line="85" />
             <source />
-            <translation type="unfinished" />
+            <translation>Bluetooth</translation>
         </message>
         <message id="headphones.item.bluetooth">
             <location filename="../qml/pages/HeadphonesPage.qml" line="91" />
             <source />
-            <translation type="unfinished" />
+            <translation>Bluetooth:</translation>
         </message>
         <message id="headphones.headphones">
             <location filename="../qml/pages/HeadphonesPage.qml" line="108" />
             <source />
-            <translation type="unfinished" />
+            <translation>Kuulokkeet</translation>
         </message>
         <message id="menu.battery">
             <location filename="../qml/main.qml" line="147" />
             <location filename="../qml/pages/BatteryPage.qml" line="46" />
             <source />
-            <translation type="unfinished" />
+            <translation>Akku</translation>
         </message>
         <message id="battery.connect_headphones.header">
             <location filename="../qml/pages/BatteryPage.qml" line="84" />
             <source />
-            <translation type="unfinished" />
+            <translation>Yhdistä kuulokkeet</translation>
         </message>
         <message id="battery.connect_headphones.description">
             <location filename="../qml/pages/BatteryPage.qml" line="85" />
             <source />
-            <translation type="unfinished" />
+            <translation>Yhdistä kuulokkeet, jotta voit tarkastella niiden akun varausta ja muuttaa asetuksia</translation>
         </message>
         <message id="battery.battery_single">
             <location filename="../qml/pages/BatteryPage.qml" line="167" />
             <location filename="../cpp/TrayIconManager.cpp" line="223" />
             <source />
-            <translation type="unfinished" />
+            <translation>Varaus</translation>
         </message>
         <message id="battery.battery_left">
             <location filename="../qml/pages/BatteryPage.qml" line="174" />
             <location filename="../cpp/TrayIconManager.cpp" line="225" />
             <source />
-            <translation type="unfinished" />
+            <translation>Vasen</translation>
         </message>
         <message id="battery.battery_right">
             <location filename="../qml/pages/BatteryPage.qml" line="181" />
             <location filename="../cpp/TrayIconManager.cpp" line="227" />
             <source />
-            <translation type="unfinished" />
+            <translation>Oikea</translation>
         </message>
         <message id="battery.battery_case">
             <location filename="../qml/pages/BatteryPage.qml" line="188" />
             <location filename="../cpp/TrayIconManager.cpp" line="229" />
             <source />
-            <translation type="unfinished" />
+            <translation>Kotelo</translation>
         </message>
         <message id="battery.anc_off">
             <location filename="../qml/pages/BatteryPage.qml" line="223" />
             <source />
-            <translation type="unfinished" />
+            <translation>Pois</translation>
         </message>
         <message id="battery.anc_tra">
             <location filename="../qml/pages/BatteryPage.qml" line="246" />
             <source />
-            <translation type="unfinished" />
+            <translation>Läpikuuluvuus</translation>
         </message>
         <message id="battery.anc_adaptive">
             <location filename="../qml/pages/BatteryPage.qml" line="269" />
             <source />
-            <translation type="unfinished" />
+            <translation>Mukautuva</translation>
         </message>
         <message id="battery.anc_wind">
             <location filename="../qml/pages/BatteryPage.qml" line="292" />
             <source />
-            <translation type="unfinished" />
+            <translation>Tuulen melun vaimennus</translation>
         </message>
         <message id="battery.anc_anc">
             <location filename="../qml/pages/BatteryPage.qml" line="315" />
             <source />
-            <translation type="unfinished" />
+            <translation>Melunvaimennus</translation>
         </message>
         <message id="battery.capabilities.header">
             <location filename="../qml/pages/BatteryPage.qml" line="331" />
             <source />
-            <translation type="unfinished" />
+            <translation>Valinnat</translation>
         </message>
         <message id="battery.high_resolution_microphone">
             <location filename="../qml/pages/BatteryPage.qml" line="360" />
             <source />
-            <translation type="unfinished" />
+            <translation>HD-mikrofoni</translation>
         </message>
         <message id="battery.high_resolution_microphone.description">
             <location filename="../qml/pages/BatteryPage.qml" line="361" />
             <source />
-            <translation type="unfinished" />
+            <translation>Tarjoaa huomattavasti paremman äänen ja mikrofonin laadun kuin Bluetooth Hands-Free -tila (kuulokemikrofoni). Toistoäänen laatu on kuitenkin edelleen selvästi heikompi kuin tavallisessa kuuloketilassa.
+
+Kun toiminto otetaan käyttöön, ”MagicPods Virtual Mic” -äänitulolaite luodaan ja valitaan automaattisesti. Kun toiminto poistetaan käytöstä, äänen lähetys päättyy ja laite poistetaan.
+
+Jos mikrofoni ei toimi, varmista, että äänitulolaitteeksi on valittu ”MagicPods Virtual Mic”.
+
+Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta äänenvoimakkuus ei pienene automaattisesti mikrofonia käytettäessä.</translation>
         </message>
         <message id="battery.ear_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="420" />
             <source />
-            <translation type="unfinished" />
+            <translation>Korvantunnistus</translation>
         </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
             <source />
-            <translation type="unfinished" />
+            <translation>Keskustelun tunnistus:</translation>
         </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />
-            <translation type="unfinished" />
+            <translation>Mukautettu äänenvoimakkuus:</translation>
         </message>
         <message id="battery.digital_crown">
             <location filename="../qml/pages/BatteryPage.qml" line="473" />
@@ -171,7 +177,7 @@
         <message id="battery.press_and_hold_mode.noise_control">
             <location filename="../qml/pages/BatteryPage.qml" line="74" />
             <source />
-            <translation type="unfinished" />
+            <translation>Melunhallinta</translation>
         </message>
         <message id="battery.press_and_hold_mode.volume_up">
             <location filename="../qml/pages/BatteryPage.qml" line="76" />
@@ -201,27 +207,27 @@
         <message id="battery.adaptive_audio_noise">
             <location filename="../qml/pages/BatteryPage.qml" line="431" />
             <source />
-            <translation type="unfinished" />
+            <translation>Mukautuva tila:</translation>
         </message>
         <message id="battery.adaptive_audio_noise.more">
             <location filename="../qml/pages/BatteryPage.qml" line="435" />
             <source />
-            <translation type="unfinished" />
+            <translation>Enemmän melua</translation>
         </message>
         <message id="battery.adaptive_audio_noise.default">
             <location filename="../qml/pages/BatteryPage.qml" line="435" />
             <source />
-            <translation type="unfinished" />
+            <translation>Oletus</translation>
         </message>
         <message id="battery.adaptive_audio_noise.less">
             <location filename="../qml/pages/BatteryPage.qml" line="435" />
             <source />
-            <translation type="unfinished" />
+            <translation>Vähemmän melua</translation>
         </message>
         <message id="battery.anc_one_airpod">
             <location filename="../qml/pages/BatteryPage.qml" line="464" />
             <source />
-            <translation type="unfinished" />
+            <translation>Melunvaimennus yhdellä AirPodilla:</translation>
         </message>
         <message id="battery.anc_off_mode">
             <location filename="../qml/pages/BatteryPage.qml" line="628" />
@@ -246,67 +252,67 @@
         <message id="battery.custom_eq">
             <location filename="../qml/pages/BatteryPage.qml" line="683" />
             <source />
-            <translation type="unfinished" />
+            <translation>Taajuuskorjain</translation>
         </message>
         <message id="battery.custom_eq.low">
             <location filename="../qml/pages/BatteryPage.qml" line="700" />
             <source />
-            <translation type="unfinished" />
+            <translation>Taajuuskorjain: Matalat</translation>
         </message>
         <message id="battery.custom_eq.mid">
             <location filename="../qml/pages/BatteryPage.qml" line="701" />
             <source />
-            <translation type="unfinished" />
+            <translation>Taajuuskorjain: Keskialue</translation>
         </message>
         <message id="battery.custom_eq.high">
             <location filename="../qml/pages/BatteryPage.qml" line="702" />
             <source />
-            <translation type="unfinished" />
+            <translation>Taajuuskorjain: Korkeat</translation>
         </message>
         <message id="battery.press_and_hold_duration">
             <location filename="../qml/pages/BatteryPage.qml" line="480" />
             <source />
-            <translation type="unfinished" />
+            <translation>Painalluksen kesto:</translation>
         </message>
         <message id="battery.press_and_hold_duration.default">
             <location filename="../qml/pages/BatteryPage.qml" line="484" />
             <source />
-            <translation type="unfinished" />
+            <translation>Oletus</translation>
         </message>
         <message id="battery.press_and_hold_duration.shorter">
             <location filename="../qml/pages/BatteryPage.qml" line="484" />
             <source />
-            <translation type="unfinished" />
+            <translation>Lyhyempi</translation>
         </message>
         <message id="battery.press_and_hold_duration.shortest">
             <location filename="../qml/pages/BatteryPage.qml" line="484" />
             <source />
-            <translation type="unfinished" />
+            <translation>Lyhin</translation>
         </message>
         <message id="battery.press_speed">
             <location filename="../qml/pages/BatteryPage.qml" line="498" />
             <source />
-            <translation type="unfinished" />
+            <translation>Painallusnopeus:</translation>
         </message>
         <message id="battery.press_speed.default">
             <location filename="../qml/pages/BatteryPage.qml" line="502" />
             <source />
-            <translation type="unfinished" />
+            <translation>Oletus</translation>
         </message>
         <message id="battery.press_speed.slower">
             <location filename="../qml/pages/BatteryPage.qml" line="502" />
             <source />
-            <translation type="unfinished" />
+            <translation>Hitaampi</translation>
         </message>
         <message id="battery.press_speed.slowest">
             <location filename="../qml/pages/BatteryPage.qml" line="502" />
             <source />
-            <translation type="unfinished" />
+            <translation>Hitain</translation>
         </message>
         <message id="battery.tone_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="516" />
             <source />
-            <translation type="unfinished" />
+            <translation>Merkkiäänen voimakkuus:</translation>
         </message>
         <message id="battery.sleep_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="818" />
@@ -321,212 +327,212 @@
         <message id="battery.volume_swipe">
             <location filename="../qml/pages/BatteryPage.qml" line="543" />
             <source />
-            <translation type="unfinished" />
+            <translation>Äänenvoimakkuuden pyyhkäisysäätö:</translation>
         </message>
         <message id="battery.volume_swipe_length">
             <location filename="../qml/pages/BatteryPage.qml" line="560" />
             <source />
-            <translation type="unfinished" />
+            <translation>Äänenvoimakkuuspyyhkäisyn pituus:</translation>
         </message>
         <message id="battery.volume_swipe_length.default">
             <location filename="../qml/pages/BatteryPage.qml" line="564" />
             <source />
-            <translation type="unfinished" />
+            <translation>Oletus</translation>
         </message>
         <message id="battery.volume_swipe_length.longer">
             <location filename="../qml/pages/BatteryPage.qml" line="564" />
             <source />
-            <translation type="unfinished" />
+            <translation>Pidempi</translation>
         </message>
         <message id="battery.volume_swipe_length.longest">
             <location filename="../qml/pages/BatteryPage.qml" line="564" />
             <source />
-            <translation type="unfinished" />
+            <translation>Pisin</translation>
         </message>
         <message id="battery.end_call">
             <location filename="../qml/pages/BatteryPage.qml" line="578" />
             <source />
-            <translation type="unfinished" />
+            <translation>Puhelun lopettaminen:</translation>
         </message>
         <message id="battery.end_call.twice">
             <location filename="../qml/pages/BatteryPage.qml" line="582" />
             <location filename="../qml/pages/BatteryPage.qml" line="600" />
             <source />
-            <translation type="unfinished" />
+            <translation>Paina kahdesti</translation>
         </message>
         <message id="battery.end_call.once">
             <location filename="../qml/pages/BatteryPage.qml" line="582" />
             <location filename="../qml/pages/BatteryPage.qml" line="600" />
             <source />
-            <translation type="unfinished" />
+            <translation>Paina kerran</translation>
         </message>
         <message id="battery.mute_unmute">
             <location filename="../qml/pages/BatteryPage.qml" line="596" />
             <source />
-            <translation type="unfinished" />
+            <translation>Mykistäminen ja mykistyksen poisto:</translation>
         </message>
         <message id="battery.bluetooth_codec">
             <location filename="../qml/pages/BatteryPage.qml" line="337" />
             <source />
-            <translation type="unfinished" />
+            <translation>Bluetooth-koodekki:</translation>
         </message>
         <message id="Error.service_api_wrong">
             <location filename="../qml/main.qml" line="56" />
             <source />
-            <translation type="unfinished" />
+            <translation>MagicPodsCore-versio ei ole yhteensopiva. Päivitä Decky Loader -laajennus ja työpöytäsovellus.</translation>
         </message>
         <message id="menu.headphones">
             <location filename="../qml/main.qml" line="152" />
             <location filename="../qml/pages/HeadphonesPage.qml" line="13" />
             <source />
-            <translation type="unfinished" />
+            <translation>Kuulokkeet</translation>
         </message>
         <message id="menu.settings">
             <location filename="../qml/main.qml" line="157" />
             <location filename="../qml/pages/SettingsPage.qml" line="16" />
             <location filename="../cpp/TrayIconManager.cpp" line="152" />
             <source />
-            <translation type="unfinished" />
+            <translation>Asetukset</translation>
         </message>
         <message id="menu.about">
             <location filename="../qml/main.qml" line="162" />
             <location filename="../qml/pages/AboutPage.qml" line="14" />
             <source />
-            <translation type="unfinished" />
+            <translation>Tietoja</translation>
         </message>
         <message id="about.button.home_page">
             <location filename="../qml/pages/AboutPage.qml" line="47" />
             <source />
-            <translation type="unfinished" />
+            <translation>Kotisivu</translation>
         </message>
         <message id="about.packages">
             <location filename="../qml/pages/AboutPage.qml" line="65" />
             <source />
-            <translation type="unfinished" />
+            <translation>Paketit</translation>
         </message>
         <message id="about.not_installed">
             <location filename="../qml/pages/AboutPage.qml" line="79" />
             <location filename="../qml/pages/AboutPage.qml" line="86" />
             <source />
-            <translation type="unfinished" />
+            <translation>Ei asennettu</translation>
         </message>
         <message id="about.not_connected">
             <location filename="../qml/pages/AboutPage.qml" line="17" />
             <source />
-            <translation type="unfinished" />
+            <translation>Ei yhdistetty</translation>
         </message>
         <message id="about.install">
             <location filename="../qml/pages/AboutPage.qml" line="101" />
             <source />
-            <translation type="unfinished" />
+            <translation>Asenna</translation>
         </message>
         <message id="about.support">
             <location filename="../qml/pages/AboutPage.qml" line="109" />
             <source />
-            <translation type="unfinished" />
+            <translation>Tuki</translation>
         </message>
         <message id="about.item.issue">
             <location filename="../qml/pages/AboutPage.qml" line="114" />
             <source />
-            <translation type="unfinished" />
+            <translation>Ilmoita ongelmasta:</translation>
         </message>
         <message id="about.item.community">
             <location filename="../qml/pages/AboutPage.qml" line="123" />
             <source />
-            <translation type="unfinished" />
+            <translation>Yhteisö:</translation>
         </message>
         <message id="settings.other">
             <location filename="../qml/pages/SettingsPage.qml" line="114" />
             <source />
-            <translation type="unfinished" />
+            <translation>Muu</translation>
         </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />
-            <translation type="unfinished" />
+            <translation>Lisää pikakuvake valikkoon:</translation>
         </message>
         <message id="settings.add_shortcut_to_menu.description">
             <location filename="../qml/pages/SettingsPage.qml" line="174" />
             <source />
-            <translation type="unfinished" />
+            <translation>Lisää sovelluksen sovellusvalikon Apuohjelmat-luokkaan.</translation>
         </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />
-            <translation type="unfinished" />
+            <translation>Ilmaisinalueen kuvakkeen teema:</translation>
         </message>
         <message id="settings.tray_icon_theme.auto">
             <location filename="../qml/pages/SettingsPage.qml" line="103" />
             <source />
-            <translation type="unfinished" />
+            <translation>Automaattinen</translation>
         </message>
         <message id="settings.tray_icon_theme.light">
             <location filename="../qml/pages/SettingsPage.qml" line="104" />
             <source />
-            <translation type="unfinished" />
+            <translation>Vaalea</translation>
         </message>
         <message id="settings.tray_icon_theme.dark">
             <location filename="../qml/pages/SettingsPage.qml" line="105" />
             <source />
-            <translation type="unfinished" />
+            <translation>Tumma</translation>
         </message>
         <message id="settings.popup">
             <location filename="../qml/pages/SettingsPage.qml" line="75" />
             <source />
-            <translation type="unfinished" />
+            <translation>Ponnahdusikkunat</translation>
         </message>
         <message id="settings.headphones_animation">
             <location filename="../qml/pages/SettingsPage.qml" line="81" />
             <source />
-            <translation type="unfinished" />
+            <translation>Kuulokeanimaatio:</translation>
         </message>
         <message id="settings.headphones_animation.description">
             <location filename="../qml/pages/SettingsPage.qml" line="103" />
             <source />
-            <translation type="unfinished" />
+            <translation>Näyttää iPhonen kaltaisen AirPods- ja Beats-animaation, kun avaat kuulokkeiden kotelon. Yhdistä kuulokkeet kerran alkuasetuksia varten.</translation>
         </message>
         <message id="tray.socket_error_tooltip">
             <location filename="../cpp/TrayIconManager.cpp" line="206" />
             <source />
-            <translation type="unfinished" />
+            <translation>Jos ongelma jatkuu, käynnistä sovellus uudelleen.</translation>
         </message>
         <message id="tray.disconnected">
             <location filename="../cpp/TrayIconManager.cpp" line="211" />
             <location filename="../cpp/TrayIconManager.cpp" line="232" />
             <source />
-            <translation type="unfinished" />
+            <translation>Kuulokkeiden yhteys katkaistu</translation>
         </message>
         <message id="tray.exit">
             <location filename="../cpp/TrayIconManager.cpp" line="159" />
             <source />
-            <translation type="unfinished" />
+            <translation>Lopeta</translation>
         </message>
         <message id="settings.exit">
             <location filename="../qml/pages/SettingsPage.qml" line="182" />
             <source />
-            <translation type="unfinished" />
+            <translation>Sulje sovellus:</translation>
         </message>
         <message id="settings.exit.description">
             <location filename="../qml/pages/SettingsPage.qml" line="183" />
             <source />
-            <translation type="unfinished" />
+            <translation>Sovellus suljetaan ja kaikki toiminnot poistetaan käytöstä.</translation>
         </message>
         <message id="settings.exit_button">
             <location filename="../qml/pages/SettingsPage.qml" line="186" />
             <source />
-            <translation type="unfinished" />
+            <translation>Lopeta</translation>
         </message>
         <message id="tray.disconnect">
             <location filename="../qml/PopupAnimation.qml" line="354" />
             <location filename="../cpp/TrayIconManager.cpp" line="283" />
             <source />
-            <translation type="unfinished" />
+            <translation>Katkaise yhteys</translation>
         </message>
         <message id="tray.connect">
             <location filename="../qml/PopupAnimation.qml" line="354" />
             <location filename="../cpp/TrayIconManager.cpp" line="283" />
             <source />
-            <translation type="unfinished" />
+            <translation>Yhdistä</translation>
         </message>
     </context>
 </TS>
