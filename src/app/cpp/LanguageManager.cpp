@@ -18,7 +18,6 @@
 
 namespace {
 const QString LanguageSettingKey = QStringLiteral("language");
-const QString LegacyLanguageSettingKey = QStringLiteral("general/language");
 const QString SystemLanguage = QStringLiteral("system");
 const QString TranslationPrefix = QStringLiteral("locale_");
 const QString TranslationSuffix = QStringLiteral(".qm");
@@ -32,15 +31,7 @@ LanguageManager::LanguageManager(UiSettingsService *settings, QObject *parent)
 {
     Q_ASSERT(this->settings);
 
-    if (this->settings->contains(LanguageSettingKey)) {
-        currentLanguage = this->settings->value(LanguageSettingKey).toString();
-    } else if (this->settings->contains(LegacyLanguageSettingKey)) {
-        currentLanguage = this->settings->value(LegacyLanguageSettingKey).toString();
-        if (this->settings->setValue(LanguageSettingKey, currentLanguage))
-            this->settings->remove(LegacyLanguageSettingKey);
-    } else {
-        currentLanguage = SystemLanguage;
-    }
+    currentLanguage = this->settings->value(LanguageSettingKey, SystemLanguage).toString();
 
     if (!isSupported(currentLanguage)) {
         qWarning() << "[LanguageManager] Unsupported saved language" << currentLanguage
