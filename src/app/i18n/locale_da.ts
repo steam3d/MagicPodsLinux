@@ -456,6 +456,21 @@ Deaktiver »Registrering af samtale« i hovedtelefonernes indstillinger for at f
             <source />
             <translation>Systemstandard</translation>
         </message>
+        <message id="settings.game_mode_scale">
+            <location filename="../qml/pages/SettingsPage.qml" line="137" />
+            <source />
+            <translation>Skalering i spiltilstand:</translation>
+        </message>
+        <message id="settings.game_mode_scale.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="138" />
+            <source />
+            <translation>Anvendes kun ved start i Steams spiltilstand. Ændringer træder i kraft, når programmet genstartes.</translation>
+        </message>
+        <message id="settings.game_mode_scale.off">
+            <location filename="../qml/pages/SettingsPage.qml" line="143" />
+            <source />
+            <translation>Anvend ikke</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

@@ -456,6 +456,21 @@ Desative a «Deteção de conversa» nas definições dos auscultadores para imp
             <source />
             <translation>Predefinição do sistema</translation>
         </message>
+        <message id="settings.game_mode_scale">
+            <location filename="../qml/pages/SettingsPage.qml" line="137" />
+            <source />
+            <translation>Escala no modo de jogo:</translation>
+        </message>
+        <message id="settings.game_mode_scale.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="138" />
+            <source />
+            <translation>Aplica-se apenas ao iniciar no modo de jogo do Steam. As alterações entram em vigor depois de reiniciar a aplicação.</translation>
+        </message>
+        <message id="settings.game_mode_scale.off">
+            <location filename="../qml/pages/SettingsPage.qml" line="143" />
+            <source />
+            <translation>Não aplicar</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

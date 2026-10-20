@@ -456,6 +456,21 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
             <source />
             <translation>Predefinita di sistema</translation>
         </message>
+        <message id="settings.game_mode_scale">
+            <location filename="../qml/pages/SettingsPage.qml" line="137" />
+            <source />
+            <translation>Ridimensionamento in modalità Gaming:</translation>
+        </message>
+        <message id="settings.game_mode_scale.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="138" />
+            <source />
+            <translation>Si applica solo quando l’applicazione viene avviata nella modalità Gaming di Steam. Le modifiche vengono applicate dopo il riavvio dell’applicazione.</translation>
+        </message>
+        <message id="settings.game_mode_scale.off">
+            <location filename="../qml/pages/SettingsPage.qml" line="143" />
+            <source />
+            <translation>Non applicare</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

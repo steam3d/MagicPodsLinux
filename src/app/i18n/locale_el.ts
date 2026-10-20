@@ -456,6 +456,21 @@
             <source />
             <translation>Προεπιλογή συστήματος</translation>
         </message>
+        <message id="settings.game_mode_scale">
+            <location filename="../qml/pages/SettingsPage.qml" line="137" />
+            <source />
+            <translation>Κλιμάκωση στη λειτουργία παιχνιδιού:</translation>
+        </message>
+        <message id="settings.game_mode_scale.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="138" />
+            <source />
+            <translation>Εφαρμόζεται μόνο κατά την εκκίνηση στη λειτουργία παιχνιδιού του Steam. Οι αλλαγές εφαρμόζονται μετά την επανεκκίνηση της εφαρμογής.</translation>
+        </message>
+        <message id="settings.game_mode_scale.off">
+            <location filename="../qml/pages/SettingsPage.qml" line="143" />
+            <source />
+            <translation>Να μην εφαρμόζεται</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

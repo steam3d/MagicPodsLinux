@@ -456,6 +456,21 @@ Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta �
             <source />
             <translation>Järjestelmän oletus</translation>
         </message>
+        <message id="settings.game_mode_scale">
+            <location filename="../qml/pages/SettingsPage.qml" line="137" />
+            <source />
+            <translation>Pelitilan skaalaus:</translation>
+        </message>
+        <message id="settings.game_mode_scale.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="138" />
+            <source />
+            <translation>Käytetään vain, kun sovellus käynnistetään Steamin pelitilassa. Muutokset tulevat voimaan sovelluksen uudelleenkäynnistyksen jälkeen.</translation>
+        </message>
+        <message id="settings.game_mode_scale.off">
+            <location filename="../qml/pages/SettingsPage.qml" line="143" />
+            <source />
+            <translation>Älä käytä</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

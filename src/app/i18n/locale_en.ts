@@ -456,6 +456,21 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <source></source>
         <translation>System default</translation>
     </message>
+    <message id="settings.game_mode_scale">
+        <location filename="../qml/pages/SettingsPage.qml" line="137"/>
+        <source></source>
+        <translation>Gaming Mode scale:</translation>
+    </message>
+    <message id="settings.game_mode_scale.description">
+        <location filename="../qml/pages/SettingsPage.qml" line="138"/>
+        <source></source>
+        <translation>Applies only when launched in Steam Gaming Mode. Changes take effect after restarting the application.</translation>
+    </message>
+    <message id="settings.game_mode_scale.off">
+        <location filename="../qml/pages/SettingsPage.qml" line="143"/>
+        <source></source>
+        <translation>Do not apply</translation>
+    </message>
     <message id="settings.add_shortcut_to_menu">
         <location filename="../qml/pages/SettingsPage.qml" line="173"/>
         <source></source>

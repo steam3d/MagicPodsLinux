@@ -456,6 +456,21 @@ Kapcsolja ki a fejhallgató beállításaiban a „Beszélgetésészlelést”, 
             <source />
             <translation>Rendszer alapértelmezése</translation>
         </message>
+        <message id="settings.game_mode_scale">
+            <location filename="../qml/pages/SettingsPage.qml" line="137" />
+            <source />
+            <translation>Méretezés Játék módban:</translation>
+        </message>
+        <message id="settings.game_mode_scale.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="138" />
+            <source />
+            <translation>Csak a Steam Játék módban történő indításakor érvényes. A módosítások az alkalmazás újraindítása után lépnek életbe.</translation>
+        </message>
+        <message id="settings.game_mode_scale.off">
+            <location filename="../qml/pages/SettingsPage.qml" line="143" />
+            <source />
+            <translation>Ne alkalmazza</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

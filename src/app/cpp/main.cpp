@@ -16,6 +16,8 @@
 #include <QQmlComponent>
 #include <QQuickStyle>
 #include <QScopedPointer>
+#include <QSettings>
+#include <QStringList>
 #include <QWindow>
 
 #include "BackendManager.h"
@@ -27,7 +29,40 @@
 #include "UiSettingsService.h"
 #include "Backend.h"
 
+namespace {
+const QString GameModeScaleSettingKey = QStringLiteral("game_mode/scale");
+const QString DefaultGameModeScale = QStringLiteral("1.5");
+
+void applyGameModeScale()
+{
+    if (qEnvironmentVariableIsEmpty("GAMESCOPE_WAYLAND_DISPLAY")
+        || !qEnvironmentVariableIsEmpty("QT_SCALE_FACTOR")) {
+        return;
+    }
+
+    QSettings settings(QSettings::IniFormat,
+                       QSettings::UserScope,
+                       QStringLiteral("magicpods"),
+                       QStringLiteral("ui"));
+    const QString scale = settings.value(GameModeScaleSettingKey, DefaultGameModeScale).toString();
+    if (scale == QStringLiteral("off"))
+        return;
+
+    const QStringList supportedScales{
+        QStringLiteral("1.0"),
+        QStringLiteral("1.25"),
+        QStringLiteral("1.5"),
+        QStringLiteral("1.75"),
+        QStringLiteral("2.0")
+    };
+    qputenv("QT_SCALE_FACTOR",
+            (supportedScales.contains(scale) ? scale : DefaultGameModeScale).toUtf8());
+}
+} // namespace
+
 static void ensureEnvDefaults() {
+    applyGameModeScale();
+
     if (qEnvironmentVariableIsEmpty("QML2_IMPORT_PATH")) {
         const QString qmlPath = QLibraryInfo::path(QLibraryInfo::QmlImportsPath);
         if (!qmlPath.isEmpty()) {

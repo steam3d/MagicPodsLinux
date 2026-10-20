@@ -456,6 +456,21 @@ Austiņu iestatījumos atspējojiet “Sarunas noteikšanu”, lai mikrofona lie
             <source />
             <translation>Sistēmas noklusējums</translation>
         </message>
+        <message id="settings.game_mode_scale">
+            <location filename="../qml/pages/SettingsPage.qml" line="137" />
+            <source />
+            <translation>Mērogs spēļu režīmā:</translation>
+        </message>
+        <message id="settings.game_mode_scale.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="138" />
+            <source />
+            <translation>Tiek lietots tikai tad, ja programma palaista Steam spēļu režīmā. Izmaiņas stājas spēkā pēc programmas restartēšanas.</translation>
+        </message>
+        <message id="settings.game_mode_scale.off">
+            <location filename="../qml/pages/SettingsPage.qml" line="143" />
+            <source />
+            <translation>Nelietot</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

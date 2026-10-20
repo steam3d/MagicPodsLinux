@@ -34,6 +34,12 @@ QQC2.Page {
         return 0;
     }
 
+    function gameModeScaleIndex(scale) {
+        const scales = ["off", "1.0", "1.25", "1.5", "1.75", "2.0"];
+        const index = scales.indexOf(scale);
+        return index >= 0 ? index : 3;
+    }
+
     function requestSettings() {
         if (cppBackend && cppBackend.connected) {
             cppBackend.getSetting("magicpods", "animation");
@@ -120,6 +126,34 @@ QQC2.Page {
                     onActivated: {
                         if (languageManager)
                             languageManager.language = currentValue;
+                    }
+                }
+            }
+
+            MP.FormRow {
+                Layout.fillWidth: true
+                Layout.maximumWidth: mWidth * 1.5
+                Layout.alignment: Qt.AlignHCenter
+                label: qsTrId("settings.game_mode_scale")
+                tooltip: qsTrId("settings.game_mode_scale.description")
+
+                QQC2.ComboBox {
+                    width: rootPage.mWidth
+                    model: [
+                        { text: qsTrId("settings.game_mode_scale.off"), value: "off" },
+                        { text: "100%", value: "1.0" },
+                        { text: "125%", value: "1.25" },
+                        { text: "150%", value: "1.5" },
+                        { text: "175%", value: "1.75" },
+                        { text: "200%", value: "2.0" }
+                    ]
+                    textRole: "text"
+                    valueRole: "value"
+                    currentIndex: rootPage.gameModeScaleIndex(
+                                      uiSettings?.value("game_mode/scale", "1.5") ?? "1.5")
+                    onActivated: {
+                        if (uiSettings)
+                            uiSettings.setValue("game_mode/scale", currentValue);
                     }
                 }
             }

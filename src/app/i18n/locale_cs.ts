@@ -456,6 +456,21 @@ V nastavení sluchátek vypněte „Detekci konverzace“, aby se při použív�
             <source />
             <translation>Výchozí nastavení systému</translation>
         </message>
+        <message id="settings.game_mode_scale">
+            <location filename="../qml/pages/SettingsPage.qml" line="137" />
+            <source />
+            <translation>Měřítko v herním režimu:</translation>
+        </message>
+        <message id="settings.game_mode_scale.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="138" />
+            <source />
+            <translation>Použije se pouze při spuštění v herním režimu služby Steam. Změny se projeví po restartování aplikace.</translation>
+        </message>
+        <message id="settings.game_mode_scale.off">
+            <location filename="../qml/pages/SettingsPage.qml" line="143" />
+            <source />
+            <translation>Nepoužívat</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

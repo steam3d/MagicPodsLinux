@@ -456,6 +456,21 @@
             <source />
             <translation>පද්ධති පෙරනිමිය</translation>
         </message>
+        <message id="settings.game_mode_scale">
+            <location filename="../qml/pages/SettingsPage.qml" line="137" />
+            <source />
+            <translation>ක්‍රීඩා ප්‍රකාරයේ පරිමාණය:</translation>
+        </message>
+        <message id="settings.game_mode_scale.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="138" />
+            <source />
+            <translation>Steam ක්‍රීඩා ප්‍රකාරයේ දියත් කරන විට පමණක් යෙදේ. යෙදුම නැවත ආරම්භ කිරීමෙන් පසු වෙනස්කම් ක්‍රියාත්මක වේ.</translation>
+        </message>
+        <message id="settings.game_mode_scale.off">
+            <location filename="../qml/pages/SettingsPage.qml" line="143" />
+            <source />
+            <translation>යොදන්න එපා</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

@@ -456,6 +456,21 @@ Wyłącz opcję „Wykrywanie rozmów” w ustawieniach słuchawek, aby zapobiec
             <source />
             <translation>Domyślne ustawienie systemu</translation>
         </message>
+        <message id="settings.game_mode_scale">
+            <location filename="../qml/pages/SettingsPage.qml" line="137" />
+            <source />
+            <translation>Skalowanie w trybie gry:</translation>
+        </message>
+        <message id="settings.game_mode_scale.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="138" />
+            <source />
+            <translation>Stosowane tylko podczas uruchamiania w trybie gry Steam. Zmiany zostaną zastosowane po ponownym uruchomieniu aplikacji.</translation>
+        </message>
+        <message id="settings.game_mode_scale.off">
+            <location filename="../qml/pages/SettingsPage.qml" line="143" />
+            <source />
+            <translation>Nie stosuj</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

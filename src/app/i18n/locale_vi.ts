@@ -456,6 +456,21 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
             <source />
             <translation>Mặc định hệ thống</translation>
         </message>
+        <message id="settings.game_mode_scale">
+            <location filename="../qml/pages/SettingsPage.qml" line="137" />
+            <source />
+            <translation>Tỷ lệ trong Chế độ chơi game:</translation>
+        </message>
+        <message id="settings.game_mode_scale.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="138" />
+            <source />
+            <translation>Chỉ áp dụng khi khởi chạy trong Chế độ chơi game của Steam. Các thay đổi sẽ có hiệu lực sau khi khởi động lại ứng dụng.</translation>
+        </message>
+        <message id="settings.game_mode_scale.off">
+            <location filename="../qml/pages/SettingsPage.qml" line="143" />
+            <source />
+            <translation>Không áp dụng</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />

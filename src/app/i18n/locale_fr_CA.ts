@@ -456,6 +456,21 @@ Désactivez la « Détection de conversation » dans les réglages de vos écout
             <source />
             <translation>Valeur par défaut du système</translation>
         </message>
+        <message id="settings.game_mode_scale">
+            <location filename="../qml/pages/SettingsPage.qml" line="137" />
+            <source />
+            <translation>Mise à l’échelle en mode Jeu :</translation>
+        </message>
+        <message id="settings.game_mode_scale.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="138" />
+            <source />
+            <translation>S’applique uniquement lors du lancement en mode Jeu de Steam. Les modifications prennent effet après le redémarrage de l’application.</translation>
+        </message>
+        <message id="settings.game_mode_scale.off">
+            <location filename="../qml/pages/SettingsPage.qml" line="143" />
+            <source />
+            <translation>Ne pas appliquer</translation>
+        </message>
         <message id="settings.add_shortcut_to_menu">
             <location filename="../qml/pages/SettingsPage.qml" line="173" />
             <source />
