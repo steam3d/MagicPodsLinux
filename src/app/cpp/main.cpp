@@ -30,7 +30,7 @@
 #include "Backend.h"
 
 namespace {
-const QString GameModeScaleSettingKey = QStringLiteral("game_mode/scale");
+const QString GameModeScaleSettingKey = QStringLiteral("GameMode/scale");
 const QString DefaultGameModeScale = QStringLiteral("1.5");
 
 void applyGameModeScale()
@@ -186,7 +186,7 @@ int main(int argc, char *argv[]) {
     DeckyManager deckyManager;
     Backend backend;
     TrayIcon trayIcon;
-    const QString trayIconThemeKey = QStringLiteral("theme/tray_icon");
+    const QString trayIconThemeKey = QStringLiteral("Theme/tray_icon");
     const QString trayIconTheme = uiSettings
                                       .value(trayIconThemeKey, QStringLiteral("auto"))
                                       .toString();

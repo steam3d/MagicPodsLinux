@@ -150,10 +150,10 @@ QQC2.Page {
                     textRole: "text"
                     valueRole: "value"
                     currentIndex: rootPage.gameModeScaleIndex(
-                                      uiSettings?.value("game_mode/scale", "1.5") ?? "1.5")
+                                      uiSettings?.value("GameMode/scale", "1.5") ?? "1.5")
                     onActivated: {
                         if (uiSettings)
-                            uiSettings.setValue("game_mode/scale", currentValue);
+                            uiSettings.setValue("GameMode/scale", currentValue);
                     }
                 }
             }
@@ -214,7 +214,7 @@ QQC2.Page {
                         if (cppTrayIcon)
                             cppTrayIcon.themeMode = currentIndex;
                         if (uiSettings)
-                            uiSettings.setValue("theme/tray_icon", rootPage.themeTrayIndexToString(currentIndex));
+                            uiSettings.setValue("Theme/tray_icon", rootPage.themeTrayIndexToString(currentIndex));
                     }
                 }
             }
