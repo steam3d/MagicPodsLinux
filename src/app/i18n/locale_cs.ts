@@ -456,6 +456,29 @@ V nastavení sluchátek vypněte „Detekci konverzace“, aby se při použív�
             <source />
             <translation>Výchozí nastavení systému</translation>
         </message>
+        <message id="settings.application_theme">
+            <location filename="../qml/pages/SettingsPage.qml" line="214" />
+            <source />
+            <translation>Motiv aplikace:</translation>
+        </message>
+        <message id="settings.theme.system">
+            <location filename="../qml/pages/SettingsPage.qml" line="223" />
+            <location filename="../qml/pages/SettingsPage.qml" line="247" />
+            <source />
+            <translation>Výchozí nastavení systému</translation>
+        </message>
+        <message id="settings.theme.light">
+            <location filename="../qml/pages/SettingsPage.qml" line="224" />
+            <location filename="../qml/pages/SettingsPage.qml" line="248" />
+            <source />
+            <translation>Světlý</translation>
+        </message>
+        <message id="settings.theme.dark">
+            <location filename="../qml/pages/SettingsPage.qml" line="225" />
+            <location filename="../qml/pages/SettingsPage.qml" line="249" />
+            <source />
+            <translation>Tmavý</translation>
+        </message>
         <message id="settings.game_mode_scale">
             <location filename="../qml/pages/SettingsPage.qml" line="137" />
             <source />
@@ -485,21 +508,6 @@ V nastavení sluchátek vypněte „Detekci konverzace“, aby se při použív�
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />
             <translation>Motiv ikony v oznamovací oblasti:</translation>
-        </message>
-        <message id="settings.tray_icon_theme.auto">
-            <location filename="../qml/pages/SettingsPage.qml" line="103" />
-            <source />
-            <translation>Automaticky</translation>
-        </message>
-        <message id="settings.tray_icon_theme.light">
-            <location filename="../qml/pages/SettingsPage.qml" line="104" />
-            <source />
-            <translation>Světlý</translation>
-        </message>
-        <message id="settings.tray_icon_theme.dark">
-            <location filename="../qml/pages/SettingsPage.qml" line="105" />
-            <source />
-            <translation>Tmavý</translation>
         </message>
         <message id="settings.popup">
             <location filename="../qml/pages/SettingsPage.qml" line="75" />

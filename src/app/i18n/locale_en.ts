@@ -456,6 +456,29 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <source></source>
         <translation>System default</translation>
     </message>
+    <message id="settings.application_theme">
+        <location filename="../qml/pages/SettingsPage.qml" line="214" />
+        <source />
+        <translation>Application theme:</translation>
+    </message>
+    <message id="settings.theme.system">
+        <location filename="../qml/pages/SettingsPage.qml" line="223" />
+        <location filename="../qml/pages/SettingsPage.qml" line="247" />
+        <source />
+        <translation>System default</translation>
+    </message>
+    <message id="settings.theme.light">
+        <location filename="../qml/pages/SettingsPage.qml" line="224" />
+        <location filename="../qml/pages/SettingsPage.qml" line="248" />
+        <source />
+        <translation>Light</translation>
+    </message>
+    <message id="settings.theme.dark">
+        <location filename="../qml/pages/SettingsPage.qml" line="225" />
+        <location filename="../qml/pages/SettingsPage.qml" line="249" />
+        <source />
+        <translation>Dark</translation>
+    </message>
     <message id="settings.game_mode_scale">
         <location filename="../qml/pages/SettingsPage.qml" line="137"/>
         <source></source>
@@ -485,21 +508,6 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <location filename="../qml/pages/SettingsPage.qml" line="97"/>
         <source></source>
         <translation>Tray icon theme:</translation>
-    </message>
-    <message id="settings.tray_icon_theme.auto">
-        <location filename="../qml/pages/SettingsPage.qml" line="103"/>
-        <source></source>
-        <translation>Auto</translation>
-    </message>
-    <message id="settings.tray_icon_theme.light">
-        <location filename="../qml/pages/SettingsPage.qml" line="104"/>
-        <source></source>
-        <translation>Light</translation>
-    </message>
-    <message id="settings.tray_icon_theme.dark">
-        <location filename="../qml/pages/SettingsPage.qml" line="105"/>
-        <source></source>
-        <translation>Dark</translation>
     </message>
     <message id="settings.popup">
         <location filename="../qml/pages/SettingsPage.qml" line="75"/>

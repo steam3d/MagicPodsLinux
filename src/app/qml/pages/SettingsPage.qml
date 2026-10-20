@@ -25,6 +25,18 @@ QQC2.Page {
         return "auto";
     }
 
+    function applicationThemeIndex(theme) {
+        if (theme === "light") return 1;
+        if (theme === "dark") return 2;
+        return 0;
+    }
+
+    function applicationThemeIndexToString(index) {
+        if (index === 1) return "light";
+        if (index === 2) return "dark";
+        return "system";
+    }
+
     function languageIndex(language) {
         const languages = languageManager?.availableLanguages ?? [];
         for (let index = 0; index < languages.length; ++index) {
@@ -199,15 +211,42 @@ QQC2.Page {
                 Layout.fillWidth: true
                 Layout.maximumWidth: mWidth * 1.5
                 Layout.alignment: Qt.AlignHCenter
+                label: qsTrId("settings.application_theme")
+
+                QQC2.ComboBox {
+                    width: rootPage.mWidth
+                    // TODO: Enable this in GameScope by applying an explicit light/dark palette
+                    // to ApplicationWindow and clearing it for System. GameScope's Wayland
+                    // platform ignores QStyleHints color-scheme overrides and reports Unknown.
+                    enabled: !gameScopeMode
+                    model: [
+                        qsTrId("settings.theme.system"),
+                        qsTrId("settings.theme.light"),
+                        qsTrId("settings.theme.dark")
+                    ]
+                    currentIndex: rootPage.applicationThemeIndex(
+                                      uiSettings?.value("Theme/application", "system") ?? "system")
+                    onActivated: {
+                        if (uiSettings)
+                            uiSettings.setValue("Theme/application",
+                                                rootPage.applicationThemeIndexToString(currentIndex));
+                    }
+                }
+            }
+
+            MP.FormRow {
+                Layout.fillWidth: true
+                Layout.maximumWidth: mWidth * 1.5
+                Layout.alignment: Qt.AlignHCenter
                 label: qsTrId("settings.tray_icon_theme")
 
                 QQC2.ComboBox {
                     width: rootPage.mWidth
                     enabled: !!cppTrayIcon
                     model: [
-                        qsTrId("settings.tray_icon_theme.auto"),
-                        qsTrId("settings.tray_icon_theme.light"),
-                        qsTrId("settings.tray_icon_theme.dark")
+                        qsTrId("settings.theme.system"),
+                        qsTrId("settings.theme.light"),
+                        qsTrId("settings.theme.dark")
                     ]
                     currentIndex: cppTrayIcon ? cppTrayIcon.themeMode : 0
                     onActivated: {

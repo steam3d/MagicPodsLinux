@@ -456,6 +456,29 @@ Desative a “Detecção de conversa” nas configurações dos fones de ouvido 
             <source />
             <translation>Padrão do sistema</translation>
         </message>
+        <message id="settings.application_theme">
+            <location filename="../qml/pages/SettingsPage.qml" line="214" />
+            <source />
+            <translation>Tema do aplicativo:</translation>
+        </message>
+        <message id="settings.theme.system">
+            <location filename="../qml/pages/SettingsPage.qml" line="223" />
+            <location filename="../qml/pages/SettingsPage.qml" line="247" />
+            <source />
+            <translation>Padrão do sistema</translation>
+        </message>
+        <message id="settings.theme.light">
+            <location filename="../qml/pages/SettingsPage.qml" line="224" />
+            <location filename="../qml/pages/SettingsPage.qml" line="248" />
+            <source />
+            <translation>Claro</translation>
+        </message>
+        <message id="settings.theme.dark">
+            <location filename="../qml/pages/SettingsPage.qml" line="225" />
+            <location filename="../qml/pages/SettingsPage.qml" line="249" />
+            <source />
+            <translation>Escuro</translation>
+        </message>
         <message id="settings.game_mode_scale">
             <location filename="../qml/pages/SettingsPage.qml" line="137" />
             <source />
@@ -485,21 +508,6 @@ Desative a “Detecção de conversa” nas configurações dos fones de ouvido 
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />
             <translation>Tema do ícone da bandeja:</translation>
-        </message>
-        <message id="settings.tray_icon_theme.auto">
-            <location filename="../qml/pages/SettingsPage.qml" line="103" />
-            <source />
-            <translation>Automático</translation>
-        </message>
-        <message id="settings.tray_icon_theme.light">
-            <location filename="../qml/pages/SettingsPage.qml" line="104" />
-            <source />
-            <translation>Claro</translation>
-        </message>
-        <message id="settings.tray_icon_theme.dark">
-            <location filename="../qml/pages/SettingsPage.qml" line="105" />
-            <source />
-            <translation>Escuro</translation>
         </message>
         <message id="settings.popup">
             <location filename="../qml/pages/SettingsPage.qml" line="75" />

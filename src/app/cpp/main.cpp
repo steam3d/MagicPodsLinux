@@ -17,6 +17,7 @@
 #include <QQuickStyle>
 #include <QScopedPointer>
 #include <QSettings>
+#include <QStyleHints>
 #include <QStringList>
 #include <QWindow>
 
@@ -32,6 +33,18 @@
 namespace {
 const QString GameModeScaleSettingKey = QStringLiteral("GameMode/scale");
 const QString DefaultGameModeScale = QStringLiteral("1.5");
+const QString ApplicationThemeSettingKey = QStringLiteral("Theme/application");
+
+void applyApplicationTheme(const QString &theme)
+{
+    Qt::ColorScheme colorScheme = Qt::ColorScheme::Unknown;
+    if (theme == QStringLiteral("light"))
+        colorScheme = Qt::ColorScheme::Light;
+    else if (theme == QStringLiteral("dark"))
+        colorScheme = Qt::ColorScheme::Dark;
+
+    QGuiApplication::styleHints()->setColorScheme(colorScheme);
+}
 
 void applyGameModeScale()
 {
@@ -174,6 +187,19 @@ int main(int argc, char *argv[]) {
     app.setWindowIcon(appIcon);
 
     UiSettingsService uiSettings;
+    const QString applicationTheme = uiSettings
+                                         .value(ApplicationThemeSettingKey,
+                                                QStringLiteral("system"))
+                                         .toString();
+    applyApplicationTheme(applicationTheme);
+    QObject::connect(&uiSettings,
+                     &UiSettingsService::valueChanged,
+                     &app,
+                     [](const QString &key, const QVariant &value) {
+                         if (key == ApplicationThemeSettingKey)
+                             applyApplicationTheme(value.toString());
+                     });
+
     LanguageManager languageManager(&uiSettings);
     languageManager.installTranslators();
 
