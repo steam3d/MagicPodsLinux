@@ -111,7 +111,7 @@
         <message id="battery.high_resolution_microphone">
             <location filename="../qml/pages/BatteryPage.qml" line="360" />
             <source />
-            <translation>HD-mikrofoni</translation>
+            <translation>HD-mikrofoni:</translation>
         </message>
         <message id="battery.high_resolution_microphone.description">
             <location filename="../qml/pages/BatteryPage.qml" line="361" />
@@ -127,7 +127,7 @@ Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta �
         <message id="battery.ear_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="420" />
             <source />
-            <translation>Korvantunnistus</translation>
+            <translation>Korvantunnistus:</translation>
         </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
@@ -142,7 +142,7 @@ Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta �
         <message id="battery.digital_crown">
             <location filename="../qml/pages/BatteryPage.qml" line="473" />
             <source />
-            <translation>Digital Crown</translation>
+            <translation>Digital Crown:</translation>
         </message>
         <message id="battery.digital_crown.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="477" />
@@ -162,12 +162,12 @@ Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta �
         <message id="battery.press_and_hold_mode.left">
             <location filename="../qml/pages/BatteryPage.qml" line="529" />
             <source />
-            <translation>Vasemman pitkä painallus</translation>
+            <translation>Vasemman pitkä painallus:</translation>
         </message>
         <message id="battery.press_and_hold_mode.right">
             <location filename="../qml/pages/BatteryPage.qml" line="554" />
             <source />
-            <translation>Oikean pitkä painallus</translation>
+            <translation>Oikean pitkä painallus:</translation>
         </message>
         <message id="battery.press_and_hold_mode.voice_assistant">
             <location filename="../qml/pages/BatteryPage.qml" line="72" />
@@ -192,7 +192,7 @@ Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta �
         <message id="battery.press_and_hold_anc">
             <location filename="../qml/pages/BatteryPage.qml" line="638" />
             <source />
-            <translation>Melunhallinta kuulokkeista</translation>
+            <translation>Melunhallinta kuulokkeista:</translation>
         </message>
         <message id="battery.press_and_hold_anc.hint">
             <location filename="../qml/pages/BatteryPage.qml" line="639" />
@@ -232,7 +232,7 @@ Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta �
         <message id="battery.anc_off_mode">
             <location filename="../qml/pages/BatteryPage.qml" line="628" />
             <source />
-            <translation>Kuuntelutila pois</translation>
+            <translation>Kuuntelutila pois:</translation>
         </message>
         <message id="battery.anc_off_mode.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="632" />
@@ -252,22 +252,22 @@ Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta �
         <message id="battery.custom_eq">
             <location filename="../qml/pages/BatteryPage.qml" line="683" />
             <source />
-            <translation>Taajuuskorjain</translation>
+            <translation>Taajuuskorjain:</translation>
         </message>
         <message id="battery.custom_eq.low">
             <location filename="../qml/pages/BatteryPage.qml" line="700" />
             <source />
-            <translation>Taajuuskorjain: Matalat</translation>
+            <translation>Taajuuskorjain: Matalat:</translation>
         </message>
         <message id="battery.custom_eq.mid">
             <location filename="../qml/pages/BatteryPage.qml" line="701" />
             <source />
-            <translation>Taajuuskorjain: Keskialue</translation>
+            <translation>Taajuuskorjain: Keskialue:</translation>
         </message>
         <message id="battery.custom_eq.high">
             <location filename="../qml/pages/BatteryPage.qml" line="702" />
             <source />
-            <translation>Taajuuskorjain: Korkeat</translation>
+            <translation>Taajuuskorjain: Korkeat:</translation>
         </message>
         <message id="battery.press_and_hold_duration">
             <location filename="../qml/pages/BatteryPage.qml" line="480" />
@@ -317,12 +317,12 @@ Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta �
         <message id="battery.sleep_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="818" />
             <source />
-            <translation>Tauko nukahtaessa</translation>
+            <translation>Tauko nukahtaessa:</translation>
         </message>
         <message id="battery.optimized_charge">
             <location filename="../qml/pages/BatteryPage.qml" line="835" />
             <source />
-            <translation>Optimoitu latausraja</translation>
+            <translation>Optimoitu latausraja:</translation>
         </message>
         <message id="battery.volume_swipe">
             <location filename="../qml/pages/BatteryPage.qml" line="543" />

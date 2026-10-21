@@ -111,7 +111,7 @@
         <message id="battery.high_resolution_microphone">
             <location filename="../qml/pages/BatteryPage.qml" line="360" />
             <source />
-            <translation>Micrófono HD</translation>
+            <translation>Micrófono HD:</translation>
         </message>
         <message id="battery.high_resolution_microphone.description">
             <location filename="../qml/pages/BatteryPage.qml" line="361" />
@@ -127,7 +127,7 @@ Desactiva «Detección de conversación» en los ajustes de los auriculares para
         <message id="battery.ear_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="420" />
             <source />
-            <translation>Detección automática de oreja</translation>
+            <translation>Detección automática de oreja:</translation>
         </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
@@ -142,7 +142,7 @@ Desactiva «Detección de conversación» en los ajustes de los auriculares para
         <message id="battery.digital_crown">
             <location filename="../qml/pages/BatteryPage.qml" line="473" />
             <source />
-            <translation>Digital Crown</translation>
+            <translation>Digital Crown:</translation>
         </message>
         <message id="battery.digital_crown.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="477" />
@@ -162,12 +162,12 @@ Desactiva «Detección de conversación» en los ajustes de los auriculares para
         <message id="battery.press_and_hold_mode.left">
             <location filename="../qml/pages/BatteryPage.qml" line="529" />
             <source />
-            <translation>Mantener pulsado el izquierdo</translation>
+            <translation>Mantener pulsado el izquierdo:</translation>
         </message>
         <message id="battery.press_and_hold_mode.right">
             <location filename="../qml/pages/BatteryPage.qml" line="554" />
             <source />
-            <translation>Mantener pulsado el derecho</translation>
+            <translation>Mantener pulsado el derecho:</translation>
         </message>
         <message id="battery.press_and_hold_mode.voice_assistant">
             <location filename="../qml/pages/BatteryPage.qml" line="72" />
@@ -192,7 +192,7 @@ Desactiva «Detección de conversación» en los ajustes de los auriculares para
         <message id="battery.press_and_hold_anc">
             <location filename="../qml/pages/BatteryPage.qml" line="638" />
             <source />
-            <translation>Control de ruido desde los auriculares</translation>
+            <translation>Control de ruido desde los auriculares:</translation>
         </message>
         <message id="battery.press_and_hold_anc.hint">
             <location filename="../qml/pages/BatteryPage.qml" line="639" />
@@ -232,7 +232,7 @@ Desactiva «Detección de conversación» en los ajustes de los auriculares para
         <message id="battery.anc_off_mode">
             <location filename="../qml/pages/BatteryPage.qml" line="628" />
             <source />
-            <translation>Mostrar modo Desactivado</translation>
+            <translation>Mostrar modo Desactivado:</translation>
         </message>
         <message id="battery.anc_off_mode.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="632" />
@@ -252,22 +252,22 @@ Desactiva «Detección de conversación» en los ajustes de los auriculares para
         <message id="battery.custom_eq">
             <location filename="../qml/pages/BatteryPage.qml" line="683" />
             <source />
-            <translation>Ecualizador</translation>
+            <translation>Ecualizador:</translation>
         </message>
         <message id="battery.custom_eq.low">
             <location filename="../qml/pages/BatteryPage.qml" line="700" />
             <source />
-            <translation>Ecualizador: Graves</translation>
+            <translation>Ecualizador: Graves:</translation>
         </message>
         <message id="battery.custom_eq.mid">
             <location filename="../qml/pages/BatteryPage.qml" line="701" />
             <source />
-            <translation>Ecualizador: Medios</translation>
+            <translation>Ecualizador: Medios:</translation>
         </message>
         <message id="battery.custom_eq.high">
             <location filename="../qml/pages/BatteryPage.qml" line="702" />
             <source />
-            <translation>Ecualizador: Agudos</translation>
+            <translation>Ecualizador: Agudos:</translation>
         </message>
         <message id="battery.press_and_hold_duration">
             <location filename="../qml/pages/BatteryPage.qml" line="480" />
@@ -317,12 +317,12 @@ Desactiva «Detección de conversación» en los ajustes de los auriculares para
         <message id="battery.sleep_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="818" />
             <source />
-            <translation>Pausa al dormirse</translation>
+            <translation>Pausa al dormirse:</translation>
         </message>
         <message id="battery.optimized_charge">
             <location filename="../qml/pages/BatteryPage.qml" line="835" />
             <source />
-            <translation>Límite de carga optimizado</translation>
+            <translation>Límite de carga optimizado:</translation>
         </message>
         <message id="battery.volume_swipe">
             <location filename="../qml/pages/BatteryPage.qml" line="543" />

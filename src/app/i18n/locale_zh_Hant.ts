@@ -111,7 +111,7 @@
         <message id="battery.high_resolution_microphone">
             <location filename="../qml/pages/BatteryPage.qml" line="360" />
             <source />
-            <translation>高解析度麥克風</translation>
+            <translation>高解析度麥克風:</translation>
         </message>
         <message id="battery.high_resolution_microphone.description">
             <location filename="../qml/pages/BatteryPage.qml" line="361" />
@@ -127,7 +127,7 @@
         <message id="battery.ear_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="420" />
             <source />
-            <translation>自動入耳偵測</translation>
+            <translation>自動入耳偵測:</translation>
         </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
@@ -142,7 +142,7 @@
         <message id="battery.digital_crown">
             <location filename="../qml/pages/BatteryPage.qml" line="473" />
             <source />
-            <translation>數碼旋鈕</translation>
+            <translation>數碼旋鈕:</translation>
         </message>
         <message id="battery.digital_crown.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="477" />
@@ -162,12 +162,12 @@
         <message id="battery.press_and_hold_mode.left">
             <location filename="../qml/pages/BatteryPage.qml" line="529" />
             <source />
-            <translation>按住左側</translation>
+            <translation>按住左側:</translation>
         </message>
         <message id="battery.press_and_hold_mode.right">
             <location filename="../qml/pages/BatteryPage.qml" line="554" />
             <source />
-            <translation>按住右側</translation>
+            <translation>按住右側:</translation>
         </message>
         <message id="battery.press_and_hold_mode.voice_assistant">
             <location filename="../qml/pages/BatteryPage.qml" line="72" />
@@ -192,7 +192,7 @@
         <message id="battery.press_and_hold_anc">
             <location filename="../qml/pages/BatteryPage.qml" line="638" />
             <source />
-            <translation>透過耳機控制噪音</translation>
+            <translation>透過耳機控制噪音:</translation>
         </message>
         <message id="battery.press_and_hold_anc.hint">
             <location filename="../qml/pages/BatteryPage.qml" line="639" />
@@ -232,7 +232,7 @@
         <message id="battery.anc_off_mode">
             <location filename="../qml/pages/BatteryPage.qml" line="628" />
             <source />
-            <translation>關閉聆聽模式</translation>
+            <translation>關閉聆聽模式:</translation>
         </message>
         <message id="battery.anc_off_mode.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="632" />
@@ -252,22 +252,22 @@
         <message id="battery.custom_eq">
             <location filename="../qml/pages/BatteryPage.qml" line="683" />
             <source />
-            <translation>等化器</translation>
+            <translation>等化器:</translation>
         </message>
         <message id="battery.custom_eq.low">
             <location filename="../qml/pages/BatteryPage.qml" line="700" />
             <source />
-            <translation>等化器：低音</translation>
+            <translation>等化器：低音:</translation>
         </message>
         <message id="battery.custom_eq.mid">
             <location filename="../qml/pages/BatteryPage.qml" line="701" />
             <source />
-            <translation>等化器：中音</translation>
+            <translation>等化器：中音:</translation>
         </message>
         <message id="battery.custom_eq.high">
             <location filename="../qml/pages/BatteryPage.qml" line="702" />
             <source />
-            <translation>等化器：高音</translation>
+            <translation>等化器：高音:</translation>
         </message>
         <message id="battery.press_and_hold_duration">
             <location filename="../qml/pages/BatteryPage.qml" line="480" />
@@ -317,12 +317,12 @@
         <message id="battery.sleep_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="818" />
             <source />
-            <translation>入睡時暫停</translation>
+            <translation>入睡時暫停:</translation>
         </message>
         <message id="battery.optimized_charge">
             <location filename="../qml/pages/BatteryPage.qml" line="835" />
             <source />
-            <translation>最佳化充電上限</translation>
+            <translation>最佳化充電上限:</translation>
         </message>
         <message id="battery.volume_swipe">
             <location filename="../qml/pages/BatteryPage.qml" line="543" />

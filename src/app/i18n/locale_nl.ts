@@ -111,7 +111,7 @@
         <message id="battery.high_resolution_microphone">
             <location filename="../qml/pages/BatteryPage.qml" line="360" />
             <source />
-            <translation>HD-microfoon</translation>
+            <translation>HD-microfoon:</translation>
         </message>
         <message id="battery.high_resolution_microphone.description">
             <location filename="../qml/pages/BatteryPage.qml" line="361" />
@@ -127,7 +127,7 @@ Schakel ‘Gespreksdetectie’ uit in de hoofdtelefooninstellingen om te voorkom
         <message id="battery.ear_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="420" />
             <source />
-            <translation>Oordetectie</translation>
+            <translation>Oordetectie:</translation>
         </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
@@ -142,7 +142,7 @@ Schakel ‘Gespreksdetectie’ uit in de hoofdtelefooninstellingen om te voorkom
         <message id="battery.digital_crown">
             <location filename="../qml/pages/BatteryPage.qml" line="473" />
             <source />
-            <translation>Digital Crown</translation>
+            <translation>Digital Crown:</translation>
         </message>
         <message id="battery.digital_crown.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="477" />
@@ -162,12 +162,12 @@ Schakel ‘Gespreksdetectie’ uit in de hoofdtelefooninstellingen om te voorkom
         <message id="battery.press_and_hold_mode.left">
             <location filename="../qml/pages/BatteryPage.qml" line="529" />
             <source />
-            <translation>Links ingedrukt houden</translation>
+            <translation>Links ingedrukt houden:</translation>
         </message>
         <message id="battery.press_and_hold_mode.right">
             <location filename="../qml/pages/BatteryPage.qml" line="554" />
             <source />
-            <translation>Rechts ingedrukt houden</translation>
+            <translation>Rechts ingedrukt houden:</translation>
         </message>
         <message id="battery.press_and_hold_mode.voice_assistant">
             <location filename="../qml/pages/BatteryPage.qml" line="72" />
@@ -192,7 +192,7 @@ Schakel ‘Gespreksdetectie’ uit in de hoofdtelefooninstellingen om te voorkom
         <message id="battery.press_and_hold_anc">
             <location filename="../qml/pages/BatteryPage.qml" line="638" />
             <source />
-            <translation>Ruisbeheersing via de koptelefoon</translation>
+            <translation>Ruisbeheersing via de koptelefoon:</translation>
         </message>
         <message id="battery.press_and_hold_anc.hint">
             <location filename="../qml/pages/BatteryPage.qml" line="639" />
@@ -232,7 +232,7 @@ Schakel ‘Gespreksdetectie’ uit in de hoofdtelefooninstellingen om te voorkom
         <message id="battery.anc_off_mode">
             <location filename="../qml/pages/BatteryPage.qml" line="628" />
             <source />
-            <translation>Luistermodus 'Uit'</translation>
+            <translation>Luistermodus 'Uit':</translation>
         </message>
         <message id="battery.anc_off_mode.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="632" />
@@ -252,22 +252,22 @@ Schakel ‘Gespreksdetectie’ uit in de hoofdtelefooninstellingen om te voorkom
         <message id="battery.custom_eq">
             <location filename="../qml/pages/BatteryPage.qml" line="683" />
             <source />
-            <translation>Equalizer</translation>
+            <translation>Equalizer:</translation>
         </message>
         <message id="battery.custom_eq.low">
             <location filename="../qml/pages/BatteryPage.qml" line="700" />
             <source />
-            <translation>Equalizer: Laag</translation>
+            <translation>Equalizer: Laag:</translation>
         </message>
         <message id="battery.custom_eq.mid">
             <location filename="../qml/pages/BatteryPage.qml" line="701" />
             <source />
-            <translation>Equalizer: Midden</translation>
+            <translation>Equalizer: Midden:</translation>
         </message>
         <message id="battery.custom_eq.high">
             <location filename="../qml/pages/BatteryPage.qml" line="702" />
             <source />
-            <translation>Equalizer: Hoog</translation>
+            <translation>Equalizer: Hoog:</translation>
         </message>
         <message id="battery.press_and_hold_duration">
             <location filename="../qml/pages/BatteryPage.qml" line="480" />
@@ -317,12 +317,12 @@ Schakel ‘Gespreksdetectie’ uit in de hoofdtelefooninstellingen om te voorkom
         <message id="battery.sleep_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="818" />
             <source />
-            <translation>Pauzeren bij inslapen</translation>
+            <translation>Pauzeren bij inslapen:</translation>
         </message>
         <message id="battery.optimized_charge">
             <location filename="../qml/pages/BatteryPage.qml" line="835" />
             <source />
-            <translation>Geoptimaliseerde oplaadlimiet</translation>
+            <translation>Geoptimaliseerde oplaadlimiet:</translation>
         </message>
         <message id="battery.volume_swipe">
             <location filename="../qml/pages/BatteryPage.qml" line="543" />

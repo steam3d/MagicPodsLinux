@@ -111,7 +111,7 @@
         <message id="battery.high_resolution_microphone">
             <location filename="../qml/pages/BatteryPage.qml" line="360" />
             <source />
-            <translation>HD 마이크</translation>
+            <translation>HD 마이크:</translation>
         </message>
         <message id="battery.high_resolution_microphone.description">
             <location filename="../qml/pages/BatteryPage.qml" line="361" />
@@ -127,7 +127,7 @@
         <message id="battery.ear_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="420" />
             <source />
-            <translation>자동 귀 감지</translation>
+            <translation>자동 귀 감지:</translation>
         </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
@@ -142,7 +142,7 @@
         <message id="battery.digital_crown">
             <location filename="../qml/pages/BatteryPage.qml" line="473" />
             <source />
-            <translation>Digital Crown</translation>
+            <translation>Digital Crown:</translation>
         </message>
         <message id="battery.digital_crown.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="477" />
@@ -162,12 +162,12 @@
         <message id="battery.press_and_hold_mode.left">
             <location filename="../qml/pages/BatteryPage.qml" line="529" />
             <source />
-            <translation>왼쪽 길게 누르기</translation>
+            <translation>왼쪽 길게 누르기:</translation>
         </message>
         <message id="battery.press_and_hold_mode.right">
             <location filename="../qml/pages/BatteryPage.qml" line="554" />
             <source />
-            <translation>오른쪽 길게 누르기</translation>
+            <translation>오른쪽 길게 누르기:</translation>
         </message>
         <message id="battery.press_and_hold_mode.voice_assistant">
             <location filename="../qml/pages/BatteryPage.qml" line="72" />
@@ -192,7 +192,7 @@
         <message id="battery.press_and_hold_anc">
             <location filename="../qml/pages/BatteryPage.qml" line="638" />
             <source />
-            <translation>헤드폰을 통한 소음 제어</translation>
+            <translation>헤드폰을 통한 소음 제어:</translation>
         </message>
         <message id="battery.press_and_hold_anc.hint">
             <location filename="../qml/pages/BatteryPage.qml" line="639" />
@@ -232,7 +232,7 @@
         <message id="battery.anc_off_mode">
             <location filename="../qml/pages/BatteryPage.qml" line="628" />
             <source />
-            <translation>끔 청취 모드</translation>
+            <translation>끔 청취 모드:</translation>
         </message>
         <message id="battery.anc_off_mode.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="632" />
@@ -252,22 +252,22 @@
         <message id="battery.custom_eq">
             <location filename="../qml/pages/BatteryPage.qml" line="683" />
             <source />
-            <translation>이퀄라이저</translation>
+            <translation>이퀄라이저:</translation>
         </message>
         <message id="battery.custom_eq.low">
             <location filename="../qml/pages/BatteryPage.qml" line="700" />
             <source />
-            <translation>이퀄라이저: 저음</translation>
+            <translation>이퀄라이저: 저음:</translation>
         </message>
         <message id="battery.custom_eq.mid">
             <location filename="../qml/pages/BatteryPage.qml" line="701" />
             <source />
-            <translation>이퀄라이저: 중음</translation>
+            <translation>이퀄라이저: 중음:</translation>
         </message>
         <message id="battery.custom_eq.high">
             <location filename="../qml/pages/BatteryPage.qml" line="702" />
             <source />
-            <translation>이퀄라이저: 고음</translation>
+            <translation>이퀄라이저: 고음:</translation>
         </message>
         <message id="battery.press_and_hold_duration">
             <location filename="../qml/pages/BatteryPage.qml" line="480" />
@@ -317,12 +317,12 @@
         <message id="battery.sleep_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="818" />
             <source />
-            <translation>잠들 때 일시 정지</translation>
+            <translation>잠들 때 일시 정지:</translation>
         </message>
         <message id="battery.optimized_charge">
             <location filename="../qml/pages/BatteryPage.qml" line="835" />
             <source />
-            <translation>최적화된 충전 한도</translation>
+            <translation>최적화된 충전 한도:</translation>
         </message>
         <message id="battery.volume_swipe">
             <location filename="../qml/pages/BatteryPage.qml" line="543" />

@@ -111,7 +111,7 @@
     <message id="battery.high_resolution_microphone">
         <location filename="../qml/pages/BatteryPage.qml" line="360"/>
         <source></source>
-        <translation>HD Microphone</translation>
+        <translation>HD Microphone:</translation>
     </message>
     <message id="battery.high_resolution_microphone.description">
         <location filename="../qml/pages/BatteryPage.qml" line="361"/>
@@ -127,7 +127,7 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
     <message id="battery.ear_detection">
         <location filename="../qml/pages/BatteryPage.qml" line="420"/>
         <source></source>
-        <translation>Ear detection</translation>
+        <translation>Ear detection:</translation>
     </message>
     <message id="battery.conversation_awareness">
         <location filename="../qml/pages/BatteryPage.qml" line="399"/>
@@ -142,7 +142,7 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
     <message id="battery.digital_crown">
         <location filename="../qml/pages/BatteryPage.qml" line="473"/>
         <source></source>
-        <translation>Digital Crown</translation>
+        <translation>Digital Crown:</translation>
     </message>
     <message id="battery.digital_crown.do_not_change">
         <location filename="../qml/pages/BatteryPage.qml" line="477"/>
@@ -162,12 +162,12 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
     <message id="battery.press_and_hold_mode.left">
         <location filename="../qml/pages/BatteryPage.qml" line="529"/>
         <source></source>
-        <translation>Left press and hold</translation>
+        <translation>Left press and hold:</translation>
     </message>
     <message id="battery.press_and_hold_mode.right">
         <location filename="../qml/pages/BatteryPage.qml" line="554"/>
         <source></source>
-        <translation>Right press and hold</translation>
+        <translation>Right press and hold:</translation>
     </message>
     <message id="battery.press_and_hold_mode.voice_assistant">
         <location filename="../qml/pages/BatteryPage.qml" line="72"/>
@@ -192,7 +192,7 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
     <message id="battery.press_and_hold_anc">
         <location filename="../qml/pages/BatteryPage.qml" line="638"/>
         <source></source>
-        <translation>Noise control from headphones</translation>
+        <translation>Noise control from headphones:</translation>
     </message>
     <message id="battery.press_and_hold_anc.hint">
         <location filename="../qml/pages/BatteryPage.qml" line="639"/>
@@ -232,7 +232,7 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
     <message id="battery.anc_off_mode">
         <location filename="../qml/pages/BatteryPage.qml" line="628"/>
         <source></source>
-        <translation>Off Listening Mode</translation>
+        <translation>Off Listening Mode:</translation>
     </message>
     <message id="battery.anc_off_mode.do_not_change">
         <location filename="../qml/pages/BatteryPage.qml" line="632"/>
@@ -252,22 +252,22 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
     <message id="battery.custom_eq">
         <location filename="../qml/pages/BatteryPage.qml" line="683"/>
         <source></source>
-        <translation>Equalizer</translation>
+        <translation>Equalizer:</translation>
     </message>
     <message id="battery.custom_eq.low">
         <location filename="../qml/pages/BatteryPage.qml" line="700"/>
         <source></source>
-        <translation>Equalizer: Low</translation>
+        <translation>Equalizer: Low:</translation>
     </message>
     <message id="battery.custom_eq.mid">
         <location filename="../qml/pages/BatteryPage.qml" line="701"/>
         <source></source>
-        <translation>Equalizer: Mid</translation>
+        <translation>Equalizer: Mid:</translation>
     </message>
     <message id="battery.custom_eq.high">
         <location filename="../qml/pages/BatteryPage.qml" line="702"/>
         <source></source>
-        <translation>Equalizer: High</translation>
+        <translation>Equalizer: High:</translation>
     </message>
     <message id="battery.press_and_hold_duration">
         <location filename="../qml/pages/BatteryPage.qml" line="480"/>
@@ -317,12 +317,12 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
     <message id="battery.sleep_detection">
         <location filename="../qml/pages/BatteryPage.qml" line="818"/>
         <source></source>
-        <translation>Pause when asleep</translation>
+        <translation>Pause when asleep:</translation>
     </message>
     <message id="battery.optimized_charge">
         <location filename="../qml/pages/BatteryPage.qml" line="835"/>
         <source></source>
-        <translation>Optimized charge limit</translation>
+        <translation>Optimized charge limit:</translation>
     </message>
     <message id="battery.volume_swipe">
         <location filename="../qml/pages/BatteryPage.qml" line="543"/>

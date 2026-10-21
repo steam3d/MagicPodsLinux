@@ -111,7 +111,7 @@
         <message id="battery.high_resolution_microphone">
             <location filename="../qml/pages/BatteryPage.qml" line="360" />
             <source />
-            <translation>Microfono HD</translation>
+            <translation>Microfono HD:</translation>
         </message>
         <message id="battery.high_resolution_microphone.description">
             <location filename="../qml/pages/BatteryPage.qml" line="361" />
@@ -127,7 +127,7 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
         <message id="battery.ear_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="420" />
             <source />
-            <translation>Rilevamento automatico dell’orecchio</translation>
+            <translation>Rilevamento automatico dell’orecchio:</translation>
         </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
@@ -142,7 +142,7 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
         <message id="battery.digital_crown">
             <location filename="../qml/pages/BatteryPage.qml" line="473" />
             <source />
-            <translation>Digital Crown</translation>
+            <translation>Digital Crown:</translation>
         </message>
         <message id="battery.digital_crown.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="477" />
@@ -162,12 +162,12 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
         <message id="battery.press_and_hold_mode.left">
             <location filename="../qml/pages/BatteryPage.qml" line="529" />
             <source />
-            <translation>Pressione prolungata sinistra</translation>
+            <translation>Pressione prolungata sinistra:</translation>
         </message>
         <message id="battery.press_and_hold_mode.right">
             <location filename="../qml/pages/BatteryPage.qml" line="554" />
             <source />
-            <translation>Pressione prolungata destra</translation>
+            <translation>Pressione prolungata destra:</translation>
         </message>
         <message id="battery.press_and_hold_mode.voice_assistant">
             <location filename="../qml/pages/BatteryPage.qml" line="72" />
@@ -192,7 +192,7 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
         <message id="battery.press_and_hold_anc">
             <location filename="../qml/pages/BatteryPage.qml" line="638" />
             <source />
-            <translation>Controllo del rumore dalle cuffie</translation>
+            <translation>Controllo del rumore dalle cuffie:</translation>
         </message>
         <message id="battery.press_and_hold_anc.hint">
             <location filename="../qml/pages/BatteryPage.qml" line="639" />
@@ -232,7 +232,7 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
         <message id="battery.anc_off_mode">
             <location filename="../qml/pages/BatteryPage.qml" line="628" />
             <source />
-            <translation>Modalità di ascolto disattivata</translation>
+            <translation>Modalità di ascolto disattivata:</translation>
         </message>
         <message id="battery.anc_off_mode.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="632" />
@@ -252,22 +252,22 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
         <message id="battery.custom_eq">
             <location filename="../qml/pages/BatteryPage.qml" line="683" />
             <source />
-            <translation>Equalizzatore</translation>
+            <translation>Equalizzatore:</translation>
         </message>
         <message id="battery.custom_eq.low">
             <location filename="../qml/pages/BatteryPage.qml" line="700" />
             <source />
-            <translation>Equalizzatore: Bassi</translation>
+            <translation>Equalizzatore: Bassi:</translation>
         </message>
         <message id="battery.custom_eq.mid">
             <location filename="../qml/pages/BatteryPage.qml" line="701" />
             <source />
-            <translation>Equalizzatore: Medi</translation>
+            <translation>Equalizzatore: Medi:</translation>
         </message>
         <message id="battery.custom_eq.high">
             <location filename="../qml/pages/BatteryPage.qml" line="702" />
             <source />
-            <translation>Equalizzatore: Alti</translation>
+            <translation>Equalizzatore: Alti:</translation>
         </message>
         <message id="battery.press_and_hold_duration">
             <location filename="../qml/pages/BatteryPage.qml" line="480" />
@@ -317,12 +317,12 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
         <message id="battery.sleep_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="818" />
             <source />
-            <translation>Pausa all’addormentamento</translation>
+            <translation>Pausa all’addormentamento:</translation>
         </message>
         <message id="battery.optimized_charge">
             <location filename="../qml/pages/BatteryPage.qml" line="835" />
             <source />
-            <translation>Limite di carica ottimizzato</translation>
+            <translation>Limite di carica ottimizzato:</translation>
         </message>
         <message id="battery.volume_swipe">
             <location filename="../qml/pages/BatteryPage.qml" line="543" />

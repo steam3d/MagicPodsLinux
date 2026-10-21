@@ -111,7 +111,7 @@
         <message id="battery.high_resolution_microphone">
             <location filename="../qml/pages/BatteryPage.qml" line="360" />
             <source />
-            <translation>Micrô HD</translation>
+            <translation>Micrô HD:</translation>
         </message>
         <message id="battery.high_resolution_microphone.description">
             <location filename="../qml/pages/BatteryPage.qml" line="361" />
@@ -127,7 +127,7 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
         <message id="battery.ear_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="420" />
             <source />
-            <translation>Phát hiện đeo tai</translation>
+            <translation>Phát hiện đeo tai:</translation>
         </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
@@ -142,7 +142,7 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
         <message id="battery.digital_crown">
             <location filename="../qml/pages/BatteryPage.qml" line="473" />
             <source />
-            <translation>Digital Crown</translation>
+            <translation>Digital Crown:</translation>
         </message>
         <message id="battery.digital_crown.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="477" />
@@ -162,12 +162,12 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
         <message id="battery.press_and_hold_mode.left">
             <location filename="../qml/pages/BatteryPage.qml" line="529" />
             <source />
-            <translation>Nhấn và giữ bên trái</translation>
+            <translation>Nhấn và giữ bên trái:</translation>
         </message>
         <message id="battery.press_and_hold_mode.right">
             <location filename="../qml/pages/BatteryPage.qml" line="554" />
             <source />
-            <translation>Nhấn và giữ bên phải</translation>
+            <translation>Nhấn và giữ bên phải:</translation>
         </message>
         <message id="battery.press_and_hold_mode.voice_assistant">
             <location filename="../qml/pages/BatteryPage.qml" line="72" />
@@ -192,7 +192,7 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
         <message id="battery.press_and_hold_anc">
             <location filename="../qml/pages/BatteryPage.qml" line="638" />
             <source />
-            <translation>Điều khiển tiếng ồn từ tai nghe</translation>
+            <translation>Điều khiển tiếng ồn từ tai nghe:</translation>
         </message>
         <message id="battery.press_and_hold_anc.hint">
             <location filename="../qml/pages/BatteryPage.qml" line="639" />
@@ -232,7 +232,7 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
         <message id="battery.anc_off_mode">
             <location filename="../qml/pages/BatteryPage.qml" line="628" />
             <source />
-            <translation>Chế độ nghe tắt</translation>
+            <translation>Chế độ nghe tắt:</translation>
         </message>
         <message id="battery.anc_off_mode.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="632" />
@@ -252,22 +252,22 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
         <message id="battery.custom_eq">
             <location filename="../qml/pages/BatteryPage.qml" line="683" />
             <source />
-            <translation>Bộ chỉnh âm</translation>
+            <translation>Bộ chỉnh âm:</translation>
         </message>
         <message id="battery.custom_eq.low">
             <location filename="../qml/pages/BatteryPage.qml" line="700" />
             <source />
-            <translation>Bộ chỉnh âm: Âm trầm</translation>
+            <translation>Bộ chỉnh âm: Âm trầm:</translation>
         </message>
         <message id="battery.custom_eq.mid">
             <location filename="../qml/pages/BatteryPage.qml" line="701" />
             <source />
-            <translation>Bộ chỉnh âm: Âm trung</translation>
+            <translation>Bộ chỉnh âm: Âm trung:</translation>
         </message>
         <message id="battery.custom_eq.high">
             <location filename="../qml/pages/BatteryPage.qml" line="702" />
             <source />
-            <translation>Bộ chỉnh âm: Âm cao</translation>
+            <translation>Bộ chỉnh âm: Âm cao:</translation>
         </message>
         <message id="battery.press_and_hold_duration">
             <location filename="../qml/pages/BatteryPage.qml" line="480" />
@@ -317,12 +317,12 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
         <message id="battery.sleep_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="818" />
             <source />
-            <translation>Tạm dừng khi ngủ</translation>
+            <translation>Tạm dừng khi ngủ:</translation>
         </message>
         <message id="battery.optimized_charge">
             <location filename="../qml/pages/BatteryPage.qml" line="835" />
             <source />
-            <translation>Giới hạn sạc được tối ưu hóa</translation>
+            <translation>Giới hạn sạc được tối ưu hóa:</translation>
         </message>
         <message id="battery.volume_swipe">
             <location filename="../qml/pages/BatteryPage.qml" line="543" />

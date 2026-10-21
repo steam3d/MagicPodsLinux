@@ -111,7 +111,7 @@
         <message id="battery.high_resolution_microphone">
             <location filename="../qml/pages/BatteryPage.qml" line="360" />
             <source />
-            <translation>HD Mikrofon</translation>
+            <translation>HD Mikrofon:</translation>
         </message>
         <message id="battery.high_resolution_microphone.description">
             <location filename="../qml/pages/BatteryPage.qml" line="361" />
@@ -127,7 +127,7 @@ Mikrofonu kullanırken ses düzeyinin otomatik olarak düşmesini önlemek için
         <message id="battery.ear_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="420" />
             <source />
-            <translation>Kulakta algılama</translation>
+            <translation>Kulakta algılama:</translation>
         </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
@@ -142,7 +142,7 @@ Mikrofonu kullanırken ses düzeyinin otomatik olarak düşmesini önlemek için
         <message id="battery.digital_crown">
             <location filename="../qml/pages/BatteryPage.qml" line="473" />
             <source />
-            <translation>Digital Crown</translation>
+            <translation>Digital Crown:</translation>
         </message>
         <message id="battery.digital_crown.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="477" />
@@ -162,12 +162,12 @@ Mikrofonu kullanırken ses düzeyinin otomatik olarak düşmesini önlemek için
         <message id="battery.press_and_hold_mode.left">
             <location filename="../qml/pages/BatteryPage.qml" line="529" />
             <source />
-            <translation>Sola basılı tut</translation>
+            <translation>Sola basılı tut:</translation>
         </message>
         <message id="battery.press_and_hold_mode.right">
             <location filename="../qml/pages/BatteryPage.qml" line="554" />
             <source />
-            <translation>Sağa basılı tut</translation>
+            <translation>Sağa basılı tut:</translation>
         </message>
         <message id="battery.press_and_hold_mode.voice_assistant">
             <location filename="../qml/pages/BatteryPage.qml" line="72" />
@@ -192,7 +192,7 @@ Mikrofonu kullanırken ses düzeyinin otomatik olarak düşmesini önlemek için
         <message id="battery.press_and_hold_anc">
             <location filename="../qml/pages/BatteryPage.qml" line="638" />
             <source />
-            <translation>Kulaklıktan gürültü denetimi</translation>
+            <translation>Kulaklıktan gürültü denetimi:</translation>
         </message>
         <message id="battery.press_and_hold_anc.hint">
             <location filename="../qml/pages/BatteryPage.qml" line="639" />
@@ -232,7 +232,7 @@ Mikrofonu kullanırken ses düzeyinin otomatik olarak düşmesini önlemek için
         <message id="battery.anc_off_mode">
             <location filename="../qml/pages/BatteryPage.qml" line="628" />
             <source />
-            <translation>Dinleme Kapalı Modu</translation>
+            <translation>Dinleme Kapalı Modu:</translation>
         </message>
         <message id="battery.anc_off_mode.do_not_change">
             <location filename="../qml/pages/BatteryPage.qml" line="632" />
@@ -252,22 +252,22 @@ Mikrofonu kullanırken ses düzeyinin otomatik olarak düşmesini önlemek için
         <message id="battery.custom_eq">
             <location filename="../qml/pages/BatteryPage.qml" line="683" />
             <source />
-            <translation>Ekolayzır</translation>
+            <translation>Ekolayzır:</translation>
         </message>
         <message id="battery.custom_eq.low">
             <location filename="../qml/pages/BatteryPage.qml" line="700" />
             <source />
-            <translation>Ekolayzır: Bas</translation>
+            <translation>Ekolayzır: Bas:</translation>
         </message>
         <message id="battery.custom_eq.mid">
             <location filename="../qml/pages/BatteryPage.qml" line="701" />
             <source />
-            <translation>Ekolayzır: Orta</translation>
+            <translation>Ekolayzır: Orta:</translation>
         </message>
         <message id="battery.custom_eq.high">
             <location filename="../qml/pages/BatteryPage.qml" line="702" />
             <source />
-            <translation>Ekolayzır: Tiz</translation>
+            <translation>Ekolayzır: Tiz:</translation>
         </message>
         <message id="battery.press_and_hold_duration">
             <location filename="../qml/pages/BatteryPage.qml" line="480" />
@@ -317,12 +317,12 @@ Mikrofonu kullanırken ses düzeyinin otomatik olarak düşmesini önlemek için
         <message id="battery.sleep_detection">
             <location filename="../qml/pages/BatteryPage.qml" line="818" />
             <source />
-            <translation>Uykuya Dalınca Duraklat</translation>
+            <translation>Uykuya Dalınca Duraklat:</translation>
         </message>
         <message id="battery.optimized_charge">
             <location filename="../qml/pages/BatteryPage.qml" line="835" />
             <source />
-            <translation>İyileştirilmiş Şarj Sınırı</translation>
+            <translation>İyileştirilmiş Şarj Sınırı:</translation>
         </message>
         <message id="battery.volume_swipe">
             <location filename="../qml/pages/BatteryPage.qml" line="543" />
