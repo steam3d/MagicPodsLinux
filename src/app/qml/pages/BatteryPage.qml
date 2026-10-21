@@ -491,12 +491,16 @@ QQC2.Page {
                     label: qsTrId("battery.ear_detection")
 
                     QQC2.Switch {
-                        checked: rootPage.earDetectionData?.selected ?? false
+                        checked: rootPage.earDetectionData?.selected?.pauseMedia ?? false
                         enabled: !(rootPage.earDetectionData?.readonly ?? true)
                         onToggled: {
                             if (rootPage.earDetectionData) {
-                                rootPage.earDetectionData.selected = checked;
-                                cppBackend.setCapability("earDetection", rootPage.currentAddress(), checked);
+                                var selected = rootPage.earDetectionData.selected || {};
+                                selected.pauseMedia = checked;
+                                rootPage.earDetectionData.selected = selected;
+                                cppBackend.setCapability("earDetection", rootPage.currentAddress(), {
+                                    pauseMedia: checked
+                                });
                             }
                         }
                     }
