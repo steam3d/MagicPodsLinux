@@ -45,6 +45,11 @@ STATE = {
                 "single": {"battery": 0, "charging": False, "status": 0},
             },
             "conversationAwareness": {"readonly": False, "selected": True},
+            "earDetection": {
+                "readonly": False,
+                "selected": {"pauseMedia": True},
+            },
+            "earDetectionState": {"readonly": True, "selected": 1},
             "endCall": {"readonly": False, "selected": 2},
             "personalizedVolume": {"readonly": False, "selected": False},
             "pressAndHoldDuration": {"readonly": False, "selected": 0},
@@ -127,6 +132,11 @@ PRESETS = [
                         "single": {"battery": 0, "charging": False, "status": 0},
                     },
                     "conversationAwareness": {"readonly": False, "selected": True},
+                    "earDetection": {
+                        "readonly": False,
+                        "selected": {"pauseMedia": True},
+                    },
+                    "earDetectionState": {"readonly": True, "selected": 1},
                     "endCall": {"readonly": False, "selected": 2},
                     "personalizedVolume": {"readonly": False, "selected": False},
                     "pressAndHoldDuration": {"readonly": False, "selected": 0},
@@ -235,6 +245,120 @@ PRESETS = [
                 },
                 "connected": True,
                 "name": "SBH20",
+            }
+        },
+    ),
+    (
+        "Info Pixel Buds A-Series",
+        {
+            "info": {
+                "vendor": 0xe0,
+                "model": 0x3003,
+                "color": 0,
+                "address": "AA:BB:CC:DD:EE:03",
+                "capabilities": {
+                    "battery": {
+                        "case": {"battery": 90, "charging": False, "status": 3},
+                        "left": {"battery": 50, "charging": False, "status": 2},
+                        "readonly": True,
+                        "right": {"battery": 25, "charging": True, "status": 2},
+                        "single": {"battery": 0, "charging": False, "status": 0},
+                    },
+                },
+                "connected": True,
+                "name": "Pixel Buds A-Series",
+            }
+        },
+    ),
+    (
+        "Info Pixel Buds Pro",
+        {
+            "info": {
+                "vendor": 0xe0,
+                "model": 0x3004,
+                "color": 0,
+                "address": "AA:BB:CC:DD:EE:04",
+                "capabilities": {
+                    "anc": {"options": 19, "readonly": False, "selected": 16},
+                    "battery": {
+                        "case": {"battery": 90, "charging": False, "status": 3},
+                        "left": {"battery": 50, "charging": False, "status": 2},
+                        "readonly": True,
+                        "right": {"battery": 25, "charging": True, "status": 2},
+                        "single": {"battery": 0, "charging": False, "status": 0},
+                    },
+                },
+                "connected": True,
+                "name": "Pixel Buds Pro",
+            }
+        },
+    ),
+    (
+        "Info Pixel Buds Pro 2",
+        {
+            "info": {
+                "vendor": 0xe0,
+                "model": 0x3005,
+                "color": 0,
+                "address": "AA:BB:CC:DD:EE:01",
+                "capabilities": {
+                    "anc": {"options": 23, "readonly": False, "selected": 4},
+                    "battery": {
+                        "case": {"battery": 90, "charging": False, "status": 3},
+                        "left": {"battery": 50, "charging": False, "status": 2},
+                        "readonly": True,
+                        "right": {"battery": 25, "charging": True, "status": 2},
+                        "single": {"battery": 0, "charging": False, "status": 0},
+                    },
+                },
+                "connected": True,
+                "name": "Pixel Buds Pro 2",
+            }
+        },
+    ),
+    (
+        "Info Pixel Buds 2a",
+        {
+            "info": {
+                "vendor": 0xe0,
+                "model": 0x3006,
+                "color": 0,
+                "address": "AA:BB:CC:DD:EE:06",
+                "capabilities": {
+                    "anc": {"options": 19, "readonly": False, "selected": 2},
+                    "battery": {
+                        "case": {"battery": 90, "charging": False, "status": 3},
+                        "left": {"battery": 50, "charging": False, "status": 2},
+                        "readonly": True,
+                        "right": {"battery": 25, "charging": True, "status": 2},
+                        "single": {"battery": 0, "charging": False, "status": 0},
+                    },
+                },
+                "connected": True,
+                "name": "Pixel Buds 2a",
+            }
+        },
+    ),
+    (
+        "Info Beats 360",
+        {
+            "info": {
+                "vendor": 0x4c,
+                "model": 0x2038,
+                "color": 0,
+                "address": "AA:BB:CC:DD:EE:02",
+                "capabilities": {
+                    "anc": {"options": 19, "readonly": False, "selected": 1},
+                    "battery": {
+                        "case": {"battery": 90, "charging": False, "status": 3},
+                        "left": {"battery": 50, "charging": False, "status": 2},
+                        "readonly": True,
+                        "right": {"battery": 25, "charging": True, "status": 2},
+                        "single": {"battery": 0, "charging": False, "status": 0},
+                    },
+                },
+                "connected": True,
+                "name": "Beats 360",
             }
         },
     ),
@@ -500,7 +624,11 @@ def _merge_info_capabilities(update_caps):
                 if selected & options != selected:
                     continue
         if "selected" in update:
-            current["selected"] = update["selected"]
+            selected = update["selected"]
+            if isinstance(current.get("selected"), dict) and isinstance(selected, dict):
+                current["selected"].update(selected)
+            else:
+                current["selected"] = selected
     info["capabilities"] = caps
     STATE["info"] = info
 
