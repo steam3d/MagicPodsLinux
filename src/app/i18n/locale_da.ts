@@ -129,6 +129,21 @@ Deaktiver »Registrering af samtale« i hovedtelefonernes indstillinger for at f
             <source />
             <translation>Øreregistrering:</translation>
         </message>
+        <message id="battery.ear_detection.pause_media">
+            <location filename="../qml/pages/BatteryPage.qml" line="507" />
+            <source />
+            <translation>Sæt på pause, når de tages af det ene øre:</translation>
+        </message>
+        <message id="battery.ear_detection.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="519" />
+            <source />
+            <translation>Sænk lydstyrken, når de tages af det ene øre:</translation>
+        </message>
+        <message id="battery.ear_detection.switch_to_speaker">
+            <location filename="../qml/pages/BatteryPage.qml" line="556" />
+            <source />
+            <translation>Skift til højttaler, når de tages helt af:</translation>
+        </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
             <source />

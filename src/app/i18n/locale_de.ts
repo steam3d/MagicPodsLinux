@@ -129,6 +129,21 @@ Deaktivieren Sie die „Konversationserkennung“ in den Einstellungen Ihrer Kop
             <source />
             <translation>Ohrerkennung:</translation>
         </message>
+        <message id="battery.ear_detection.pause_media">
+            <location filename="../qml/pages/BatteryPage.qml" line="507" />
+            <source />
+            <translation>Bei Abnahme von einem Ohr pausieren:</translation>
+        </message>
+        <message id="battery.ear_detection.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="519" />
+            <source />
+            <translation>Lautstärke bei Abnahme von einem Ohr verringern:</translation>
+        </message>
+        <message id="battery.ear_detection.switch_to_speaker">
+            <location filename="../qml/pages/BatteryPage.qml" line="556" />
+            <source />
+            <translation>Bei vollständiger Abnahme auf Lautsprecher umschalten:</translation>
+        </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
             <source />

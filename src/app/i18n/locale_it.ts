@@ -129,6 +129,21 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
             <source />
             <translation>Rilevamento automatico dell’orecchio:</translation>
         </message>
+        <message id="battery.ear_detection.pause_media">
+            <location filename="../qml/pages/BatteryPage.qml" line="507" />
+            <source />
+            <translation>Metti in pausa quando le togli da un orecchio:</translation>
+        </message>
+        <message id="battery.ear_detection.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="519" />
+            <source />
+            <translation>Riduci il volume quando le togli da un orecchio:</translation>
+        </message>
+        <message id="battery.ear_detection.switch_to_speaker">
+            <location filename="../qml/pages/BatteryPage.qml" line="556" />
+            <source />
+            <translation>Passa all’altoparlante quando le togli completamente:</translation>
+        </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
             <source />

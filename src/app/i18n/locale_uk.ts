@@ -129,6 +129,21 @@
             <source />
             <translation>Автовиявлення вуха:</translation>
         </message>
+        <message id="battery.ear_detection.pause_media">
+            <location filename="../qml/pages/BatteryPage.qml" line="507" />
+            <source />
+            <translation>Призупиняти при зніманні з одного вуха:</translation>
+        </message>
+        <message id="battery.ear_detection.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="519" />
+            <source />
+            <translation>Знижувати гучність при зніманні з одного вуха:</translation>
+        </message>
+        <message id="battery.ear_detection.switch_to_speaker">
+            <location filename="../qml/pages/BatteryPage.qml" line="556" />
+            <source />
+            <translation>Перемикати на динамік при повному зніманні:</translation>
+        </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
             <source />

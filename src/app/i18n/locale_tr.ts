@@ -129,6 +129,21 @@ Mikrofonu kullanırken ses düzeyinin otomatik olarak düşmesini önlemek için
             <source />
             <translation>Kulakta algılama:</translation>
         </message>
+        <message id="battery.ear_detection.pause_media">
+            <location filename="../qml/pages/BatteryPage.qml" line="507" />
+            <source />
+            <translation>Bir kulaktan çıkarıldığında duraklat:</translation>
+        </message>
+        <message id="battery.ear_detection.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="519" />
+            <source />
+            <translation>Bir kulaktan çıkarıldığında sesi azalt:</translation>
+        </message>
+        <message id="battery.ear_detection.switch_to_speaker">
+            <location filename="../qml/pages/BatteryPage.qml" line="556" />
+            <source />
+            <translation>Tamamen çıkarıldığında hoparlöre geç:</translation>
+        </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
             <source />

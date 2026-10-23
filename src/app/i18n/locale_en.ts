@@ -129,6 +129,21 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <source></source>
         <translation>Ear detection:</translation>
     </message>
+    <message id="battery.ear_detection.pause_media">
+        <location filename="../qml/pages/BatteryPage.qml" line="507"/>
+        <source></source>
+        <translation>Pause when off-ear:</translation>
+    </message>
+    <message id="battery.ear_detection.lower_volume">
+        <location filename="../qml/pages/BatteryPage.qml" line="519"/>
+        <source></source>
+        <translation>Lower volume when off-ear:</translation>
+    </message>
+    <message id="battery.ear_detection.switch_to_speaker">
+        <location filename="../qml/pages/BatteryPage.qml" line="556"/>
+        <source></source>
+        <translation>Switch to speaker when fully removed:</translation>
+    </message>
     <message id="battery.conversation_awareness">
         <location filename="../qml/pages/BatteryPage.qml" line="399"/>
         <source></source>

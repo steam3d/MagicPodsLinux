@@ -129,6 +129,21 @@ Austiņu iestatījumos atspējojiet “Sarunas noteikšanu”, lai mikrofona lie
             <source />
             <translation>Auss noteikšana:</translation>
         </message>
+        <message id="battery.ear_detection.pause_media">
+            <location filename="../qml/pages/BatteryPage.qml" line="507" />
+            <source />
+            <translation>Pauzēt, noņemot no vienas auss:</translation>
+        </message>
+        <message id="battery.ear_detection.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="519" />
+            <source />
+            <translation>Samazināt skaļumu, noņemot no vienas auss:</translation>
+        </message>
+        <message id="battery.ear_detection.switch_to_speaker">
+            <location filename="../qml/pages/BatteryPage.qml" line="556" />
+            <source />
+            <translation>Pilnībā noņemot, pārslēgt uz skaļruni:</translation>
+        </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
             <source />

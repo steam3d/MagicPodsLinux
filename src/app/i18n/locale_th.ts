@@ -129,6 +129,21 @@
             <source />
             <translation>ตรวจจับการสวมใส่:</translation>
         </message>
+        <message id="battery.ear_detection.pause_media">
+            <location filename="../qml/pages/BatteryPage.qml" line="507" />
+            <source />
+            <translation>หยุดชั่วคราวเมื่อถอดออกจากหูข้างหนึ่ง:</translation>
+        </message>
+        <message id="battery.ear_detection.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="519" />
+            <source />
+            <translation>ลดระดับเสียงเมื่อถอดออกจากหูข้างหนึ่ง:</translation>
+        </message>
+        <message id="battery.ear_detection.switch_to_speaker">
+            <location filename="../qml/pages/BatteryPage.qml" line="556" />
+            <source />
+            <translation>สลับไปใช้ลำโพงเมื่อถอดออกทั้งหมด:</translation>
+        </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
             <source />

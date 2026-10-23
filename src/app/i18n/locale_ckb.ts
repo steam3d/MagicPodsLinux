@@ -129,6 +129,21 @@
             <source />
             <translation>هەستکردن بە دانانی گوێگر:</translation>
         </message>
+        <message id="battery.ear_detection.pause_media">
+            <location filename="../qml/pages/BatteryPage.qml" line="507" />
+            <source />
+            <translation>وەستاندن لە کاتی لابردن لە یەک گوێ:</translation>
+        </message>
+        <message id="battery.ear_detection.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="519" />
+            <source />
+            <translation>کەمکردنەوەی دەنگ لە کاتی لابردن لە یەک گوێ:</translation>
+        </message>
+        <message id="battery.ear_detection.switch_to_speaker">
+            <location filename="../qml/pages/BatteryPage.qml" line="556" />
+            <source />
+            <translation>گواستنەوە بۆ بڵندگۆ لە کاتی لابردنی تەواو:</translation>
+        </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
             <source />

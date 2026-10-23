@@ -70,6 +70,22 @@ QQC2.Page {
         return Math.round(value) | 0;
     }
 
+    function setEarDetectionField(field, value) {
+        if (!earDetectionData) {
+            return;
+        }
+
+        var selected = earDetectionData.selected || {};
+        selected[field] = value;
+        earDetectionData.selected = selected;
+
+        cppBackend.setCapability("earDetection", currentAddress(), {
+            pauseMedia: selected.pauseMedia ?? false,
+            switchToSpeakers: selected.switchToSpeakers ?? false,
+            lowerVolume: toInteger(selected.lowerVolume ?? 0)
+        });
+    }
+
     function requestInfo() {
         if (cppBackend && cppBackend.connected) {
             cppBackend.getInfo();
@@ -488,21 +504,61 @@ QQC2.Page {
                 MP.FormRow {
                     Layout.fillWidth: true
                     visible: rootPage.earDetectionData !== null
-                    label: qsTrId("battery.ear_detection")
+                    label: qsTrId("battery.ear_detection.pause_media")
 
                     QQC2.Switch {
                         checked: rootPage.earDetectionData?.selected?.pauseMedia ?? false
                         enabled: !(rootPage.earDetectionData?.readonly ?? true)
-                        onToggled: {
-                            if (rootPage.earDetectionData) {
-                                var selected = rootPage.earDetectionData.selected || {};
-                                selected.pauseMedia = checked;
-                                rootPage.earDetectionData.selected = selected;
-                                cppBackend.setCapability("earDetection", rootPage.currentAddress(), {
-                                    pauseMedia: checked
-                                });
+                        onToggled: rootPage.setEarDetectionField("pauseMedia", checked)
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.earDetectionData !== null
+                    label: qsTrId("battery.ear_detection.lower_volume")
+
+                    RowLayout {
+                        spacing: MP.Units.largeSpacing
+
+                        QQC2.Slider {
+                            id: earDetectionVolumeSlider
+                            Layout.leftMargin: -16
+                            Layout.rightMargin: -16
+                            implicitWidth: rootPage.mWidth + 32
+                            from: 0
+                            to: 100
+                            value: rootPage.earDetectionData?.selected?.lowerVolume ?? 0
+                            enabled: !(rootPage.earDetectionData?.readonly ?? true)
+                            onMoved: {
+                                if (rootPage.earDetectionData) {
+                                    var selected = rootPage.earDetectionData.selected || {};
+                                    selected.lowerVolume = rootPage.toInteger(value);
+                                    rootPage.earDetectionData.selected = selected;
+                                }
+                            }
+                            onPressedChanged: {
+                                if (!pressed) {
+                                    rootPage.setEarDetectionField("lowerVolume", rootPage.toInteger(value));
+                                }
                             }
                         }
+
+                        MP.Label {
+                            text: Math.round(earDetectionVolumeSlider.value) + "%"
+                        }
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.earDetectionData !== null
+                    label: qsTrId("battery.ear_detection.switch_to_speaker")
+
+                    QQC2.Switch {
+                        checked: rootPage.earDetectionData?.selected?.switchToSpeakers ?? false
+                        enabled: !(rootPage.earDetectionData?.readonly ?? true)
+                        onToggled: rootPage.setEarDetectionField("switchToSpeakers", checked)
                     }
                 }
 

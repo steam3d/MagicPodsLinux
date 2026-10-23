@@ -129,6 +129,21 @@
             <source />
             <translation>කන හඳුනාගැනීම:</translation>
         </message>
+        <message id="battery.ear_detection.pause_media">
+            <location filename="../qml/pages/BatteryPage.qml" line="507" />
+            <source />
+            <translation>එක් කනකින් ඉවත් කළ විට විරාම කරන්න:</translation>
+        </message>
+        <message id="battery.ear_detection.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="519" />
+            <source />
+            <translation>එක් කනකින් ඉවත් කළ විට හඬ අඩු කරන්න:</translation>
+        </message>
+        <message id="battery.ear_detection.switch_to_speaker">
+            <location filename="../qml/pages/BatteryPage.qml" line="556" />
+            <source />
+            <translation>සම්පූර්ණයෙන් ඉවත් කළ විට ස්පීකරයට මාරු වන්න:</translation>
+        </message>
         <message id="battery.conversation_awareness">
             <location filename="../qml/pages/BatteryPage.qml" line="399" />
             <source />
