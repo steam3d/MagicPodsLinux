@@ -567,5 +567,141 @@
             <source />
             <translation>連接</translation>
         </message>
+        <message id="menu.shortcuts">
+            <location filename="../qml/Main.qml" line="146" />
+            <location filename="../qml/pages/ShortcutsPage.qml" line="17" />
+            <source />
+            <translation>快速鍵</translation>
+        </message>
+        <message id="shortcuts.portal_unavailable.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="23" />
+            <source />
+            <translation>快速鍵無法使用</translation>
+        </message>
+        <message id="shortcuts.portal_unavailable.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="24" />
+            <source />
+            <translation>快速鍵需要 XDG Global Shortcuts Portal 才能運作</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
+            <source />
+            <translation>需要應用程式捷徑才能啟用快速鍵</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
+            <source />
+            <translation>在「設定」中啟用「%1」並重新啟動應用程式</translation>
+        </message>
+        <message id="shortcuts.game_scope.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
+            <source />
+            <translation>切換至桌面模式</translation>
+        </message>
+        <message id="shortcuts.game_scope.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="41" />
+            <source />
+            <translation>快速鍵無法在 Steam 遊戲模式中使用</translation>
+        </message>
+        <message id="shortcuts.system_settings">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="62" />
+            <source />
+            <translation>系統設定</translation>
+        </message>
+        <message id="shortcuts.setting">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="70" />
+            <source />
+            <translation>快速鍵</translation>
+        </message>
+        <message id="shortcuts.configure">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="75" />
+            <source />
+            <translation>設定</translation>
+        </message>
+        <message id="shortcuts.configure.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
+            <source />
+            <translation>「設定」按鈕會開啟系統的「快速鍵」設定。請為所需插槽指定按鍵組合並套用變更，然後在應用程式中為每個插槽選擇一個動作。</translation>
+        </message>
+        <message id="shortcuts.actions">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="87" />
+            <source />
+            <translation>快速鍵動作</translation>
+        </message>
+        <message id="shortcuts.slot">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="104" />
+            <source />
+            <translation>插槽 %1：</translation>
+        </message>
+        <message id="shortcuts.action.none">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="159" />
+            <source />
+            <translation>無</translation>
+        </message>
+        <message id="shortcuts.action.toggle_window">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="160" />
+            <source />
+            <translation>顯示/隱藏視窗</translation>
+        </message>
+        <message id="shortcuts.action.toggle_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="161" />
+            <source />
+            <translation>Bluetooth：開啟/關閉</translation>
+        </message>
+        <message id="shortcuts.action.enable_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="162" />
+            <source />
+            <translation>Bluetooth：開啟</translation>
+        </message>
+        <message id="shortcuts.action.disable_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="163" />
+            <source />
+            <translation>Bluetooth：關閉</translation>
+        </message>
+        <message id="shortcuts.action.cycle_noise_control">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="164" />
+            <source />
+            <translation>噪音控制：循環切換模式</translation>
+        </message>
+        <message id="shortcuts.action.noise_cancellation">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="167" />
+            <source />
+            <translation>噪音控制：降噪模式</translation>
+        </message>
+        <message id="shortcuts.action.adaptive">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="170" />
+            <source />
+            <translation>噪音控制：自動模式</translation>
+        </message>
+        <message id="shortcuts.action.transparency">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="173" />
+            <source />
+            <translation>噪音控制：通透模式</translation>
+        </message>
+        <message id="shortcuts.action.wind_reduction">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="176" />
+            <source />
+            <translation>噪音控制：風噪消除</translation>
+        </message>
+        <message id="shortcuts.action.noise_control_off">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="179" />
+            <source />
+            <translation>噪音控制：關閉</translation>
+        </message>
+        <message id="shortcuts.action.toggle_device_connection">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="67" />
+            <source />
+            <translation>連接/中斷連線：%1</translation>
+        </message>
+        <message id="shortcuts.action.connect_device">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="70" />
+            <source />
+            <translation>連接：%1</translation>
+        </message>
+        <message id="shortcuts.action.disconnect_device">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="73" />
+            <source />
+            <translation>中斷連線：%1</translation>
+        </message>
     </context>
 </TS>

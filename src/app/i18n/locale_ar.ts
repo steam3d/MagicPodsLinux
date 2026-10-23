@@ -567,5 +567,141 @@
             <source />
             <translation>اتصال</translation>
         </message>
+        <message id="menu.shortcuts">
+            <location filename="../qml/Main.qml" line="146" />
+            <location filename="../qml/pages/ShortcutsPage.qml" line="17" />
+            <source />
+            <translation>اختصارات لوحة المفاتيح</translation>
+        </message>
+        <message id="shortcuts.portal_unavailable.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="23" />
+            <source />
+            <translation>اختصارات لوحة المفاتيح غير متاحة</translation>
+        </message>
+        <message id="shortcuts.portal_unavailable.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="24" />
+            <source />
+            <translation>يلزم XDG Global Shortcuts Portal لتعمل اختصارات لوحة المفاتيح</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
+            <source />
+            <translation>يلزم اختصار لتفعيل اختصارات لوحة المفاتيح</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
+            <source />
+            <translation>فعّل «%1» في الإعدادات وأعد تشغيل التطبيق</translation>
+        </message>
+        <message id="shortcuts.game_scope.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
+            <source />
+            <translation>انتقل إلى وضع سطح المكتب</translation>
+        </message>
+        <message id="shortcuts.game_scope.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="41" />
+            <source />
+            <translation>لا تعمل اختصارات لوحة المفاتيح في وضع الألعاب في Steam</translation>
+        </message>
+        <message id="shortcuts.system_settings">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="62" />
+            <source />
+            <translation>إعدادات النظام</translation>
+        </message>
+        <message id="shortcuts.setting">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="70" />
+            <source />
+            <translation>اختصارات لوحة المفاتيح</translation>
+        </message>
+        <message id="shortcuts.configure">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="75" />
+            <source />
+            <translation>إعداد</translation>
+        </message>
+        <message id="shortcuts.configure.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
+            <source />
+            <translation>يفتح زر «إعداد» قسم «اختصارات لوحة المفاتيح» في إعدادات النظام. عيّن مجموعات مفاتيح للخانات المطلوبة وطبّق التغييرات. ثم اختر إجراءً لكل خانة في التطبيق.</translation>
+        </message>
+        <message id="shortcuts.actions">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="87" />
+            <source />
+            <translation>إجراءات اختصارات لوحة المفاتيح</translation>
+        </message>
+        <message id="shortcuts.slot">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="104" />
+            <source />
+            <translation>الخانة %1:</translation>
+        </message>
+        <message id="shortcuts.action.none">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="159" />
+            <source />
+            <translation>بلا</translation>
+        </message>
+        <message id="shortcuts.action.toggle_window">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="160" />
+            <source />
+            <translation>إظهار/إخفاء النافذة</translation>
+        </message>
+        <message id="shortcuts.action.toggle_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="161" />
+            <source />
+            <translation>Bluetooth: تشغيل/إيقاف</translation>
+        </message>
+        <message id="shortcuts.action.enable_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="162" />
+            <source />
+            <translation>Bluetooth: تشغيل</translation>
+        </message>
+        <message id="shortcuts.action.disable_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="163" />
+            <source />
+            <translation>Bluetooth: إيقاف</translation>
+        </message>
+        <message id="shortcuts.action.cycle_noise_control">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="164" />
+            <source />
+            <translation>التحكم في الضوضاء: التنقل بين الأوضاع</translation>
+        </message>
+        <message id="shortcuts.action.noise_cancellation">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="167" />
+            <source />
+            <translation>التحكم في الضوضاء: إلغاء الضوضاء</translation>
+        </message>
+        <message id="shortcuts.action.adaptive">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="170" />
+            <source />
+            <translation>التحكم في الضوضاء: تكيفي</translation>
+        </message>
+        <message id="shortcuts.action.transparency">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="173" />
+            <source />
+            <translation>التحكم في الضوضاء: الشفافية</translation>
+        </message>
+        <message id="shortcuts.action.wind_reduction">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="176" />
+            <source />
+            <translation>التحكم في الضوضاء: إلغاء الرياح</translation>
+        </message>
+        <message id="shortcuts.action.noise_control_off">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="179" />
+            <source />
+            <translation>التحكم في الضوضاء: إيقاف</translation>
+        </message>
+        <message id="shortcuts.action.toggle_device_connection">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="67" />
+            <source />
+            <translation>اتصال/قطع الاتصال: %1</translation>
+        </message>
+        <message id="shortcuts.action.connect_device">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="70" />
+            <source />
+            <translation>اتصال: %1</translation>
+        </message>
+        <message id="shortcuts.action.disconnect_device">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="73" />
+            <source />
+            <translation>قطع الاتصال: %1</translation>
+        </message>
     </context>
 </TS>

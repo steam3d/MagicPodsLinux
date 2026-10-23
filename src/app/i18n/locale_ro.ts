@@ -567,5 +567,141 @@ Dezactivați „Detectarea conversației” în setările căștilor pentru a î
             <source />
             <translation>Conectare</translation>
         </message>
+        <message id="menu.shortcuts">
+            <location filename="../qml/Main.qml" line="146" />
+            <location filename="../qml/pages/ShortcutsPage.qml" line="17" />
+            <source />
+            <translation>Comenzi rapide de la tastatură</translation>
+        </message>
+        <message id="shortcuts.portal_unavailable.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="23" />
+            <source />
+            <translation>Comenzile rapide nu sunt disponibile</translation>
+        </message>
+        <message id="shortcuts.portal_unavailable.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="24" />
+            <source />
+            <translation>XDG Global Shortcuts Portal este necesar pentru funcționarea comenzilor rapide</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
+            <source />
+            <translation>Este necesară o scurtătură pentru activarea comenzilor rapide</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
+            <source />
+            <translation>Activați „%1” în Setări și reporniți aplicația</translation>
+        </message>
+        <message id="shortcuts.game_scope.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
+            <source />
+            <translation>Comutați la modul Desktop</translation>
+        </message>
+        <message id="shortcuts.game_scope.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="41" />
+            <source />
+            <translation>Comenzile rapide nu funcționează în modul Gaming Steam</translation>
+        </message>
+        <message id="shortcuts.system_settings">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="62" />
+            <source />
+            <translation>Setări de sistem</translation>
+        </message>
+        <message id="shortcuts.setting">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="70" />
+            <source />
+            <translation>Comenzi rapide de la tastatură</translation>
+        </message>
+        <message id="shortcuts.configure">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="75" />
+            <source />
+            <translation>Configurare</translation>
+        </message>
+        <message id="shortcuts.configure.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
+            <source />
+            <translation>Butonul „Configurare” deschide secțiunea „Comenzi rapide de la tastatură” din setările de sistem. Atribuiți combinații de taste sloturilor dorite și aplicați modificările. Apoi selectați în aplicație o acțiune pentru fiecare slot.</translation>
+        </message>
+        <message id="shortcuts.actions">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="87" />
+            <source />
+            <translation>Acțiuni pentru comenzile rapide</translation>
+        </message>
+        <message id="shortcuts.slot">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="104" />
+            <source />
+            <translation>Slotul %1:</translation>
+        </message>
+        <message id="shortcuts.action.none">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="159" />
+            <source />
+            <translation>Niciuna</translation>
+        </message>
+        <message id="shortcuts.action.toggle_window">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="160" />
+            <source />
+            <translation>Afișați/ascundeți fereastra</translation>
+        </message>
+        <message id="shortcuts.action.toggle_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="161" />
+            <source />
+            <translation>Bluetooth: porniți/opriți</translation>
+        </message>
+        <message id="shortcuts.action.enable_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="162" />
+            <source />
+            <translation>Bluetooth: porniți</translation>
+        </message>
+        <message id="shortcuts.action.disable_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="163" />
+            <source />
+            <translation>Bluetooth: opriți</translation>
+        </message>
+        <message id="shortcuts.action.cycle_noise_control">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="164" />
+            <source />
+            <translation>Controlul zgomotului: comutați modurile</translation>
+        </message>
+        <message id="shortcuts.action.noise_cancellation">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="167" />
+            <source />
+            <translation>Controlul zgomotului: anularea zgomotului</translation>
+        </message>
+        <message id="shortcuts.action.adaptive">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="170" />
+            <source />
+            <translation>Controlul zgomotului: adaptiv</translation>
+        </message>
+        <message id="shortcuts.action.transparency">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="173" />
+            <source />
+            <translation>Controlul zgomotului: transparență</translation>
+        </message>
+        <message id="shortcuts.action.wind_reduction">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="176" />
+            <source />
+            <translation>Controlul zgomotului: reducerea zgomotului produs de vânt</translation>
+        </message>
+        <message id="shortcuts.action.noise_control_off">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="179" />
+            <source />
+            <translation>Controlul zgomotului: oprit</translation>
+        </message>
+        <message id="shortcuts.action.toggle_device_connection">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="67" />
+            <source />
+            <translation>Conectare/deconectare: %1</translation>
+        </message>
+        <message id="shortcuts.action.connect_device">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="70" />
+            <source />
+            <translation>Conectare: %1</translation>
+        </message>
+        <message id="shortcuts.action.disconnect_device">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="73" />
+            <source />
+            <translation>Deconectare: %1</translation>
+        </message>
     </context>
 </TS>

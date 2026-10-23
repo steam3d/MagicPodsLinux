@@ -567,5 +567,141 @@
             <source />
             <translation>接続</translation>
         </message>
+        <message id="menu.shortcuts">
+            <location filename="../qml/Main.qml" line="146" />
+            <location filename="../qml/pages/ShortcutsPage.qml" line="17" />
+            <source />
+            <translation>ホットキー</translation>
+        </message>
+        <message id="shortcuts.portal_unavailable.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="23" />
+            <source />
+            <translation>ホットキーを利用できません</translation>
+        </message>
+        <message id="shortcuts.portal_unavailable.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="24" />
+            <source />
+            <translation>ホットキーを使用するには XDG Global Shortcuts Portal が必要です</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
+            <source />
+            <translation>ホットキーを有効にするにはショートカットが必要です</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
+            <source />
+            <translation>設定で「%1」を有効にして、アプリケーションを再起動してください</translation>
+        </message>
+        <message id="shortcuts.game_scope.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
+            <source />
+            <translation>デスクトップモードに切り替えてください</translation>
+        </message>
+        <message id="shortcuts.game_scope.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="41" />
+            <source />
+            <translation>Steamゲームモードではホットキーを使用できません</translation>
+        </message>
+        <message id="shortcuts.system_settings">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="62" />
+            <source />
+            <translation>システム設定</translation>
+        </message>
+        <message id="shortcuts.setting">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="70" />
+            <source />
+            <translation>ホットキー</translation>
+        </message>
+        <message id="shortcuts.configure">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="75" />
+            <source />
+            <translation>設定</translation>
+        </message>
+        <message id="shortcuts.configure.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
+            <source />
+            <translation>「設定」ボタンを押すと、システム設定の「ホットキー」が開きます。使用するスロットにキーの組み合わせを割り当てて変更を適用し、アプリケーションで各スロットのアクションを選択してください。</translation>
+        </message>
+        <message id="shortcuts.actions">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="87" />
+            <source />
+            <translation>ホットキーのアクション</translation>
+        </message>
+        <message id="shortcuts.slot">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="104" />
+            <source />
+            <translation>スロット %1：</translation>
+        </message>
+        <message id="shortcuts.action.none">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="159" />
+            <source />
+            <translation>なし</translation>
+        </message>
+        <message id="shortcuts.action.toggle_window">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="160" />
+            <source />
+            <translation>ウィンドウを表示/非表示</translation>
+        </message>
+        <message id="shortcuts.action.toggle_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="161" />
+            <source />
+            <translation>Bluetooth：オン/オフ</translation>
+        </message>
+        <message id="shortcuts.action.enable_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="162" />
+            <source />
+            <translation>Bluetooth：オン</translation>
+        </message>
+        <message id="shortcuts.action.disable_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="163" />
+            <source />
+            <translation>Bluetooth：オフ</translation>
+        </message>
+        <message id="shortcuts.action.cycle_noise_control">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="164" />
+            <source />
+            <translation>ノイズコントロール：モードを切り替え</translation>
+        </message>
+        <message id="shortcuts.action.noise_cancellation">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="167" />
+            <source />
+            <translation>ノイズコントロール：ノイズキャンセリング</translation>
+        </message>
+        <message id="shortcuts.action.adaptive">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="170" />
+            <source />
+            <translation>ノイズコントロール：適応型</translation>
+        </message>
+        <message id="shortcuts.action.transparency">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="173" />
+            <source />
+            <translation>ノイズコントロール：外部音取り込み</translation>
+        </message>
+        <message id="shortcuts.action.wind_reduction">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="176" />
+            <source />
+            <translation>ノイズコントロール：風切り音低減</translation>
+        </message>
+        <message id="shortcuts.action.noise_control_off">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="179" />
+            <source />
+            <translation>ノイズコントロール：オフ</translation>
+        </message>
+        <message id="shortcuts.action.toggle_device_connection">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="67" />
+            <source />
+            <translation>接続/切断：%1</translation>
+        </message>
+        <message id="shortcuts.action.connect_device">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="70" />
+            <source />
+            <translation>接続：%1</translation>
+        </message>
+        <message id="shortcuts.action.disconnect_device">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="73" />
+            <source />
+            <translation>切断：%1</translation>
+        </message>
     </context>
 </TS>

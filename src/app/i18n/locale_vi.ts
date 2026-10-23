@@ -567,5 +567,141 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
             <source />
             <translation>Kết nối</translation>
         </message>
+        <message id="menu.shortcuts">
+            <location filename="../qml/Main.qml" line="146" />
+            <location filename="../qml/pages/ShortcutsPage.qml" line="17" />
+            <source />
+            <translation>Phím tắt</translation>
+        </message>
+        <message id="shortcuts.portal_unavailable.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="23" />
+            <source />
+            <translation>Không thể sử dụng phím tắt</translation>
+        </message>
+        <message id="shortcuts.portal_unavailable.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="24" />
+            <source />
+            <translation>Cần có XDG Global Shortcuts Portal để phím tắt hoạt động</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
+            <source />
+            <translation>Cần có lối tắt để kích hoạt phím tắt</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
+            <source />
+            <translation>Bật “%1” trong phần Cài đặt rồi khởi động lại ứng dụng</translation>
+        </message>
+        <message id="shortcuts.game_scope.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
+            <source />
+            <translation>Chuyển sang Chế độ máy tính</translation>
+        </message>
+        <message id="shortcuts.game_scope.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="41" />
+            <source />
+            <translation>Phím tắt không hoạt động trong Chế độ chơi game Steam</translation>
+        </message>
+        <message id="shortcuts.system_settings">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="62" />
+            <source />
+            <translation>Cài đặt hệ thống</translation>
+        </message>
+        <message id="shortcuts.setting">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="70" />
+            <source />
+            <translation>Phím tắt</translation>
+        </message>
+        <message id="shortcuts.configure">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="75" />
+            <source />
+            <translation>Cấu hình</translation>
+        </message>
+        <message id="shortcuts.configure.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
+            <source />
+            <translation>Nút “Cấu hình” sẽ mở mục “Phím tắt” trong cài đặt hệ thống. Gán tổ hợp phím cho các vị trí mong muốn và áp dụng thay đổi. Sau đó chọn một tác vụ cho mỗi vị trí trong ứng dụng.</translation>
+        </message>
+        <message id="shortcuts.actions">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="87" />
+            <source />
+            <translation>Tác vụ phím tắt</translation>
+        </message>
+        <message id="shortcuts.slot">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="104" />
+            <source />
+            <translation>Vị trí %1:</translation>
+        </message>
+        <message id="shortcuts.action.none">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="159" />
+            <source />
+            <translation>Không có</translation>
+        </message>
+        <message id="shortcuts.action.toggle_window">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="160" />
+            <source />
+            <translation>Hiện/ẩn cửa sổ</translation>
+        </message>
+        <message id="shortcuts.action.toggle_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="161" />
+            <source />
+            <translation>Bluetooth: bật/tắt</translation>
+        </message>
+        <message id="shortcuts.action.enable_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="162" />
+            <source />
+            <translation>Bluetooth: bật</translation>
+        </message>
+        <message id="shortcuts.action.disable_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="163" />
+            <source />
+            <translation>Bluetooth: tắt</translation>
+        </message>
+        <message id="shortcuts.action.cycle_noise_control">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="164" />
+            <source />
+            <translation>Kiểm soát tiếng ồn: chuyển đổi chế độ</translation>
+        </message>
+        <message id="shortcuts.action.noise_cancellation">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="167" />
+            <source />
+            <translation>Kiểm soát tiếng ồn: khử tiếng ồn</translation>
+        </message>
+        <message id="shortcuts.action.adaptive">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="170" />
+            <source />
+            <translation>Kiểm soát tiếng ồn: thích ứng</translation>
+        </message>
+        <message id="shortcuts.action.transparency">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="173" />
+            <source />
+            <translation>Kiểm soát tiếng ồn: xuyên âm</translation>
+        </message>
+        <message id="shortcuts.action.wind_reduction">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="176" />
+            <source />
+            <translation>Kiểm soát tiếng ồn: khử tiếng gió</translation>
+        </message>
+        <message id="shortcuts.action.noise_control_off">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="179" />
+            <source />
+            <translation>Kiểm soát tiếng ồn: tắt</translation>
+        </message>
+        <message id="shortcuts.action.toggle_device_connection">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="67" />
+            <source />
+            <translation>Kết nối/ngắt kết nối: %1</translation>
+        </message>
+        <message id="shortcuts.action.connect_device">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="70" />
+            <source />
+            <translation>Kết nối: %1</translation>
+        </message>
+        <message id="shortcuts.action.disconnect_device">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="73" />
+            <source />
+            <translation>Ngắt kết nối: %1</translation>
+        </message>
     </context>
 </TS>

@@ -567,5 +567,141 @@
             <source />
             <translation>සම්බන්ධ කරන්න</translation>
         </message>
+        <message id="menu.shortcuts">
+            <location filename="../qml/Main.qml" line="146" />
+            <location filename="../qml/pages/ShortcutsPage.qml" line="17" />
+            <source />
+            <translation>යතුරුපුවරු කෙටිමං</translation>
+        </message>
+        <message id="shortcuts.portal_unavailable.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="23" />
+            <source />
+            <translation>යතුරුපුවරු කෙටිමං ලබා ගත නොහැක</translation>
+        </message>
+        <message id="shortcuts.portal_unavailable.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="24" />
+            <source />
+            <translation>යතුරුපුවරු කෙටිමං ක්‍රියා කිරීමට XDG Global Shortcuts Portal අවශ්‍ය වේ</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
+            <source />
+            <translation>යතුරුපුවරු කෙටිමං සක්‍රිය කිරීමට කෙටිමඟක් අවශ්‍ය වේ</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
+            <source />
+            <translation>සැකසුම් තුළ “%1” සක්‍රිය කර යෙදුම නැවත අරඹන්න</translation>
+        </message>
+        <message id="shortcuts.game_scope.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
+            <source />
+            <translation>ඩෙස්ක්ටොප් ප්‍රකාරයට මාරු වන්න</translation>
+        </message>
+        <message id="shortcuts.game_scope.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="41" />
+            <source />
+            <translation>Steam ක්‍රීඩා ප්‍රකාරයේදී යතුරුපුවරු කෙටිමං ක්‍රියා නොකරයි</translation>
+        </message>
+        <message id="shortcuts.system_settings">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="62" />
+            <source />
+            <translation>පද්ධති සැකසුම්</translation>
+        </message>
+        <message id="shortcuts.setting">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="70" />
+            <source />
+            <translation>යතුරුපුවරු කෙටිමං</translation>
+        </message>
+        <message id="shortcuts.configure">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="75" />
+            <source />
+            <translation>වින්‍යාස කරන්න</translation>
+        </message>
+        <message id="shortcuts.configure.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
+            <source />
+            <translation>“වින්‍යාස කරන්න” බොත්තම පද්ධති සැකසුම් තුළ “යතුරුපුවරු කෙටිමං” කොටස විවෘත කරයි. අවශ්‍ය ස්ථාන සඳහා යතුරු සංයෝජන යොදා වෙනස්කම් අදාළ කරන්න. ඉන්පසු යෙදුම තුළ එක් එක් ස්ථානය සඳහා ක්‍රියාවක් තෝරන්න.</translation>
+        </message>
+        <message id="shortcuts.actions">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="87" />
+            <source />
+            <translation>යතුරුපුවරු කෙටිමං ක්‍රියා</translation>
+        </message>
+        <message id="shortcuts.slot">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="104" />
+            <source />
+            <translation>ස්ථානය %1:</translation>
+        </message>
+        <message id="shortcuts.action.none">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="159" />
+            <source />
+            <translation>කිසිවක් නැත</translation>
+        </message>
+        <message id="shortcuts.action.toggle_window">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="160" />
+            <source />
+            <translation>කවුළුව පෙන්වන්න/සඟවන්න</translation>
+        </message>
+        <message id="shortcuts.action.toggle_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="161" />
+            <source />
+            <translation>Bluetooth: සක්‍රිය/අක්‍රිය කරන්න</translation>
+        </message>
+        <message id="shortcuts.action.enable_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="162" />
+            <source />
+            <translation>Bluetooth: සක්‍රිය කරන්න</translation>
+        </message>
+        <message id="shortcuts.action.disable_bluetooth">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="163" />
+            <source />
+            <translation>Bluetooth: අක්‍රිය කරන්න</translation>
+        </message>
+        <message id="shortcuts.action.cycle_noise_control">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="164" />
+            <source />
+            <translation>ශබ්ද පාලනය: ප්‍රකාර මාරු කරන්න</translation>
+        </message>
+        <message id="shortcuts.action.noise_cancellation">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="167" />
+            <source />
+            <translation>ශබ්ද පාලනය: ශබ්ද අහෝසි කිරීම</translation>
+        </message>
+        <message id="shortcuts.action.adaptive">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="170" />
+            <source />
+            <translation>ශබ්ද පාලනය: අනුරූපණශීලී</translation>
+        </message>
+        <message id="shortcuts.action.transparency">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="173" />
+            <source />
+            <translation>ශබ්ද පාලනය: පැහැදිලි බව</translation>
+        </message>
+        <message id="shortcuts.action.wind_reduction">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="176" />
+            <source />
+            <translation>ශබ්ද පාලනය: සුළඟ අහෝසි කිරීම</translation>
+        </message>
+        <message id="shortcuts.action.noise_control_off">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="179" />
+            <source />
+            <translation>ශබ්ද පාලනය: අක්‍රියයි</translation>
+        </message>
+        <message id="shortcuts.action.toggle_device_connection">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="67" />
+            <source />
+            <translation>සම්බන්ධ කරන්න/විසන්ධි කරන්න: %1</translation>
+        </message>
+        <message id="shortcuts.action.connect_device">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="70" />
+            <source />
+            <translation>සම්බන්ධ කරන්න: %1</translation>
+        </message>
+        <message id="shortcuts.action.disconnect_device">
+            <location filename="../cpp/ShortcutActionManager.cpp" line="73" />
+            <source />
+            <translation>විසන්ධි කරන්න: %1</translation>
+        </message>
     </context>
 </TS>

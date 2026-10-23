@@ -24,7 +24,9 @@
 #include "BackendManager.h"
 #include "DesktopManager.h"
 #include "DeckyManager.h"
+#include "GlobalShortcutManager.h"
 #include "LanguageManager.h"
+#include "ShortcutActionManager.h"
 #include "TrayIcon.h"
 #include "TrayIconManager.h"
 #include "UiSettingsService.h"
@@ -163,6 +165,15 @@ int main(int argc, char *argv[]) {
             root->setProperty("visible", true);
         }
     };
+    auto toggleMainWindow = [&]() {
+        if (!root)
+            return;
+
+        if (root->property("visible").toBool())
+            root->setProperty("visible", false);
+        else
+            raiseWindow();
+    };
     auto handleRaiseRequest = [&]() {
         auto client = server.nextPendingConnection();
         if (client) {
@@ -205,12 +216,23 @@ int main(int argc, char *argv[]) {
 
     const bool gameScopeMode = !qEnvironmentVariableIsEmpty("GAMESCOPE_WAYLAND_DISPLAY");
 
-    QQmlApplicationEngine engine;
-    languageManager.setEngine(&engine);
     BackendManager backendManager;
     DesktopManager desktopManager;
     DeckyManager deckyManager;
+    GlobalShortcutManager globalShortcutManager(gameScopeMode,
+                                                 desktopManager.isInstalled());
     Backend backend;
+    ShortcutActionManager shortcutActionManager(&backend,
+                                                 &uiSettings,
+                                                 toggleMainWindow);
+    QObject::connect(&globalShortcutManager,
+                     &GlobalShortcutManager::shortcutActivated,
+                     &shortcutActionManager,
+                     &ShortcutActionManager::executeShortcut);
+    QObject::connect(&languageManager,
+                     &LanguageManager::languageChanged,
+                     &shortcutActionManager,
+                     &ShortcutActionManager::refreshTranslations);
     TrayIcon trayIcon;
     const QString trayIconThemeKey = QStringLiteral("Theme/tray_icon");
     const QString trayIconTheme = uiSettings
@@ -223,15 +245,20 @@ int main(int argc, char *argv[]) {
     else
         trayIcon.setThemeMode(0);
 
+    QQmlApplicationEngine engine;
+    languageManager.setEngine(&engine);
     engine.rootContext()->setContextProperty("backendManager", &backendManager);
     engine.rootContext()->setContextProperty("desktopManager", &desktopManager);
     engine.rootContext()->setContextProperty("deckyManager", &deckyManager);
+    engine.rootContext()->setContextProperty("globalShortcutManager", &globalShortcutManager);
+    engine.rootContext()->setContextProperty("shortcutActionManager", &shortcutActionManager);
     engine.rootContext()->setContextProperty("cppBackend", &backend);
     engine.rootContext()->setContextProperty("cppTrayIcon", &trayIcon);
     engine.rootContext()->setContextProperty("uiSettings", &uiSettings);
     engine.rootContext()->setContextProperty("languageManager", &languageManager);
     engine.rootContext()->setContextProperty("gameScopeMode", gameScopeMode);
     engine.rootContext()->setContextProperty("startInBackground", startInBackground);
+    globalShortcutManager.start();
     backendManager.start();
     backend.connectSocket();
     engine.loadFromModule("magicpods", "Main");
@@ -259,24 +286,6 @@ int main(int argc, char *argv[]) {
     }
 
     QMenu trayMenu;
-    auto toggleMainWindow = [&]() {
-        if (!root) {
-            return;
-        }
-        if (auto window = qobject_cast<QWindow *>(root)) {
-            const bool visible = window->isVisible();
-            if (visible) {
-                window->hide();
-            } else {
-                window->show();
-                window->raise();
-                window->requestActivate();
-            }
-        } else {
-            const bool visible = root->property("visible").toBool();
-            root->setProperty("visible", !visible);
-        }
-    };
     TrayIconManager trayIconManager(&trayIcon, &trayMenu, &backend, toggleMainWindow, [&app]() {
         app.quit();
     });

@@ -7,7 +7,7 @@ include(GNUInstallDirs)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Gui Qml Quick QuickControls2 Widgets WebSockets Linguist)
+find_package(Qt6 REQUIRED COMPONENTS Core DBus Gui Qml Quick QuickControls2 Widgets WebSockets Linguist)
 
 qt_standard_project_setup(REQUIRES 6.8
     I18N_TRANSLATED_LANGUAGES
@@ -63,8 +63,10 @@ qt_add_executable(magicpods
     src/app/cpp/BackendManager.cpp
     src/app/cpp/DeckyManager.cpp
     src/app/cpp/DesktopManager.cpp
+    src/app/cpp/GlobalShortcutManager.cpp
     src/app/cpp/LanguageManager.cpp
     src/app/cpp/main.cpp
+    src/app/cpp/ShortcutActionManager.cpp
     src/app/cpp/TrayIcon.cpp
     src/app/cpp/TrayIconManager.cpp
     src/app/cpp/UiSettingsService.cpp
@@ -113,6 +115,7 @@ qt_add_qml_module(magicpods
         src/app/qml/pages/AboutPage.qml
         src/app/qml/pages/BatteryPage.qml
         src/app/qml/pages/HeadphonesPage.qml
+        src/app/qml/pages/ShortcutsPage.qml
         src/app/qml/pages/SettingsPage.qml
         src/app/qml/pages/ColorSample.qml
     RESOURCES
@@ -133,6 +136,7 @@ target_include_directories(magicpods PRIVATE
 
 target_link_libraries(magicpods PRIVATE
     Qt6::Core
+    Qt6::DBus
     Qt6::Gui
     Qt6::Qml
     Qt6::Quick

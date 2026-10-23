@@ -69,6 +69,7 @@ QQC2.ApplicationWindow {
 
             BatteryPage {}
             HeadphonesPage {}
+            ShortcutsPage {}
             SettingsPage {}
             AboutPage {}
         }
@@ -135,6 +136,30 @@ QQC2.ApplicationWindow {
                         text: tabHeadphones.text
                         font: tabHeadphones.font
                         color: tabHeadphones.palette.buttonText
+                    }
+                }
+            }
+        }
+
+        QQC2.TabButton {
+            id: tabShortcuts
+            text: qsTrId("menu.shortcuts")
+            contentItem: Item {
+                Row {
+                    anchors.centerIn: parent
+                    spacing: 8
+                    Image {
+                        anchors.verticalCenter: parent.verticalCenter
+                        source: "qrc:/qt/qml/magicpods/src/app/qml/assets/icons/menu-shortcuts.png"
+                        width: 24; height: 24
+                        fillMode: Image.PreserveAspectFit
+                        mipmap: true
+                    }
+                    Text {
+                        anchors.verticalCenter: parent.verticalCenter
+                        text: tabShortcuts.text
+                        font: tabShortcuts.font
+                        color: tabShortcuts.palette.buttonText
                     }
                 }
             }
