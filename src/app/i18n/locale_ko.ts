@@ -149,6 +149,11 @@
             <source />
             <translation>대화 인지:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>말할 때 음량 낮추기:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

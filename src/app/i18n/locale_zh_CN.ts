@@ -149,6 +149,11 @@
             <source />
             <translation>对话感知:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>说话时降低音量:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

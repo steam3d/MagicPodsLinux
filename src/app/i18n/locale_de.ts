@@ -149,6 +149,11 @@ Deaktivieren Sie die „Konversationserkennung“ in den Einstellungen Ihrer Kop
             <source />
             <translation>Konversationserkennung:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>Lautstärke beim Sprechen verringern:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

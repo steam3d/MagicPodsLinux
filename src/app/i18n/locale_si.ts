@@ -149,6 +149,11 @@
             <source />
             <translation>සංවාද හඳුනාගැනීම:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>කතා කරන විට හඬ අඩු කරන්න:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

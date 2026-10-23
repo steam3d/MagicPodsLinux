@@ -86,6 +86,21 @@ QQC2.Page {
         });
     }
 
+    function setConversationAwarenessField(field, value) {
+        if (!conversationAwarenessData) {
+            return;
+        }
+
+        var selected = conversationAwarenessData.selected || {};
+        selected[field] = value;
+        conversationAwarenessData.selected = selected;
+
+        cppBackend.setCapability("conversationAwareness", currentAddress(), {
+            enabled: selected.enabled ?? false,
+            volume: toInteger(selected.volume ?? 0)
+        });
+    }
+
     function requestInfo() {
         if (cppBackend && cppBackend.connected) {
             cppBackend.getInfo();
@@ -568,13 +583,45 @@ QQC2.Page {
                     label: qsTrId("battery.conversation_awareness")
 
                     QQC2.Switch {
-                        checked: rootPage.conversationAwarenessData?.selected ?? false
+                        checked: rootPage.conversationAwarenessData?.selected?.enabled ?? false
                         enabled: !(rootPage.conversationAwarenessData?.readonly ?? true)
-                        onToggled: {
-                            if (rootPage.conversationAwarenessData) {
-                                rootPage.conversationAwarenessData.selected = checked;
-                                cppBackend.setCapability("conversationAwareness", rootPage.currentAddress(), checked);
+                        onToggled: rootPage.setConversationAwarenessField("enabled", checked)
+                    }
+                }
+
+                MP.FormRow {
+                    Layout.fillWidth: true
+                    visible: rootPage.conversationAwarenessData !== null
+                    label: qsTrId("battery.conversation_awareness.lower_volume")
+
+                    RowLayout {
+                        spacing: MP.Units.largeSpacing
+
+                        QQC2.Slider {
+                            id: conversationAwarenessVolumeSlider
+                            Layout.leftMargin: -16
+                            Layout.rightMargin: -16
+                            implicitWidth: rootPage.mWidth + 32
+                            from: 0
+                            to: 100
+                            value: rootPage.conversationAwarenessData?.selected?.volume ?? 0
+                            enabled: !(rootPage.conversationAwarenessData?.readonly ?? true)
+                            onMoved: {
+                                if (rootPage.conversationAwarenessData) {
+                                    var selected = rootPage.conversationAwarenessData.selected || {};
+                                    selected.volume = rootPage.toInteger(value);
+                                    rootPage.conversationAwarenessData.selected = selected;
+                                }
                             }
+                            onPressedChanged: {
+                                if (!pressed) {
+                                    rootPage.setConversationAwarenessField("volume", rootPage.toInteger(value));
+                                }
+                            }
+                        }
+
+                        MP.Label {
+                            text: Math.round(conversationAwarenessVolumeSlider.value) + "%"
                         }
                     }
                 }

@@ -149,6 +149,11 @@ V nastavení sluchátek vypněte „Detekci konverzace“, aby se při použív�
             <source />
             <translation>Detekce konverzace:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>Snížit hlasitost při mluvení:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

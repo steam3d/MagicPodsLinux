@@ -149,6 +149,11 @@ Désactivez la « Détection de conversation » dans les réglages de vos écout
             <source />
             <translation>Détection de conversation:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>Baisser le volume lorsque vous parlez:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

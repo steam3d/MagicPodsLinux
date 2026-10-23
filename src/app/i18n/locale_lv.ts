@@ -149,6 +149,11 @@ Austiņu iestatījumos atspējojiet “Sarunas noteikšanu”, lai mikrofona lie
             <source />
             <translation>Sarunas noteikšana:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>Samazināt skaļumu runāšanas laikā:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

@@ -149,6 +149,11 @@ Desactiva «Detección de conversación» en los ajustes de los auriculares para
             <source />
             <translation>Detección de conversación:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>Bajar el volumen al hablar:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

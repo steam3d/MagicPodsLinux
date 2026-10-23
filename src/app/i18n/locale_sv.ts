@@ -149,6 +149,11 @@ Inaktivera ”Samtalsmedvetenhet” i hörlurarnas inställningar för att förh
             <source />
             <translation>Samtalsmedvetenhet:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>Sänk volymen när du pratar:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

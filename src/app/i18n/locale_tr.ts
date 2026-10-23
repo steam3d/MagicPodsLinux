@@ -149,6 +149,11 @@ Mikrofonu kullanırken ses düzeyinin otomatik olarak düşmesini önlemek için
             <source />
             <translation>Konuşma Farkındalığı:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>Konuşurken sesi azalt:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

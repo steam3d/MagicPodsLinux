@@ -149,6 +149,11 @@
             <source />
             <translation>ئاگاداریی گفتوگۆ:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>کەمکردنەوەی دەنگ لە کاتی قسەکردن:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

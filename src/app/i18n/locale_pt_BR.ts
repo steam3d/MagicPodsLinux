@@ -149,6 +149,11 @@ Desative a “Detecção de conversa” nas configurações dos fones de ouvido 
             <source />
             <translation>Detecção de conversa:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>Diminuir o volume ao falar:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

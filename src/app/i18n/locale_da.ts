@@ -149,6 +149,11 @@ Deaktiver »Registrering af samtale« i hovedtelefonernes indstillinger for at f
             <source />
             <translation>Registrering af samtale:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>Sænk lydstyrken, når du taler:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

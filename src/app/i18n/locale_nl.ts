@@ -149,6 +149,11 @@ Schakel ‘Gespreksdetectie’ uit in de hoofdtelefooninstellingen om te voorkom
             <source />
             <translation>Gespreksdetectie:</translation>
         </message>
+        <message id="battery.conversation_awareness.lower_volume">
+            <location filename="../qml/pages/BatteryPage.qml" line="595" />
+            <source />
+            <translation>Volume verlagen tijdens het praten:</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />
