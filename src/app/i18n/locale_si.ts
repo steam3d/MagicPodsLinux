@@ -504,6 +504,16 @@
             <source />
             <translation>“උපයෝගිතා” යටතේ යෙදුම් මෙනුවට යෙදුම එක් කරයි.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>පිවිසීමේදී ආරම්භ කරන්න</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>ඔබ පිවිසෙන විට යෙදුම පසුබිමේ ආරම්භ කරයි.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

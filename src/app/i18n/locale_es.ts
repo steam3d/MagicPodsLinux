@@ -504,6 +504,16 @@ Desactiva «Detección de conversación» en los ajustes de los auriculares para
             <source />
             <translation>Añade la aplicación al menú de aplicaciones, en «Utilidades».</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Iniciar al iniciar sesión</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Inicia la aplicación en segundo plano al iniciar sesión.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

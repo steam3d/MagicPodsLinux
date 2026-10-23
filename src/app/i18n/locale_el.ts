@@ -504,6 +504,16 @@
             <source />
             <translation>Προσθέτει την εφαρμογή στο μενού εφαρμογών, στην κατηγορία «Βοηθήματα».</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Εκκίνηση κατά τη σύνδεση</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Εκκινεί την εφαρμογή στο παρασκήνιο κατά τη σύνδεση.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

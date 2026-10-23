@@ -504,6 +504,16 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
             <source />
             <translation>Aggiunge l’applicazione al menu delle applicazioni nella categoria «Accessori».</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Avvia all’accesso</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Avvia l’applicazione in background quando accedi.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

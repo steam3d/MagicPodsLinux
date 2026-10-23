@@ -504,6 +504,16 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
             <source />
             <translation>Thêm ứng dụng vào mục “Tiện ích” trong menu ứng dụng.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Khởi chạy khi đăng nhập</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Khởi chạy ứng dụng trong nền khi bạn đăng nhập.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

@@ -211,6 +211,43 @@ QQC2.Page {
                 Layout.fillWidth: true
                 Layout.maximumWidth: mWidth * 1.5
                 Layout.alignment: Qt.AlignHCenter
+                label: qsTrId("settings.launch_at_startup")
+                tooltip: qsTrId("settings.launch_at_startup.description")
+
+                QQC2.Switch {
+                    id: autostartSwitch
+                    property bool skipToggle: false
+                    checked: false
+                    enabled: false
+
+                    function refreshState() {
+                        skipToggle = true;
+                        enabled = !!desktopManager;
+                        checked = !!desktopManager && desktopManager.isAutostartInstalled();
+                        skipToggle = false;
+                    }
+
+                    onToggled: {
+                        if (skipToggle)
+                            return;
+
+                        if (checked) {
+                            if (!desktopManager?.installAutostart())
+                                refreshState();
+                        } else {
+                            if (!desktopManager?.uninstallAutostart())
+                                refreshState();
+                        }
+                    }
+
+                    Component.onCompleted: refreshState()
+                }
+            }
+
+            MP.FormRow {
+                Layout.fillWidth: true
+                Layout.maximumWidth: mWidth * 1.5
+                Layout.alignment: Qt.AlignHCenter
                 label: qsTrId("settings.application_theme")
 
                 QQC2.ComboBox {

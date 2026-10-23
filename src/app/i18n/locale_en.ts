@@ -504,6 +504,16 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <source></source>
         <translation>Adds the application to the application menu under "Utilities".</translation>
     </message>
+    <message id="settings.launch_at_startup">
+        <location filename="../qml/pages/SettingsPage.qml" line="241"/>
+        <source></source>
+        <translation>Launch at startup</translation>
+    </message>
+    <message id="settings.launch_at_startup.description">
+        <location filename="../qml/pages/SettingsPage.qml" line="242"/>
+        <source></source>
+        <translation>Starts the application in the background when you log in.</translation>
+    </message>
     <message id="settings.tray_icon_theme">
         <location filename="../qml/pages/SettingsPage.qml" line="97"/>
         <source></source>

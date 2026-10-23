@@ -504,6 +504,16 @@ Désactivez la « Détection de conversation » dans les réglages de vos écout
             <source />
             <translation>Ajoute l’application au menu des applications, dans « Utilitaires ».</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Lancer à la connexion</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Lance l’application en arrière-plan lorsque vous vous connectez.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

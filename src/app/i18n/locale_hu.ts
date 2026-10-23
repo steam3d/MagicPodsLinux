@@ -504,6 +504,16 @@ Kapcsolja ki a fejhallgató beállításaiban a „Beszélgetésészlelést”, 
             <source />
             <translation>Hozzáadja az alkalmazást az alkalmazásmenü „Segédprogramok” kategóriájához.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Indítás bejelentkezéskor</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Az alkalmazás indítása a háttérben bejelentkezéskor.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

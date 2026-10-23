@@ -504,6 +504,16 @@ Schakel ‘Gespreksdetectie’ uit in de hoofdtelefooninstellingen om te voorkom
             <source />
             <translation>Voegt de toepassing toe aan het toepassingsmenu onder ‘Hulpmiddelen’.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Starten bij aanmelden</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Start de toepassing op de achtergrond wanneer u zich aanmeldt.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

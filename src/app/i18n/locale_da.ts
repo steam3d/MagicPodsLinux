@@ -504,6 +504,16 @@ Deaktiver »Registrering af samtale« i hovedtelefonernes indstillinger for at f
             <source />
             <translation>Føjer programmet til programmenuen under »Værktøjer«.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Start ved login</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Starter programmet i baggrunden, når du logger ind.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

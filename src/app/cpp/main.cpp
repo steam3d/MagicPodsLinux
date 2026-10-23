@@ -138,9 +138,11 @@ int main(int argc, char *argv[]) {
     QLocalSocket socket;
     socket.connectToServer(serverName);
     if (socket.waitForConnected(150)) {
-        socket.write("raise");
-        socket.flush();
-        socket.waitForBytesWritten(150);
+        if (!startInBackground) {
+            socket.write("raise");
+            socket.flush();
+            socket.waitForBytesWritten(150);
+        }
         return 0;
     }
 

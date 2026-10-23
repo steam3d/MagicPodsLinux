@@ -504,6 +504,16 @@ Desative a “Detecção de conversa” nas configurações dos fones de ouvido 
             <source />
             <translation>Adiciona o aplicativo ao menu de aplicativos, em “Utilitários”.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Iniciar ao entrar</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Inicia o aplicativo em segundo plano ao entrar.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

@@ -504,6 +504,16 @@ Inaktivera ”Samtalsmedvetenhet” i hörlurarnas inställningar för att förh
             <source />
             <translation>Lägger till programmet i programmenyn under ”Verktyg”.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Starta vid inloggning</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Startar programmet i bakgrunden när du loggar in.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

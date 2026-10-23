@@ -504,6 +504,16 @@ Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta �
             <source />
             <translation>Lisää sovelluksen sovellusvalikon Apuohjelmat-luokkaan.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Käynnistä kirjauduttaessa</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Käynnistää sovelluksen taustalla, kun kirjaudut sisään.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

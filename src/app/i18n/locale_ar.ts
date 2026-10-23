@@ -504,6 +504,16 @@
             <source />
             <translation>يضيف التطبيق إلى قائمة التطبيقات ضمن «الأدوات المساعدة».</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>التشغيل عند تسجيل الدخول</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>يشغّل التطبيق في الخلفية عند تسجيل الدخول.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

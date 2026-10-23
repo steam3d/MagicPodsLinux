@@ -504,6 +504,16 @@ Deaktivieren Sie die „Konversationserkennung“ in den Einstellungen Ihrer Kop
             <source />
             <translation>Fügt die Anwendung dem Anwendungsmenü unter „Dienstprogramme“ hinzu.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Beim Anmelden starten</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Startet die Anwendung bei der Anmeldung im Hintergrund.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

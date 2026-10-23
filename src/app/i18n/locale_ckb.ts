@@ -504,6 +504,16 @@
             <source />
             <translation>بەرنامەکە لە بەشی «ئامرازەکان»ی پێڕستی بەرنامەکان زیاد دەکات.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>دەستپێکردن لە کاتی چوونەژوورەوە</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>کاتێک دەچیتە ژوورەوە، ئەپەکە لە پاشبنەما دەخاتە کار.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

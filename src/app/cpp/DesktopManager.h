@@ -16,8 +16,13 @@ public:
     Q_INVOKABLE bool install();
     Q_INVOKABLE bool uninstall();
     Q_INVOKABLE bool isInstalled() const;
+    Q_INVOKABLE bool installAutostart();
+    Q_INVOKABLE bool uninstallAutostart();
+    Q_INVOKABLE bool isAutostartInstalled() const;
 
 private:
     QString desktopFilePath() const;
+    QString autostartFilePath() const;
     bool createDesktopFile();
+    bool createAutostartFile();
 };

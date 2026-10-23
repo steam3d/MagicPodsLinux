@@ -504,6 +504,16 @@ Desative a «Deteção de conversa» nas definições dos auscultadores para imp
             <source />
             <translation>Adiciona a aplicação ao menu de aplicações, em «Utilitários».</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Iniciar ao iniciar sessão</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Inicia a aplicação em segundo plano ao iniciar sessão.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

@@ -504,6 +504,16 @@ V nastavení sluchátek vypněte „Detekci konverzace“, aby se při použív�
             <source />
             <translation>Přidá aplikaci do nabídky aplikací v kategorii „Nástroje“.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Spustit při přihlášení</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Spustí aplikaci na pozadí při přihlášení.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

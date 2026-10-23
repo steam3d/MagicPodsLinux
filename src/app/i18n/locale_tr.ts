@@ -504,6 +504,16 @@ Mikrofonu kullanırken ses düzeyinin otomatik olarak düşmesini önlemek için
             <source />
             <translation>Uygulamayı uygulama menüsündeki “Yardımcı Programlar” kategorisine ekler.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Oturum açıldığında başlat</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Oturum açtığınızda uygulamayı arka planda başlatır.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />

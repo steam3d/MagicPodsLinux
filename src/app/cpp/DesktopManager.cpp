@@ -14,6 +14,16 @@
 DesktopManager::DesktopManager(QObject *parent)
     : QObject(parent) {}
 
+static QString applicationPath()
+{
+    // Use launcher script path if available (CQtDeployer sets CQT_RUN_FILE),
+    // otherwise fall back to the binary itself (dev builds)
+    QString path = qEnvironmentVariable("CQT_RUN_FILE");
+    if (path.isEmpty())
+        path = QCoreApplication::applicationFilePath();
+    return path;
+}
+
 static QString iconInstallPath()
 {
     return QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)
@@ -39,12 +49,6 @@ bool DesktopManager::createDesktopFile()
     if (!installIcon())
         qWarning() << "[DesktopManager] Failed to install icon";
 
-    // Use launcher script path if available (CQtDeployer sets CQT_RUN_FILE),
-    // otherwise fall back to the binary itself (dev builds)
-    QString exePath = qEnvironmentVariable("CQT_RUN_FILE");
-    if (exePath.isEmpty())
-        exePath = QCoreApplication::applicationFilePath();
-
     const QString dirPath = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)
                             + QString("/applications");
     qDebug() << dirPath;
@@ -69,7 +73,37 @@ Terminal=false
 Categories=Utility;
 StartupWMClass=MagicPods
 )")
-    .arg(exePath, iconInstallPath());
+    .arg(applicationPath(), iconInstallPath());
+    return true;
+}
+
+bool DesktopManager::createAutostartFile()
+{
+    if (!installIcon())
+        qWarning() << "[DesktopManager] Failed to install icon";
+
+    const QString dirPath = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation)
+                            + QString("/autostart");
+    if (!QDir().mkpath(dirPath))
+        return false;
+
+    QFile f(dirPath + "/app.magicpods.desktop");
+    if (!f.open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text))
+        return false;
+
+    QTextStream out(&f);
+    out << QString(
+R"([Desktop Entry]
+Type=Application
+Name=MagicPods
+Comment=The control center for your Bluetooth headphones
+Exec=%1 --background
+Icon=%2
+Terminal=false
+Categories=Utility;
+StartupWMClass=MagicPods
+)")
+    .arg(applicationPath(), iconInstallPath());
     return true;
 }
 
@@ -80,9 +114,21 @@ QString DesktopManager::desktopFilePath() const
     return QFileInfo::exists(path) ? path : QString{};
 }
 
+QString DesktopManager::autostartFilePath() const
+{
+    const QString path = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation)
+                         + "/autostart/app.magicpods.desktop";
+    return QFileInfo::exists(path) ? path : QString{};
+}
+
 bool DesktopManager::isInstalled() const
 {
     return !desktopFilePath().isEmpty();
+}
+
+bool DesktopManager::isAutostartInstalled() const
+{
+    return !autostartFilePath().isEmpty();
 }
 
 bool DesktopManager::install()
@@ -98,6 +144,27 @@ bool DesktopManager::install()
 
 bool DesktopManager::uninstall()
 {
-    QFile::remove(iconInstallPath());
-    return QFile::remove(desktopFilePath());
+    const bool removed = QFile::remove(desktopFilePath());
+    if (removed && !isAutostartInstalled())
+        QFile::remove(iconInstallPath());
+    return removed;
+}
+
+bool DesktopManager::installAutostart()
+{
+    if (isAutostartInstalled()) {
+        qDebug() << "[DesktopManager] Autostart file already exists";
+        return true;
+    }
+
+    qDebug() << "[DesktopManager] Creating autostart file";
+    return createAutostartFile();
+}
+
+bool DesktopManager::uninstallAutostart()
+{
+    const bool removed = QFile::remove(autostartFilePath());
+    if (removed && !isInstalled())
+        QFile::remove(iconInstallPath());
+    return removed;
 }

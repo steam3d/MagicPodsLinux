@@ -504,6 +504,16 @@ Wyłącz opcję „Wykrywanie rozmów” w ustawieniach słuchawek, aby zapobiec
             <source />
             <translation>Dodaje aplikację do menu aplikacji w kategorii „Narzędzia”.</translation>
         </message>
+        <message id="settings.launch_at_startup">
+            <location filename="../qml/pages/SettingsPage.qml" line="241" />
+            <source />
+            <translation>Uruchamiaj przy logowaniu</translation>
+        </message>
+        <message id="settings.launch_at_startup.description">
+            <location filename="../qml/pages/SettingsPage.qml" line="242" />
+            <source />
+            <translation>Uruchamia aplikację w tle podczas logowania.</translation>
+        </message>
         <message id="settings.tray_icon_theme">
             <location filename="../qml/pages/SettingsPage.qml" line="97" />
             <source />
