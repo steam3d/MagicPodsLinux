@@ -154,6 +154,11 @@
             <source />
             <translation>කතා කරන විට හඬ අඩු කරන්න:</translation>
         </message>
+        <message id="battery.volume_reduction.off">
+            <location filename="../qml/pages/BatteryPage.qml" line="75" />
+            <source />
+            <translation>අක්‍රිය</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

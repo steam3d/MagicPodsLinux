@@ -154,6 +154,11 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <source></source>
         <translation>Lower volume when talking:</translation>
     </message>
+    <message id="battery.volume_reduction.off">
+        <location filename="../qml/pages/BatteryPage.qml" line="75"/>
+        <source></source>
+        <translation>Off</translation>
+    </message>
     <message id="battery.personalized_volume">
         <location filename="../qml/pages/BatteryPage.qml" line="415"/>
         <source></source>

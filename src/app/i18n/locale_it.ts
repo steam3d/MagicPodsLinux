@@ -154,6 +154,11 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
             <source />
             <translation>Riduci il volume mentre parli:</translation>
         </message>
+        <message id="battery.volume_reduction.off">
+            <location filename="../qml/pages/BatteryPage.qml" line="75" />
+            <source />
+            <translation>Disatt.</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

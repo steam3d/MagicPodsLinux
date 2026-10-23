@@ -154,6 +154,11 @@ Desative a «Deteção de conversa» nas definições dos auscultadores para imp
             <source />
             <translation>Baixar o volume ao falar:</translation>
         </message>
+        <message id="battery.volume_reduction.off">
+            <location filename="../qml/pages/BatteryPage.qml" line="75" />
+            <source />
+            <translation>Desl.</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

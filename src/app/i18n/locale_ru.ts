@@ -154,6 +154,11 @@
             <source />
             <translation>Снизить громкость при разговоре:</translation>
         </message>
+        <message id="battery.volume_reduction.off">
+            <location filename="../qml/pages/BatteryPage.qml" line="75" />
+            <source />
+            <translation>Выкл.</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

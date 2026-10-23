@@ -154,6 +154,11 @@ V nastavení sluchátek vypněte „Detekci konverzace“, aby se při použív�
             <source />
             <translation>Snížit hlasitost při mluvení:</translation>
         </message>
+        <message id="battery.volume_reduction.off">
+            <location filename="../qml/pages/BatteryPage.qml" line="75" />
+            <source />
+            <translation>Vyp.</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

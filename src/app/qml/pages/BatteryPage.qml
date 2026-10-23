@@ -70,6 +70,11 @@ QQC2.Page {
         return Math.round(value) | 0;
     }
 
+    function volumeReductionLabel(value) {
+        const roundedValue = toInteger(value);
+        return roundedValue === 0 ? qsTrId("battery.volume_reduction.off") : roundedValue + "%";
+    }
+
     function setEarDetectionField(field, value) {
         if (!earDetectionData) {
             return;
@@ -560,7 +565,7 @@ QQC2.Page {
                         }
 
                         MP.Label {
-                            text: Math.round(earDetectionVolumeSlider.value) + "%"
+                            text: rootPage.volumeReductionLabel(earDetectionVolumeSlider.value)
                         }
                     }
                 }
@@ -621,7 +626,7 @@ QQC2.Page {
                         }
 
                         MP.Label {
-                            text: Math.round(conversationAwarenessVolumeSlider.value) + "%"
+                            text: rootPage.volumeReductionLabel(conversationAwarenessVolumeSlider.value)
                         }
                     }
                 }

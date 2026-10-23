@@ -154,6 +154,11 @@ Kapcsolja ki a fejhallgató beállításaiban a „Beszélgetésészlelést”, 
             <source />
             <translation>Hangerő csökkentése beszéd közben:</translation>
         </message>
+        <message id="battery.volume_reduction.off">
+            <location filename="../qml/pages/BatteryPage.qml" line="75" />
+            <source />
+            <translation>Ki</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

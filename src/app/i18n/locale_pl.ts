@@ -154,6 +154,11 @@ Wyłącz opcję „Wykrywanie rozmów” w ustawieniach słuchawek, aby zapobiec
             <source />
             <translation>Zmniejsz głośność podczas mówienia:</translation>
         </message>
+        <message id="battery.volume_reduction.off">
+            <location filename="../qml/pages/BatteryPage.qml" line="75" />
+            <source />
+            <translation>Wył.</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

@@ -154,6 +154,11 @@ Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta �
             <source />
             <translation>Laske äänenvoimakkuutta puhuessa:</translation>
         </message>
+        <message id="battery.volume_reduction.off">
+            <location filename="../qml/pages/BatteryPage.qml" line="75" />
+            <source />
+            <translation>Pois</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

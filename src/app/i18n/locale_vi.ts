@@ -154,6 +154,11 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
             <source />
             <translation>Giảm âm lượng khi nói:</translation>
         </message>
+        <message id="battery.volume_reduction.off">
+            <location filename="../qml/pages/BatteryPage.qml" line="75" />
+            <source />
+            <translation>Tắt</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

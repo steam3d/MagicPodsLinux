@@ -154,6 +154,11 @@ Austiņu iestatījumos atspējojiet “Sarunas noteikšanu”, lai mikrofona lie
             <source />
             <translation>Samazināt skaļumu runāšanas laikā:</translation>
         </message>
+        <message id="battery.volume_reduction.off">
+            <location filename="../qml/pages/BatteryPage.qml" line="75" />
+            <source />
+            <translation>Izsl.</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />

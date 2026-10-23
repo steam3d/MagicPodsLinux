@@ -154,6 +154,11 @@ Deaktivieren Sie die „Konversationserkennung“ in den Einstellungen Ihrer Kop
             <source />
             <translation>Lautstärke beim Sprechen verringern:</translation>
         </message>
+        <message id="battery.volume_reduction.off">
+            <location filename="../qml/pages/BatteryPage.qml" line="75" />
+            <source />
+            <translation>Aus</translation>
+        </message>
         <message id="battery.personalized_volume">
             <location filename="../qml/pages/BatteryPage.qml" line="415" />
             <source />
