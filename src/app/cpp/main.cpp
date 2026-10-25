@@ -122,6 +122,8 @@ int main(int argc, char *argv[]) {
     QFontDatabase::addApplicationFont(":/fonts/NotoSans-BlackItalic.ttf");
     app.setFont(QFont("Noto Sans", app.font().pointSize()));
 
+    // TODO: Package with Qt 6.11.1 or newer for QTBUG-145740, which prevents
+    // FluentWinUI3 from drawing keyboard focus frames for programmatic focus.
     QQuickStyle::setStyle("FluentWinUI3");
     app.setApplicationName("MagicPods");
     app.setApplicationDisplayName("MagicPods");
