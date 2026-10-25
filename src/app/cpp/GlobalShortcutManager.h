@@ -56,6 +56,7 @@ signals:
     void availableChanged();
     void busyChanged();
     void canConfigureChanged();
+    void configurationHelpRequested();
     void shortcutActivated(const QString &shortcutId);
 
 private slots:
@@ -64,8 +65,6 @@ private slots:
                          const QString &shortcutId,
                          qulonglong timestamp,
                          const QVariantMap &options);
-    void handleShortcutsChanged(const QDBusObjectPath &sessionHandle,
-                                const PortalShortcutList &shortcuts);
     void handleSessionClosed();
 
 private:
@@ -89,7 +88,6 @@ private:
     void connectSessionSignals();
     void disconnectSessionSignals();
     void closeSession();
-    void applyShortcuts(const PortalShortcutList &shortcuts);
     void failRequest(const QString &message);
     void setAvailable(bool value);
     void setBusy(bool value);
@@ -98,9 +96,10 @@ private:
     bool desktopEntryAvailableAtStartup = false;
     bool bindAfterSessionCreation = false;
     bool bindAttemptedForSession = false;
+    bool bindCompletedForSession = false;
     bool availableValue = false;
     bool busyValue = false;
-    bool shortcutsRegistered = false;
+    uint portalVersion = 0;
     QString sessionPath;
     QString pendingRequestPath;
     QString pendingRequestToken;

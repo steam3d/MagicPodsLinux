@@ -621,12 +621,17 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>È necessario un collegamento per attivare le scorciatoie da tastiera</translation>
+            <translation>È necessario un collegamento all’applicazione</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Attiva «%1» nelle impostazioni e riavvia l’applicazione</translation>
+            <translation>Le scorciatoie da tastiera funzioneranno al successivo avvio dell’applicazione dopo l’aggiunta del collegamento.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Aggiungi ed esci</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Disattiva «Rilevamento della conversazione» nelle impostazioni delle cuffie pe
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Il pulsante «Configura» apre la sezione «Scorciatoie da tastiera» delle impostazioni di sistema. Assegna le combinazioni di tasti agli slot desiderati e applica le modifiche. Quindi seleziona un’azione per ogni slot nell’applicazione.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Configura le scorciatoie da tastiera</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>In SteamOS, vai a Impostazioni di sistema → Tastiera → Scorciatoie. Il percorso può variare su altri sistemi. Trova MagicPods e assegna le scorciatoie da tastiera agli slot desiderati. Torna quindi nell’app e assegna le azioni a questi slot nella scheda «%1».</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

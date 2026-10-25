@@ -621,12 +621,17 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Cần có lối tắt để kích hoạt phím tắt</translation>
+            <translation>Cần có lối tắt ứng dụng</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Bật “%1” trong phần Cài đặt rồi khởi động lại ứng dụng</translation>
+            <translation>Sau khi thêm lối tắt, phím tắt sẽ hoạt động vào lần tiếp theo bạn khởi chạy ứng dụng.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Thêm và thoát</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Tắt “Nhận biết cuộc hội thoại” trong cài đặt tai nghe để 
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Nút “Cấu hình” sẽ mở mục “Phím tắt” trong cài đặt hệ thống. Gán tổ hợp phím cho các vị trí mong muốn và áp dụng thay đổi. Sau đó chọn một tác vụ cho mỗi vị trí trong ứng dụng.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Cấu hình phím tắt</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>Trong SteamOS, hãy đi tới Thiết lập hệ thống → Bàn phím → Phím tắt. Đường dẫn có thể khác trên các hệ thống khác. Tìm MagicPods và gán phím tắt cho các vị trí mong muốn. Sau đó quay lại ứng dụng và gán hành động cho các vị trí đó trong thẻ “%1”.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

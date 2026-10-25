@@ -621,12 +621,17 @@
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>بۆ چالاککردنی کورتەکلیلەکان قەدبڕێک پێویستە</translation>
+            <translation>قەدبڕی بەرنامە پێویستە</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>لە ڕێکخستنەکاندا «%1» چالاک بکە و بەرنامەکە دووبارە پێبکەرەوە</translation>
+            <translation>کورتەکلیلەکان لە دەستپێکردنەوەی داهاتووی بەرنامەکەدا، دوای زیادکردنی قەدبڕەکە، کار دەکەن.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>زیادکردن و دەرچوون</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>دوگمەی «ڕێکخستن» بەشی «کورتەکلیلەکان» لە ڕێکخستنەکانی سیستەم دەکاتەوە. بۆ خانە پێویستەکان تێکەڵەکلیل دابنێ و گۆڕانکارییەکان جێبەجێ بکە. پاشان لە بەرنامەکەدا بۆ هەر خانەیەک کردارێک هەڵبژێرە.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>ڕێکخستنی کورتەکلیلەکانی تەختەکلیل</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>لە SteamOS، بڕۆ بۆ ڕێکخستنەکانی سیستەم → تەختەکلیل → کورتەکلیلەکان. ڕەنگە ڕێڕەوەکە لە سیستەمەکانی تردا جیاواز بێت. MagicPods بدۆزەرەوە و کورتەکلیلەکان بۆ خانە خوازراوەکان دابنێ. پاشان بگەڕێوە بۆ ئەپەکە و کردارەکان بۆ ئەو خانانە لە تابی «%1» دابنێ.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

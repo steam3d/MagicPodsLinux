@@ -621,12 +621,17 @@
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>需要應用程式捷徑才能啟用快速鍵</translation>
+            <translation>需要應用程式捷徑</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>在「設定」中啟用「%1」並重新啟動應用程式</translation>
+            <translation>新增捷徑後，下次啟動應用程式時快速鍵即可生效。</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>新增並結束</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>「設定」按鈕會開啟系統的「快速鍵」設定。請為所需插槽指定按鍵組合並套用變更，然後在應用程式中為每個插槽選擇一個動作。</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>設定鍵盤快速鍵</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>在 SteamOS 中，前往「系統設定」→「鍵盤」→「快速鍵」。其他系統中的路徑可能不同。找到 MagicPods，並為所需的欄位指定鍵盤快速鍵。然後返回應用程式，在「%1」分頁中為這些欄位指定動作。</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

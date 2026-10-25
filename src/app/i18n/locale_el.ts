@@ -621,12 +621,17 @@
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Απαιτείται συντόμευση για την ενεργοποίηση των συντομεύσεων πληκτρολογίου</translation>
+            <translation>Απαιτείται συντόμευση εφαρμογής</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Ενεργοποιήστε το «%1» στις Ρυθμίσεις και επανεκκινήστε την εφαρμογή</translation>
+            <translation>Οι συντομεύσεις πληκτρολογίου θα λειτουργήσουν την επόμενη φορά που θα εκκινήσετε την εφαρμογή μετά την προσθήκη της συντόμευσης.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Προσθήκη και έξοδος</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Το κουμπί «Ρύθμιση» ανοίγει την ενότητα «Συντομεύσεις πληκτρολογίου» στις ρυθμίσεις συστήματος. Αντιστοιχίστε συνδυασμούς πλήκτρων στις επιθυμητές θέσεις και εφαρμόστε τις αλλαγές. Έπειτα επιλέξτε μια ενέργεια για κάθε θέση στην εφαρμογή.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Ρύθμιση συντομεύσεων πληκτρολογίου</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>Στο SteamOS, μεταβείτε στις Ρυθμίσεις συστήματος → Πληκτρολόγιο → Συντομεύσεις. Η διαδρομή ενδέχεται να διαφέρει σε άλλα συστήματα. Βρείτε το MagicPods και αντιστοιχίστε συντομεύσεις πληκτρολογίου στις επιθυμητές υποδοχές. Στη συνέχεια, επιστρέψτε στην εφαρμογή και αντιστοιχίστε ενέργειες σε αυτές τις υποδοχές στην καρτέλα «%1».</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

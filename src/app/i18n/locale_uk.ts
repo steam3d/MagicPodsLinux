@@ -621,12 +621,17 @@
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Для активації гарячих клавіш потрібен ярлик</translation>
+            <translation>Потрібен ярлик застосунку</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Увімкніть «%1» у налаштуваннях і перезапустіть застосунок</translation>
+            <translation>Гарячі клавіші запрацюють після додавання ярлика під час наступного запуску застосунку.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Додати й вийти</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Кнопка «Налаштувати» відкриває розділ «Гарячі клавіші» в системних налаштуваннях. Призначте сполучення клавіш потрібним слотам і застосуйте зміни. Потім виберіть у застосунку дію для кожного слота.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Налаштування клавіатурних скорочень</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>У SteamOS перейдіть до розділу «Системні параметри» → «Клавіатура» → «Скорочення». В інших системах шлях може відрізнятися. Знайдіть MagicPods і призначте клавіатурні скорочення потрібним слотам. Потім поверніться до застосунку та призначте дії цим слотам на вкладці «%1».</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

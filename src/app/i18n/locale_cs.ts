@@ -621,12 +621,17 @@ V nastavení sluchátek vypněte „Detekci konverzace“, aby se při použív�
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Pro aktivaci klávesových zkratek je vyžadován zástupce</translation>
+            <translation>Je vyžadován zástupce aplikace</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Povolte „%1“ v nastavení a restartujte aplikaci</translation>
+            <translation>Klávesové zkratky budou fungovat při příštím spuštění aplikace po přidání zástupce.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Přidat a ukončit</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ V nastavení sluchátek vypněte „Detekci konverzace“, aby se při použív�
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Tlačítko „Nastavit“ otevře v systémovém nastavení část „Klávesové zkratky“. Přiřaďte požadovaným slotům kombinace kláves a použijte změny. Poté v aplikaci vyberte pro každý slot akci.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Nastavit klávesové zkratky</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>V systému SteamOS přejděte do Nastavení systému → Klávesnice → Zkratky. V jiných systémech se cesta může lišit. Vyhledejte MagicPods a přiřaďte klávesové zkratky požadovaným slotům. Poté se vraťte do aplikace a přiřaďte těmto slotům akce na kartě „%1“.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

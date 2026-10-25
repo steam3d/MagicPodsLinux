@@ -621,12 +621,17 @@ Deaktiver »Registrering af samtale« i hovedtelefonernes indstillinger for at f
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Der kræves en genvej for at aktivere genvejstaster</translation>
+            <translation>Programgenvej påkrævet</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Aktivér "%1" i Indstillinger, og genstart programmet</translation>
+            <translation>Genvejstasterne virker, næste gang du starter programmet, efter at genvejen er tilføjet.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Tilføj og afslut</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Deaktiver »Registrering af samtale« i hovedtelefonernes indstillinger for at f
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Knappen "Konfigurer" åbner "Genvejstaster" i systemindstillingerne. Tildel tastekombinationer til de ønskede pladser, og anvend ændringerne. Vælg derefter en handling for hver plads i programmet.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Indstil tastaturgenveje</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>I SteamOS skal du gå til Systemindstillinger → Tastatur → Genveje. Stien kan være anderledes på andre systemer. Find MagicPods, og tildel tastaturgenveje til de ønskede pladser. Gå derefter tilbage til appen, og tildel handlinger til pladserne på fanen »%1«.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

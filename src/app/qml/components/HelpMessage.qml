@@ -3,13 +3,20 @@
 // License: GPL-3.0
 
 import QtQuick 2.15
+import QtQuick.Controls 2.15 as QQC2
 import QtQuick.Layouts 1.15
 import magicpods as MP
 
 ColumnLayout {
+    id: root
+
     required property url iconSource
     required property string titleText
     required property string bodyText
+    property string actionText: ""
+
+    signal actionTriggered()
+
     anchors.centerIn: parent
 
     Image {
@@ -38,5 +45,13 @@ ColumnLayout {
         wrapMode: Text.WordWrap
         Layout.alignment: Qt.AlignHCenter
         horizontalAlignment: Text.AlignHCenter
+    }
+
+    QQC2.Button {
+        visible: root.actionText.length > 0
+        text: root.actionText
+        Layout.topMargin: MP.Units.smallSpacing
+        Layout.alignment: Qt.AlignHCenter
+        onClicked: root.actionTriggered()
     }
 }

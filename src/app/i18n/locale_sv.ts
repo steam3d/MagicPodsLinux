@@ -621,12 +621,17 @@ Inaktivera ”Samtalsmedvetenhet” i hörlurarnas inställningar för att förh
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>En genväg krävs för att aktivera kortkommandon</translation>
+            <translation>En programgenväg krävs</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Aktivera ”%1” i Inställningar och starta om programmet</translation>
+            <translation>När genvägen har lagts till fungerar kortkommandona nästa gång du startar programmet.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Lägg till och avsluta</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Inaktivera ”Samtalsmedvetenhet” i hörlurarnas inställningar för att förh
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Knappen ”Konfigurera” öppnar avsnittet ”Kortkommandon” i systeminställningarna. Tilldela tangentkombinationer till önskade platser och tillämpa ändringarna. Välj sedan en åtgärd för varje plats i programmet.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Konfigurera kortkommandon</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>I SteamOS går du till Systeminställningar → Tangentbord → Genvägar. Sökvägen kan skilja sig på andra system. Leta reda på MagicPods och tilldela kortkommandon till önskade platser. Gå sedan tillbaka till appen och tilldela åtgärder till platserna på fliken ”%1”.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

@@ -621,12 +621,17 @@
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>يلزم اختصار لتفعيل اختصارات لوحة المفاتيح</translation>
+            <translation>مطلوب اختصار للتطبيق</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>فعّل «%1» في الإعدادات وأعد تشغيل التطبيق</translation>
+            <translation>ستعمل اختصارات لوحة المفاتيح في المرة التالية التي تشغّل فيها التطبيق بعد إضافة الاختصار.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>إضافة وخروج</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>يفتح زر «إعداد» قسم «اختصارات لوحة المفاتيح» في إعدادات النظام. عيّن مجموعات مفاتيح للخانات المطلوبة وطبّق التغييرات. ثم اختر إجراءً لكل خانة في التطبيق.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>إعداد اختصارات لوحة المفاتيح</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>في SteamOS، انتقل إلى إعدادات النّظام → لوحة المفاتيح → الاختصارات. قد يختلف المسار في الأنظمة الأخرى. ابحث عن MagicPods وعيّن اختصارات لوحة المفاتيح للخانات المطلوبة. ثم ارجع إلى التطبيق وعيّن إجراءات لهذه الخانات في علامة التبويب «%1».</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

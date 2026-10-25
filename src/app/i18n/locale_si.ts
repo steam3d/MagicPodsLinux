@@ -621,12 +621,17 @@
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>යතුරුපුවරු කෙටිමං සක්‍රිය කිරීමට කෙටිමඟක් අවශ්‍ය වේ</translation>
+            <translation>යෙදුම් කෙටිමඟක් අවශ්‍යයි</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>සැකසුම් තුළ “%1” සක්‍රිය කර යෙදුම නැවත අරඹන්න</translation>
+            <translation>කෙටිමඟ එක් කිරීමෙන් පසු, යෙදුම ඊළඟ වර ආරම්භ කරන විට යතුරුපුවරු කෙටිමං ක්‍රියා කරනු ඇත.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>එක් කර පිටවන්න</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>“වින්‍යාස කරන්න” බොත්තම පද්ධති සැකසුම් තුළ “යතුරුපුවරු කෙටිමං” කොටස විවෘත කරයි. අවශ්‍ය ස්ථාන සඳහා යතුරු සංයෝජන යොදා වෙනස්කම් අදාළ කරන්න. ඉන්පසු යෙදුම තුළ එක් එක් ස්ථානය සඳහා ක්‍රියාවක් තෝරන්න.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>යතුරුපුවරු කෙටිමං සැකසීම</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>SteamOS හි පද්ධති සැකසුම් → යතුරුපුවරුව → කෙටිමං වෙත යන්න. වෙනත් පද්ධතිවල මෙම මාර්ගය වෙනස් විය හැක. MagicPods සොයා අවශ්‍ය ස්ලොට් සඳහා යතුරුපුවරු කෙටිමං පවරන්න. ඉන්පසු යෙදුමට ආපසු ගොස් “%1” ටැබය තුළ එම ස්ලොට් සඳහා ක්‍රියා පවරන්න.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

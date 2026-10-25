@@ -621,12 +621,17 @@
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Для активации горячих клавиш требуется ярлык</translation>
+            <translation>Понадобится ярлык приложения</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Включите «%1» в настройках и перезапустите приложение</translation>
+            <translation>Горячие клавиши заработают при следующем запуске приложения после добавления ярлыка</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Добавить и выйти</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Кнопка «Настроить» откроет системный раздел «Горячие клавиши». Назначьте сочетания клавиш для нужных слотов и примените изменения. Затем выберите действия для этих слотов в приложении.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Настройка комбинаций клавиш</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>В SteamOS перейдите в раздел «Параметры системы» → «Клавиатура» → «Комбинации клавиш». В других системах путь может отличаться. Найдите MagicPods и назначьте комбинации клавиш для нужных слотов. Затем вернитесь в приложение и назначьте действия этим слотам на вкладке «%1».</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

@@ -621,12 +621,17 @@ Kapcsolja ki a fejhallgató beállításaiban a „Beszélgetésészlelést”, 
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>A gyorsbillentyűk engedélyezéséhez parancsikon szükséges</translation>
+            <translation>Alkalmazás-parancsikon szükséges</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Engedélyezze a(z) „%1” beállítást, majd indítsa újra az alkalmazást</translation>
+            <translation>A gyorsbillentyűk a parancsikon hozzáadása után, az alkalmazás következő indításakor fognak működni.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Hozzáadás és kilépés</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Kapcsolja ki a fejhallgató beállításaiban a „Beszélgetésészlelést”, 
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>A „Beállítás” gomb megnyitja a rendszerbeállítások „Gyorsbillentyűk” részét. Rendeljen billentyűkombinációkat a kívánt helyekhez, és alkalmazza a módosításokat. Ezután válasszon műveletet az alkalmazás minden helyéhez.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Billentyűparancsok beállítása</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>SteamOS alatt nyissa meg a Rendszerbeállítások → Billentyűzet → Gyorsbillentyűk oldalt. Más rendszereken az elérési út eltérhet. Keresse meg a MagicPods alkalmazást, és rendeljen billentyűparancsokat a kívánt helyekhez. Ezután térjen vissza az alkalmazásba, és rendeljen műveleteket ezekhez a helyekhez a(z) „%1” lapon.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

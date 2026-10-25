@@ -621,12 +621,17 @@ Désactivez la « Détection de conversation » dans les réglages de vos écout
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Un raccourci d’application est requis pour activer les raccourcis clavier</translation>
+            <translation>Un raccourci vers l’application est requis</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Activez « %1 » dans les paramètres et redémarrez l’application</translation>
+            <translation>Les raccourcis clavier fonctionneront au prochain lancement de l’application après l’ajout du raccourci.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Ajouter et quitter</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Désactivez la « Détection de conversation » dans les réglages de vos écout
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Le bouton « Configurer » ouvre la section « Raccourcis clavier » des paramètres système. Attribuez des combinaisons de touches aux emplacements souhaités et appliquez les modifications. Sélectionnez ensuite une action pour chaque emplacement dans l’application.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Configurer les raccourcis clavier</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>Sous SteamOS, accédez à Configuration du système → Clavier → Raccourcis. Le chemin peut varier sur les autres systèmes. Trouvez MagicPods et attribuez des raccourcis clavier aux emplacements souhaités. Revenez ensuite dans l’application et attribuez des actions à ces emplacements dans l’onglet « %1 ».</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

@@ -621,12 +621,17 @@ Austiņu iestatījumos atspējojiet “Sarunas noteikšanu”, lai mikrofona lie
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Lai aktivizētu karstos taustiņus, nepieciešama saīsne</translation>
+            <translation>Nepieciešama lietotnes saīsne</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Iestatījumos iespējojiet “%1” un restartējiet lietotni</translation>
+            <translation>Pēc saīsnes pievienošanas karstie taustiņi darbosies nākamajā lietotnes palaišanas reizē.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Pievienot un iziet</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Austiņu iestatījumos atspējojiet “Sarunas noteikšanu”, lai mikrofona lie
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Poga “Konfigurēt” atver sistēmas iestatījumu sadaļu “Karstie taustiņi”. Piešķiriet taustiņu kombinācijas vajadzīgajiem slotiem un lietojiet izmaiņas. Pēc tam lietotnē izvēlieties darbību katram slotam.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Tastatūras īsinājumtaustiņu konfigurēšana</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>SteamOS sistēmā atveriet Sistēmas iestatījumi → Tastatūra → Saīsnes. Citās sistēmās ceļš var atšķirties. Atrodiet MagicPods un piešķiriet tastatūras īsinājumtaustiņus vajadzīgajiem slotiem. Pēc tam atgriezieties lietotnē un piešķiriet darbības šiem slotiem cilnē “%1”.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

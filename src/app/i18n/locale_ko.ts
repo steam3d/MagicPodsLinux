@@ -621,12 +621,17 @@
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>단축키를 활성화하려면 바로 가기가 필요합니다</translation>
+            <translation>애플리케이션 바로 가기가 필요합니다</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>설정에서 "%1"을 활성화하고 애플리케이션을 다시 시작하세요</translation>
+            <translation>바로 가기를 추가하면 다음에 애플리케이션을 실행할 때 단축키가 작동합니다.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>추가하고 종료</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>"설정" 버튼을 누르면 시스템 설정의 "단축키" 항목이 열립니다. 원하는 슬롯에 키 조합을 할당하고 변경 사항을 적용한 다음, 애플리케이션에서 각 슬롯의 동작을 선택하세요.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>키보드 단축키 설정</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>SteamOS에서 시스템 설정 → 키보드 → 단축키로 이동하세요. 다른 시스템에서는 경로가 다를 수 있습니다. MagicPods를 찾아 원하는 슬롯에 키보드 단축키를 할당하세요. 그런 다음 앱으로 돌아와 “%1” 탭에서 해당 슬롯에 동작을 할당하세요.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

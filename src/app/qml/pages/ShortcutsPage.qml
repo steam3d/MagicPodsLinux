@@ -17,11 +17,37 @@ QQC2.Page {
     readonly property int mWidth: MP.Units.gridUnit * 12
     title: qsTrId("menu.shortcuts")
 
+    QQC2.Dialog {
+        id: configurationHelpDialog
+        parent: QQC2.Overlay.overlay
+        anchors.centerIn: parent
+        width: Math.min(420, parent ? parent.width - 32 : 420)
+        modal: true
+        focus: true
+        title: qsTrId("shortcuts.configure_help.header")
+        standardButtons: QQC2.Dialog.Ok
+
+        contentItem: QQC2.Label {
+            text: qsTrId("shortcuts.configure_help.description").arg(
+                      qsTrId("menu.shortcuts"))
+            wrapMode: Text.WordWrap
+        }
+    }
+
+    Connections {
+        target: globalShortcutManager
+
+        function onConfigurationHelpRequested() {
+            configurationHelpDialog.open();
+        }
+    }
+
     MP.HelpMessage {
         visible: !gameScopeMode && !globalShortcutManager.available
         iconSource: "qrc:/qt/qml/magicpods/src/app/qml/assets/icons/menu-bandage.png"
         titleText: qsTrId("shortcuts.portal_unavailable.header")
         bodyText: qsTrId("shortcuts.portal_unavailable.description")
+        width: rootPage.mWidth * 1.5
     }
 
     MP.HelpMessage {
@@ -30,8 +56,14 @@ QQC2.Page {
                  && !globalShortcutManager.desktopEntryAvailable
         iconSource: "qrc:/qt/qml/magicpods/src/app/qml/assets/icons/add-shortcut.png"
         titleText: qsTrId("shortcuts.desktop_entry_missing.header")
-        bodyText: qsTrId("shortcuts.desktop_entry_missing.description").arg(
-                      qsTrId("settings.add_shortcut_to_menu"))
+        bodyText: qsTrId("shortcuts.desktop_entry_missing.description")
+        actionText: qsTrId("shortcuts.desktop_entry_missing.action")
+        width: rootPage.mWidth * 1.5
+
+        onActionTriggered: {
+            if (desktopManager?.install())
+                Qt.quit();
+        }
     }
 
     MP.HelpMessage {
@@ -39,6 +71,7 @@ QQC2.Page {
         iconSource: "qrc:/qt/qml/magicpods/src/app/qml/assets/icons/menu-shortcuts.png"
         titleText: qsTrId("shortcuts.game_scope.header")
         bodyText: qsTrId("shortcuts.game_scope.description")
+        width: rootPage.mWidth * 1.5
     }
 
     QQC2.ScrollView {

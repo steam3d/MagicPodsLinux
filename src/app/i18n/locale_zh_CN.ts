@@ -621,12 +621,17 @@
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>需要应用快捷方式才能启用快捷键</translation>
+            <translation>需要应用快捷方式</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>在设置中启用“%1”并重启应用</translation>
+            <translation>添加快捷方式后，下次启动应用时快捷键即可生效。</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>添加并退出</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>“配置”按钮将打开系统的“快捷键”设置。请为所需插槽分配按键组合并应用更改，然后在应用中为每个插槽选择一个操作。</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>配置键盘快捷键</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>在 SteamOS 中，前往“系统设置”→“键盘”→“快捷键”。其他系统中的路径可能有所不同。找到 MagicPods，并为所需的槽位分配键盘快捷键。然后返回应用，在“%1”选项卡中为这些槽位分配操作。</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

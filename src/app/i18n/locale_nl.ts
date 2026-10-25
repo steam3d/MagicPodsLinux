@@ -621,12 +621,17 @@ Schakel ‘Gespreksdetectie’ uit in de hoofdtelefooninstellingen om te voorkom
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Een snelkoppeling is vereist om sneltoetsen te activeren</translation>
+            <translation>Een snelkoppeling naar de toepassing is vereist</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Schakel "%1" in bij Instellingen en start de toepassing opnieuw</translation>
+            <translation>Na het toevoegen van de snelkoppeling werken de sneltoetsen wanneer u de toepassing de volgende keer start.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Toevoegen en afsluiten</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Schakel ‘Gespreksdetectie’ uit in de hoofdtelefooninstellingen om te voorkom
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>De knop "Configureren" opent het onderdeel "Sneltoetsen" van de systeeminstellingen. Wijs toetscombinaties toe aan de gewenste posities en pas de wijzigingen toe. Selecteer daarna in de toepassing een actie voor elke positie.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Sneltoetsen configureren</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>Ga in SteamOS naar Systeeminstellingen → Toetsenbord → Sneltoetsen. Het pad kan op andere systemen afwijken. Zoek MagicPods en wijs sneltoetsen toe aan de gewenste slots. Ga daarna terug naar de app en wijs acties toe aan die slots op het tabblad ‘%1’.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

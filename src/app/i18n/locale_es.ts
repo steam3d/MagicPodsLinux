@@ -621,12 +621,17 @@ Desactiva «Detección de conversación» en los ajustes de los auriculares para
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Se necesita un acceso directo para activar los atajos de teclado</translation>
+            <translation>Se necesita un acceso directo de la aplicación</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Activa «%1» en Ajustes y reinicia la aplicación</translation>
+            <translation>Los atajos de teclado funcionarán la próxima vez que inicies la aplicación después de añadir el acceso directo.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Añadir y salir</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Desactiva «Detección de conversación» en los ajustes de los auriculares para
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>El botón «Configurar» abre la sección «Atajos de teclado» de la configuración del sistema. Asigna combinaciones de teclas a las ranuras que quieras y aplica los cambios. Después, selecciona una acción para cada ranura en la aplicación.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Configurar atajos de teclado</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>En SteamOS, ve a Preferencias del sistema → Teclado → Atajos de teclado. La ruta puede variar en otros sistemas. Busca MagicPods y asigna atajos de teclado a las ranuras que quieras. Después, vuelve a la aplicación y asigna acciones a esas ranuras en la pestaña «%1».</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

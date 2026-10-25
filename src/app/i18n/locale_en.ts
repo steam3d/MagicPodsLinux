@@ -621,12 +621,17 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
     <message id="shortcuts.desktop_entry_missing.header">
         <location filename="../qml/pages/ShortcutsPage.qml" line="32"/>
         <source></source>
-        <translation>Shortcut required to enable hotkeys</translation>
+        <translation>Application shortcut required</translation>
     </message>
     <message id="shortcuts.desktop_entry_missing.description">
         <location filename="../qml/pages/ShortcutsPage.qml" line="33"/>
         <source></source>
-        <translation>Enable "%1" in Settings and restart the application</translation>
+        <translation>Hotkeys will work the next time you launch the application after adding the shortcut.</translation>
+    </message>
+    <message id="shortcuts.desktop_entry_missing.action">
+        <location filename="../qml/pages/ShortcutsPage.qml" line="60"/>
+        <source></source>
+        <translation>Add and exit</translation>
     </message>
     <message id="shortcuts.game_scope.header">
         <location filename="../qml/pages/ShortcutsPage.qml" line="40"/>
@@ -657,6 +662,16 @@ Disable &quot;Conversation Awareness&quot; in your headphones' settings to preve
         <location filename="../qml/pages/ShortcutsPage.qml" line="71"/>
         <source></source>
         <translation>The "Configure" button opens the system's "Hotkeys" settings. Assign key combinations to the desired slots and apply the changes. Then select an action for each slot in the application.</translation>
+    </message>
+    <message id="shortcuts.configure_help.header">
+        <location filename="../qml/pages/ShortcutsPage.qml" line="27"/>
+        <source></source>
+        <translation>Configure keyboard shortcuts</translation>
+    </message>
+    <message id="shortcuts.configure_help.description">
+        <location filename="../qml/pages/ShortcutsPage.qml" line="31"/>
+        <source></source>
+        <translation>On SteamOS, go to System Settings → Keyboard → Shortcuts. The path may differ on other systems. Find MagicPods and assign keyboard shortcuts to the desired slots. Then return to the app and assign actions to those slots in the “%1” tab.</translation>
     </message>
     <message id="shortcuts.actions">
         <location filename="../qml/pages/ShortcutsPage.qml" line="87"/>

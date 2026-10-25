@@ -621,12 +621,17 @@ Wyłącz opcję „Wykrywanie rozmów” w ustawieniach słuchawek, aby zapobiec
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Do włączenia skrótów klawiszowych wymagany jest skrót aplikacji</translation>
+            <translation>Wymagany jest skrót do aplikacji</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Włącz „%1” w ustawieniach i uruchom aplikację ponownie</translation>
+            <translation>Po dodaniu skrótu skróty klawiszowe będą działać przy następnym uruchomieniu aplikacji.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Dodaj i zakończ</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Wyłącz opcję „Wykrywanie rozmów” w ustawieniach słuchawek, aby zapobiec
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Przycisk „Konfiguruj” otwiera sekcję „Skróty klawiszowe” w ustawieniach systemowych. Przypisz kombinacje klawiszy do wybranych pól i zastosuj zmiany. Następnie wybierz w aplikacji działanie dla każdego pola.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Konfiguracja skrótów klawiszowych</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>W systemie SteamOS przejdź do Ustawienia systemowe → Klawiatura → Skróty. Ścieżka może być inna w pozostałych systemach. Znajdź MagicPods i przypisz skróty klawiszowe do wybranych slotów. Następnie wróć do aplikacji i przypisz działania do tych slotów na karcie „%1”.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

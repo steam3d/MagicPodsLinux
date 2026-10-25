@@ -621,12 +621,17 @@ Mikrofonu kullanırken ses düzeyinin otomatik olarak düşmesini önlemek için
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Kısayol tuşlarını etkinleştirmek için bir uygulama kısayolu gereklidir</translation>
+            <translation>Uygulama kısayolu gerekli</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Ayarlar'da “%1” seçeneğini etkinleştirip uygulamayı yeniden başlatın</translation>
+            <translation>Kısayol eklendikten sonra, kısayol tuşları uygulamanın bir sonraki başlatılışında çalışacaktır.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Ekle ve çık</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Mikrofonu kullanırken ses düzeyinin otomatik olarak düşmesini önlemek için
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>“Yapılandır” düğmesi sistem ayarlarındaki “Kısayol tuşları” bölümünü açar. İstediğiniz yuvalara tuş kombinasyonları atayıp değişiklikleri uygulayın. Ardından uygulamada her yuva için bir eylem seçin.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Klavye kısayollarını yapılandır</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>SteamOS’te Sistem Ayarları → Klavye → Kısayollar’a gidin. Diğer sistemlerde yol farklı olabilir. MagicPods’u bulun ve istediğiniz yuvalara klavye kısayolları atayın. Ardından uygulamaya dönün ve “%1” sekmesinde bu yuvalara eylemler atayın.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

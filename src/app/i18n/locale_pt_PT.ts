@@ -621,12 +621,17 @@ Desative a «Deteção de conversa» nas definições dos auscultadores para imp
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>É necessário um atalho para ativar os atalhos de teclado</translation>
+            <translation>É necessário um atalho da aplicação</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Ative «%1» nas Definições e reinicie a aplicação</translation>
+            <translation>Depois de adicionar o atalho, os atalhos de teclado funcionarão da próxima vez que iniciar a aplicação.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Adicionar e sair</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Desative a «Deteção de conversa» nas definições dos auscultadores para imp
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>O botão «Configurar» abre a secção «Atalhos de teclado» das definições do sistema. Atribua combinações de teclas às posições pretendidas e aplique as alterações. Depois, selecione uma ação para cada posição na aplicação.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Configurar atalhos de teclado</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>No SteamOS, aceda a Configuração do Sistema → Teclado → Atalhos. O caminho pode ser diferente noutros sistemas. Localize o MagicPods e atribua atalhos de teclado aos slots pretendidos. Depois, volte à aplicação e atribua ações a esses slots no separador “%1”.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

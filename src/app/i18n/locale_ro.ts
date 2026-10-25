@@ -621,12 +621,17 @@ Dezactivați „Detectarea conversației” în setările căștilor pentru a î
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Este necesară o scurtătură pentru activarea comenzilor rapide</translation>
+            <translation>Este necesară o scurtătură pentru aplicație</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Activați „%1” în Setări și reporniți aplicația</translation>
+            <translation>După adăugarea scurtăturii, comenzile rapide de la tastatură vor funcționa la următoarea pornire a aplicației.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Adăugați și ieșiți</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Dezactivați „Detectarea conversației” în setările căștilor pentru a î
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Butonul „Configurare” deschide secțiunea „Comenzi rapide de la tastatură” din setările de sistem. Atribuiți combinații de taste sloturilor dorite și aplicați modificările. Apoi selectați în aplicație o acțiune pentru fiecare slot.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Configurează comenzile rapide de la tastatură</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>În SteamOS, accesați Configurări de sistem → Tastatură → Scurtături. Calea poate fi diferită pe alte sisteme. Găsiți MagicPods și atribuiți comenzi rapide de la tastatură sloturilor dorite. Apoi reveniți în aplicație și atribuiți acțiuni acelor sloturi în fila „%1”.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

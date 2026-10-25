@@ -621,12 +621,17 @@ Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta �
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Pikanäppäinten käyttöönotto edellyttää pikakuvaketta</translation>
+            <translation>Sovelluksen pikakuvake tarvitaan</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Ota ”%1” käyttöön asetuksissa ja käynnistä sovellus uudelleen</translation>
+            <translation>Pikanäppäimet toimivat, kun käynnistät sovelluksen seuraavan kerran pikakuvakkeen lisäämisen jälkeen.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Lisää ja lopeta</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Poista kuulokkeiden asetuksista ”Keskustelun tunnistus” käytöstä, jotta �
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Määritä-painike avaa järjestelmäasetusten Pikanäppäimet-osion. Määritä halutuille paikoille näppäinyhdistelmät ja ota muutokset käyttöön. Valitse sitten sovelluksessa kullekin paikalle toiminto.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Määritä pikanäppäimet</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>Siirry SteamOS:ssa kohtaan Järjestelmäasetukset → Näppäimistö → Pikanäppäimet. Polku voi olla erilainen muissa järjestelmissä. Etsi MagicPods ja määritä pikanäppäimet haluamillesi paikoille. Palaa sitten sovellukseen ja määritä toiminnot näille paikoille välilehdellä ”%1”.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

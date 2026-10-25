@@ -621,12 +621,17 @@ Deaktivieren Sie die „Konversationserkennung“ in den Einstellungen Ihrer Kop
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>Zum Aktivieren von Tastenkürzeln ist eine Verknüpfung erforderlich</translation>
+            <translation>Anwendungsverknüpfung erforderlich</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>Aktivieren Sie „%1“ in den Einstellungen und starten Sie die Anwendung neu</translation>
+            <translation>Die Tastenkürzel funktionieren beim nächsten Start der Anwendung, nachdem die Verknüpfung hinzugefügt wurde.</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>Hinzufügen und beenden</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@ Deaktivieren Sie die „Konversationserkennung“ in den Einstellungen Ihrer Kop
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>Die Schaltfläche „Einrichten“ öffnet den Bereich „Tastenkürzel“ in den Systemeinstellungen. Weisen Sie den gewünschten Slots Tastenkombinationen zu und übernehmen Sie die Änderungen. Wählen Sie anschließend in der Anwendung eine Aktion für jeden Slot aus.</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>Tastenkürzel einrichten</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>Gehen Sie in SteamOS zu Systemeinstellungen → Tastatur → Kurzbefehle. Der Pfad kann auf anderen Systemen abweichen. Suchen Sie MagicPods und weisen Sie den gewünschten Slots Tastenkürzel zu. Kehren Sie anschließend zur App zurück und weisen Sie diesen Slots auf der Registerkarte „%1“ Aktionen zu.</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

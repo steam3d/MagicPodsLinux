@@ -12,7 +12,6 @@
 #include <QDBusPendingReply>
 #include <QDBusVariant>
 #include <QDebug>
-#include <QSet>
 #include <QUuid>
 
 namespace {
@@ -57,6 +56,16 @@ bool hasAssignedShortcut(const PortalShortcutList &shortcuts)
         const QVariant triggerDescription = unpackVariant(
             shortcut.properties.value(QStringLiteral("trigger_description")));
         if (!triggerDescription.toString().trimmed().isEmpty())
+            return true;
+    }
+
+    return false;
+}
+
+bool hasRegisteredShortcut(const PortalShortcutList &shortcuts)
+{
+    for (const PortalShortcut &shortcut : shortcuts) {
+        if (isShortcutId(shortcut.id))
             return true;
     }
 
@@ -150,9 +159,9 @@ void GlobalShortcutManager::start()
         return;
     }
 
-    const uint portalVersion = portal.property("version").toUInt();
-    if (portalVersion < 2) {
-        qWarning() << "[GlobalShortcutManager] GlobalShortcuts portal v2 is required";
+    portalVersion = portal.property("version").toUInt();
+    if (portalVersion < 1) {
+        qWarning() << "[GlobalShortcutManager] GlobalShortcuts portal v1 is required";
         return;
     }
 
@@ -178,7 +187,7 @@ void GlobalShortcutManager::configureShortcuts()
     if (!canConfigure() || busyValue)
         return;
 
-    if (!shortcutsRegistered) {
+    if (!bindCompletedForSession) {
         if (bindAttemptedForSession) {
             closeSession();
             bindAfterSessionCreation = true;
@@ -186,6 +195,11 @@ void GlobalShortcutManager::configureShortcuts()
         } else {
             bindShortcuts();
         }
+        return;
+    }
+
+    if (portalVersion < 2) {
+        emit configurationHelpRequested();
         return;
     }
 
@@ -245,6 +259,7 @@ void GlobalShortcutManager::handleRequestResponse(uint response,
         }
 
         bindAttemptedForSession = false;
+        bindCompletedForSession = false;
         emit canConfigureChanged();
         connectSessionSignals();
         if (bindAfterSessionCreation) {
@@ -259,7 +274,10 @@ void GlobalShortcutManager::handleRequestResponse(uint response,
     if (operation == RequestOperation::ListShortcuts) {
         const PortalShortcutList shortcuts = decodeShortcuts(
             results.value(QStringLiteral("shortcuts")));
-        if (hasAssignedShortcut(shortcuts))
+        const bool shouldRestore = portalVersion < 2
+            ? hasRegisteredShortcut(shortcuts)
+            : hasAssignedShortcut(shortcuts);
+        if (shouldRestore)
             bindShortcuts();
         else
             setBusy(false);
@@ -267,18 +285,9 @@ void GlobalShortcutManager::handleRequestResponse(uint response,
     }
 
     if (operation == RequestOperation::BindShortcuts) {
-        const PortalShortcutList shortcuts = decodeShortcuts(
-            results.value(QStringLiteral("shortcuts")));
-        applyShortcuts(shortcuts);
-
-        if (!shortcutsRegistered) {
-            failRequest(QStringLiteral("The portal did not register all shortcut slots"));
-            return;
-        }
-
+        bindCompletedForSession = true;
         setBusy(false);
-        qInfo() << "[GlobalShortcutManager] Registered"
-                << kShortcutSlotCount << "global shortcut slots";
+        qInfo() << "[GlobalShortcutManager] Shortcut binding completed";
     }
 }
 
@@ -298,22 +307,12 @@ void GlobalShortcutManager::handleActivated(const QDBusObjectPath &sessionHandle
     emit shortcutActivated(shortcutId);
 }
 
-void GlobalShortcutManager::handleShortcutsChanged(
-    const QDBusObjectPath &sessionHandle,
-    const PortalShortcutList &shortcuts)
-{
-    if (sessionHandle.path() != sessionPath)
-        return;
-
-    applyShortcuts(shortcuts);
-}
-
 void GlobalShortcutManager::handleSessionClosed()
 {
     disconnectSessionSignals();
     sessionPath.clear();
     bindAttemptedForSession = false;
-    shortcutsRegistered = false;
+    bindCompletedForSession = false;
     setBusy(false);
     emit canConfigureChanged();
     qInfo() << "[GlobalShortcutManager] Session closed";
@@ -533,13 +532,6 @@ void GlobalShortcutManager::connectSessionSignals()
         QStringLiteral("Activated"),
         this,
         SLOT(handleActivated(QDBusObjectPath,QString,qulonglong,QVariantMap)));
-    const bool changedConnected = bus.connect(
-        QString::fromLatin1(kPortalService),
-        QString::fromLatin1(kPortalPath),
-        QString::fromLatin1(kGlobalShortcutsInterface),
-        QStringLiteral("ShortcutsChanged"),
-        this,
-        SLOT(handleShortcutsChanged(QDBusObjectPath,PortalShortcutList)));
     const bool closedConnected = bus.connect(
         QString::fromLatin1(kPortalService),
         sessionPath,
@@ -548,7 +540,7 @@ void GlobalShortcutManager::connectSessionSignals()
         this,
         SLOT(handleSessionClosed()));
 
-    if (!activatedConnected || !changedConnected || !closedConnected) {
+    if (!activatedConnected || !closedConnected) {
         qWarning() << "[GlobalShortcutManager] Failed to connect one or more portal signals";
     }
 }
@@ -563,14 +555,6 @@ void GlobalShortcutManager::disconnectSessionSignals()
         QStringLiteral("Activated"),
         this,
         SLOT(handleActivated(QDBusObjectPath,QString,qulonglong,QVariantMap)));
-    bus.disconnect(
-        QString::fromLatin1(kPortalService),
-        QString::fromLatin1(kPortalPath),
-        QString::fromLatin1(kGlobalShortcutsInterface),
-        QStringLiteral("ShortcutsChanged"),
-        this,
-        SLOT(handleShortcutsChanged(QDBusObjectPath,PortalShortcutList)));
-
     bus.disconnect(
         QString::fromLatin1(kPortalService),
         sessionPath,
@@ -594,19 +578,8 @@ void GlobalShortcutManager::closeSession()
     session.asyncCall(QStringLiteral("Close"));
     sessionPath.clear();
     bindAttemptedForSession = false;
-    shortcutsRegistered = false;
+    bindCompletedForSession = false;
     emit canConfigureChanged();
-}
-
-void GlobalShortcutManager::applyShortcuts(const PortalShortcutList &shortcuts)
-{
-    QSet<QString> registeredSlotIds;
-    for (const PortalShortcut &shortcut : shortcuts) {
-        if (isShortcutId(shortcut.id))
-            registeredSlotIds.insert(shortcut.id);
-    }
-
-    shortcutsRegistered = registeredSlotIds.size() == kShortcutSlotCount;
 }
 
 void GlobalShortcutManager::failRequest(const QString &message)

@@ -621,12 +621,17 @@
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>ต้องมีทางลัดเพื่อเปิดใช้งานปุ่มลัด</translation>
+            <translation>ต้องมีทางลัดของแอปพลิเคชัน</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>เปิดใช้ “%1” ในการตั้งค่าแล้วเริ่มแอปพลิเคชันใหม่</translation>
+            <translation>หลังจากเพิ่มทางลัดแล้ว ปุ่มลัดจะใช้งานได้ในครั้งถัดไปที่คุณเปิดแอปพลิเคชัน</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>เพิ่มและออก</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>ปุ่ม “กำหนดค่า” จะเปิดส่วน “ปุ่มลัด” ในการตั้งค่าระบบ กำหนดชุดปุ่มให้กับช่องที่ต้องการและใช้การเปลี่ยนแปลง จากนั้นเลือกการทำงานสำหรับแต่ละช่องในแอปพลิเคชัน</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>ตั้งค่าปุ่มลัดบนแป้นพิมพ์</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>ใน SteamOS ให้ไปที่ ตั้งค่าระบบ → คีย์บอร์ด → ปุ่มลัด เส้นทางอาจแตกต่างกันในระบบอื่น ค้นหา MagicPods และกำหนดปุ่มลัดบนแป้นพิมพ์ให้กับช่องที่ต้องการ จากนั้นกลับไปที่แอปและกำหนดการทำงานให้กับช่องเหล่านั้นในแท็บ “%1”</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />

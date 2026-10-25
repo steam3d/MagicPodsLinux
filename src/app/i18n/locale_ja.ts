@@ -621,12 +621,17 @@
         <message id="shortcuts.desktop_entry_missing.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="32" />
             <source />
-            <translation>ホットキーを有効にするにはショートカットが必要です</translation>
+            <translation>アプリケーションのショートカットが必要です</translation>
         </message>
         <message id="shortcuts.desktop_entry_missing.description">
             <location filename="../qml/pages/ShortcutsPage.qml" line="33" />
             <source />
-            <translation>設定で「%1」を有効にして、アプリケーションを再起動してください</translation>
+            <translation>ショートカットを追加すると、次回のアプリケーション起動時からキーボードショートカットが機能します。</translation>
+        </message>
+        <message id="shortcuts.desktop_entry_missing.action">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="60" />
+            <source />
+            <translation>追加して終了</translation>
         </message>
         <message id="shortcuts.game_scope.header">
             <location filename="../qml/pages/ShortcutsPage.qml" line="40" />
@@ -657,6 +662,16 @@
             <location filename="../qml/pages/ShortcutsPage.qml" line="71" />
             <source />
             <translation>「設定」ボタンを押すと、システム設定の「ホットキー」が開きます。使用するスロットにキーの組み合わせを割り当てて変更を適用し、アプリケーションで各スロットのアクションを選択してください。</translation>
+        </message>
+        <message id="shortcuts.configure_help.header">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="27" />
+            <source />
+            <translation>キーボードショートカットを設定</translation>
+        </message>
+        <message id="shortcuts.configure_help.description">
+            <location filename="../qml/pages/ShortcutsPage.qml" line="31" />
+            <source />
+            <translation>SteamOS では、システム設定 → キーボード → ショートカットを開きます。他のシステムではパスが異なる場合があります。MagicPods を見つけ、必要なスロットにキーボードショートカットを割り当てます。その後、アプリに戻り、「%1」タブでそれらのスロットにアクションを割り当てます。</translation>
         </message>
         <message id="shortcuts.actions">
             <location filename="../qml/pages/ShortcutsPage.qml" line="87" />
