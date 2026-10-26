@@ -5,9 +5,9 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 TARGET_DIR="$SCRIPT_DIR/MagicPods-portable"
-BUILD_DIR="$SCRIPT_DIR/build/Desktop_Qt_6_10_2-Release"
-QMAKE="$HOME/Qt/6.10.2/gcc_64/bin/qmake"
-QT_PLUGINS_DIR="$HOME/Qt/6.10.2/gcc_64/plugins"
+BUILD_DIR="$SCRIPT_DIR/build/Desktop_Qt_6_12_0-Release"
+QMAKE="$HOME/Qt/6.12.0/gcc_64/bin/qmake"
+QT_PLUGINS_DIR="$HOME/Qt/6.12.0/gcc_64/plugins"
 DOCKER_OUT="$(mktemp -d "${TMPDIR:-/tmp}/magicpodscore-runtime.XXXXXX")"
 OWNER_USER="$(id -un)"
 OWNER_GROUP="$(id -gn)"
