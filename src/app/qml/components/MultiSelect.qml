@@ -87,8 +87,8 @@ Item {
 
                     delegate: Image {
                         required property var modelData
-                        Layout.preferredWidth: 24
-                        Layout.preferredHeight: 24
+                        Layout.preferredWidth: 20
+                        Layout.preferredHeight: 20
                         source: modelData.icon
                         fillMode: Image.PreserveAspectFit
                     }
