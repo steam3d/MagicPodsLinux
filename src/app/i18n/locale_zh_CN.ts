@@ -113,6 +113,11 @@
             <source />
             <translation>高清麦克风:</translation>
         </message>
+        <message id="tray.high_resolution_microphone">
+            <location filename="../cpp/TrayIconManager.cpp" line="343" />
+            <source />
+            <translation>高清麦克风</translation>
+        </message>
         <message id="battery.high_resolution_microphone.description">
             <location filename="../qml/pages/BatteryPage.qml" line="361" />
             <source />

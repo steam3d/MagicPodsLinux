@@ -340,7 +340,7 @@ void TrayIconManager::addHeadphoneAction(const QVariantMap &headphone)
 void TrayIconManager::addHighResolutionMicrophoneAction(const QString &address,
                                                         const QVariantMap &microphoneData)
 {
-    QAction *action = menu->addAction(qtTrId("battery.high_resolution_microphone"));
+    QAction *action = menu->addAction(qtTrId("tray.high_resolution_microphone"));
 
     const bool isSelected = microphoneData.value(QStringLiteral("selected")).toBool();
     const bool isReadonly = microphoneData.value(QStringLiteral("readonly")).toBool();
