@@ -61,7 +61,7 @@ private:
     QWebSocket socket;
     QTimer reconnectTimer;
     bool allowReconnect = true;
-    int supportedApiVersion = 0;
+    int supportedApiVersion = 1;
     int maxAttempts = -1;
     int reconnectAttempts = 0;
     QString backendInfoTextValue;

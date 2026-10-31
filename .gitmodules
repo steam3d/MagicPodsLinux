@@ -1,3 +1,4 @@
 [submodule "src/modules/MagicPodsCore"]
 	path = src/modules/MagicPodsCore
 	url = https://github.com/steam3d/MagicPodsCore.git
+	branch = master
