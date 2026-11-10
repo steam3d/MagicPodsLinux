@@ -30,6 +30,7 @@ QQC2.ApplicationWindow {
     width: frame.implicitWidth
     height: frame.implicitHeight
     visible: false
+    title: "MagicPods PopUp"
 
     function showOsd() {
         if (width <= 0 || height <= 0 || frame.width <= 0 || frame.height <= 0) {
